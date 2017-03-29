@@ -23,6 +23,7 @@ body {
   background: $nord6;
   padding: 3px 5px;
   border-radius: 8px;
+  animation: 60s infinite colorrotate2;
 }
 h1 {
   font-family: "DejaVu Sans", sans-serif;
@@ -30,7 +31,11 @@ h1 {
   margin: 24pt 0 12pt;
   line-height: 1.3em;
 }
-a, #intro {
+#intro {
+  margin-right: 250px;
+  animation: 15s infinite alternate colorrotate1;
+}
+a, #intro, h1 .highlight {
   font-weight: bold;
   text-decoration: none !important;
 }
@@ -151,4 +156,14 @@ h1, .tab-pane#home {
     padding-top: 1.4em;
     border-top: 1px solid $nord3;
   }
+}
+@keyframes colorrotate1 {
+  0% { filter: saturate(10) hue-rotate(0deg); }
+  50% { filter: saturate(50) hue-rotate(180deg); }
+  100% { filter: saturate(10) hue-rotate(360deg); }
+}
+@keyframes colorrotate2 {
+  0% { filter: saturate(1) hue-rotate(0deg); }
+  50% { filter: saturate(5) hue-rotate(180deg); }
+  100% { filter: saturate(1) hue-rotate(360deg); }
 }
