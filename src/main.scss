@@ -1,0 +1,154 @@
+@import "nord";
+
+* {
+  box-sizing: border-box;
+}
+@page {
+  margin: 0.8cm;
+}
+html {
+  background: $nord1;
+}
+body {
+  text-align: justify;
+  background: $nord0;
+  max-width: 1024px;
+  margin: 10px auto;
+  font-size: 12pt;
+  color: $nord4;
+  border: 1px solid $nord3;
+}
+.highlight {
+  color: $nord2;
+  background: $nord6;
+  padding: 3px 5px;
+  border-radius: 8px;
+}
+h1 {
+  font-family: "DejaVu Sans", sans-serif;
+  font-size: 28pt;
+  margin: 24pt 0 12pt;
+  line-height: 1.3em;
+}
+a, #intro {
+  font-weight: bold;
+  text-decoration: none !important;
+}
+a.highlight:hover {
+  color: $nord2 !important;
+  background: $nord8 !important;
+}
+li {
+  line-height: 1.5em;
+  margin: 0.5em 0;
+}
+p.lead {
+  clear: both;
+  font-size: 16pt;
+  margin-bottom: 20pt;
+}
+.tab-content {
+  padding: 30pt 40pt;
+  margin: 0;
+  text-align: justify;
+}
+.tab-content ul {
+  text-align: left;
+  line-height: 1.5em;
+}
+h1, .tab-pane#home {
+  text-align: left !important;
+}
+.navbar li:first-of-type a {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+[data-toggle="tooltip"] {
+  cursor: help;
+}
+.subtitle {
+  color: $nord7;
+}
+.tab-pane {
+  display: block !important;
+  opacity: 1 !important;
+}
+.todo, .next, .done {
+  padding: .1em .2em .2em;
+}
+#social {
+  float: right;
+}
+.glyph-link {
+  filter: unquote("invert()");
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  margin: 8px;
+  opacity: 0.6;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.glyph-link:hover {
+  opacity: 0.9;
+  height: 36px;
+  width: 36px;
+  margin: 2px;
+}
+.twitter {
+  background-image: url('glyphicons/glyphicons-social-32-twitter.png');
+}
+.facebook {
+  background-image: url('glyphicons/glyphicons-social-31-facebook.png');
+}
+.email {
+  background-image: url('glyphicons/glyphicons-social-14-e-mail-envelope.png');
+}
+.linkedin {
+  background-image: url('glyphicons/glyphicons-social-18-linked-in.png');
+}
+.github {
+  background-image: url('glyphicons/glyphicons-social-22-github.png');
+}
+
+@media only screen and (max-device-width : 800px) {
+  .highlight {
+    padding: 2px 5px;
+  }
+  li {
+    line-height: 1.7em;
+  }
+}
+@media only screen and (max-device-width : 600px) {
+  body, .tab-content {
+    padding: 0;
+    margin: 10pt;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .date {
+    font-size: 0.8em;
+  }
+  #employment, #me {
+    margin-top: 40pt;
+  }
+  .tab-pane strong {
+    text-decoration: underline;
+  }
+  #social {
+    float: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .tab-pane > ul > li:nth-of-type(n+2) {
+    margin-top: 1.5em;
+    padding-top: 1.4em;
+    border-top: 1px solid $nord3;
+  }
+}
