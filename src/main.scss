@@ -44,8 +44,12 @@ a.highlight:hover {
   background: $nord8 !important;
 }
 li {
+  line-height: 1.2em;
+  margin: 0.3em 0;
+}
+#languages li {
   line-height: 1.5em;
-  margin: 0.5em 0;
+  margin: 0.3em 0;
 }
 p.lead {
   clear: both;
@@ -217,6 +221,9 @@ ul ul {
   .print-links {
     display: block;
   }
+  h1 {
+    margin: 10pt 0;
+  }
   #intro {
     margin: 0 0 6pt !important;
   }
@@ -237,10 +244,13 @@ ul ul {
   }
   li {
     line-height: 1.2em !important;
-    margin: 0.1em !important;
+    margin: 1pt !important;
   }
   .subtitle {
     display: none;
+  }
+  #me {
+    break-before: page;
   }
 }
 
