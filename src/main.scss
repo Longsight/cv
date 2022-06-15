@@ -218,6 +218,11 @@ ul ul {
 }
 
 @media print {
+  * {
+    background: none;
+    border-radius: none;
+    animation: none;
+  }
   .print-links {
     display: block;
   }
