@@ -16,8 +16,13 @@ class SkillLevel(StrEnum):
     RUSTY = auto()
     GOOD = auto()
     EXCELLENT = auto()
+
     def __str__(self):
         return f'{self.name}'.title()
+
+    def __repr__(self):
+        return f'{self.name}'.title()
+
     @classmethod
     def _missing_(cls, value):
         if value is None:
@@ -30,48 +35,66 @@ class SkillLevel(StrEnum):
 
 class Skill(yaml.YAMLObject):
     yaml_tag = u'!Skill'
+
     def __init__(self, name, level):
         self.name = name
         self.level = SkillLevel(level)
+
     def __repr__(self):
         return "%s(name=%r, level=%r)" % (
             self.__class__.__name__, self.name, self.level)
 
     @classmethod
-    def to_yaml(cls, dumper, data):
-        return dumper.represent_scalar(u'!Skill', data.level)
+    def from_yaml(cls, loader, node):
+        data = loader.construct_mapping(node)
+        return Skill(**data)
 
     @classmethod
-    def from_yaml(cls, loader, node):
-        data = {
-            "name": node,
-            "level": SkillLevel(loader.construct_scalar(node))
-        }
-        return data
+    def to_yaml(cls, dumper, data):
+        node = dumper.represent_mapping(u'!Skill', {
+            "name": data.name,
+            "level": str(data.level),
+        }, flow_style=True)
+        return node
 
 class Category(yaml.YAMLObject):
     yaml_tag = u'!Category'
+
     def __init__(self, name):
         self.name = name
         self.skills = []
+
     def add_skill(self, skill):
         if skill in skills:
             self.skills.append(skills[skill])
+
     def __repr__(self):
         return "%s(name=%r, skills=%r)" % (
             self.__class__.__name__, self.name, self.skills)
     
+    @classmethod
+    def to_yaml(cls, dumper, data):
+        node = dumper.represent_mapping(u'!Category', vars(data), flow_style=True)
+        return node
+
 class Role(yaml.YAMLObject):
     yaml_tag = u'!Role'
+
     def __init__(self, employer, title, location, start_date, end_date):
         self.employer = employer
         self.title = title
         self.location = location
         self.start_date = start_date
         self.end_date = end_date
+
     def __repr__(self):
         return "%s(employer=%r, title=%r, location=%r, start_date=%r, end_date=%r)" % (
             self.__class__.__name__, self.employer, self.title, self.location, self.start_date, self.end_date)
+
+    @classmethod
+    def to_yaml(cls, dumper, data):
+        node = dumper.represent_mapping(u'!Role', vars(data), flow_style=True)
+        return node
     
 # def munge_skills(memo, row):
 #     try:
@@ -112,7 +135,7 @@ res = cur.execute("""
                   select title, employer, location, strftime('%Y-%m', start) as start_date,
                   strftime('%Y-%m', end) as end_date from roles order by start desc
                   """).fetchall()
-doc["roles"] = [dict(r) for r in res]
+roles = [Role(**r) for r in res]
 
 res = cur.execute("""
                   select categories.category, skills.skill from categories 
@@ -122,9 +145,12 @@ res = cur.execute("""
                   """).fetchall()
 categories = {r: Category(r) for r in sorted(set([row["category"] for row in res]))}
 skills = {r: Skill(r, None) for r in sorted(set([row["skill"] for row in res]))}
+for row in res:
+    categories[row["category"]].add_skill(row["skill"])
 
-doc["categories"] = categories
-doc["skills"] = skills
+doc["skills"] = list(skills.values())
+doc["categories"] = list(categories.values())
+doc["roles"] = roles
 
 
 # res = cur.execute("""

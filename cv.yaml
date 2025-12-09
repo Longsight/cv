@@ -1,183 +1,120 @@
-roles:
-- title: Platform Infrastructure Engineer
-  employer: Vitrifi Ltd
-  location: London
-  start_date: 2022-08
-  end_date: null
-- title: Senior Systems Engineer
-  employer: Unipart Digital
-  location: Cambridge
-  start_date: 2018-10
-  end_date: 2022-08
-- title: Lead Developer
-  employer: PocketWorks
-  location: Leeds
-  start_date: 2018-01
-  end_date: 2018-08
-- title: Lead Developer
-  employer: TempTribe
-  location: London
-  start_date: 2017-06
-  end_date: 2018-01
-- title: Senior Developer
-  employer: The Student Room Group
-  location: Brighton
-  start_date: 2015-12
-  end_date: 2017-05
-- title: Developer
-  employer: Omnisis Ltd
-  location: Manchester
-  start_date: 2012-07
-  end_date: 2015-11
-- title: Developer
-  employer: Pingala Media Ltd
-  location: Maidstone
-  start_date: 2011-07
-  end_date: 2012-06
-categories:
-  automation: !Category
-    name: automation
-    skills: []
-  cloud: !Category
-    name: cloud
-    skills: []
-  compliance: !Category
-    name: compliance
-    skills: []
-  configuration: !Category
-    name: configuration
-    skills: []
-  database: !Category
-    name: database
-    skills: []
-  dev: !Category
-    name: dev
-    skills: []
-  embedded: !Category
-    name: embedded
-    skills: []
-  hardware: !Category
-    name: hardware
-    skills: []
-  iac: !Category
-    name: iac
-    skills: []
-  linux: !Category
-    name: linux
-    skills: []
-  management: !Category
-    name: management
-    skills: []
-  mobile: !Category
-    name: mobile
-    skills: []
-  monitoring: !Category
-    name: monitoring
-    skills: []
-  networking: !Category
-    name: networking
-    skills: []
-  ops: !Category
-    name: ops
-    skills: []
-  performance: !Category
-    name: performance
-    skills: []
-  security: !Category
-    name: security
-    skills: []
-  web: !Category
-    name: web
-    skills: []
 skills:
-  .NET: !Skill 'poor'
-  AWS: !Skill 'poor'
-  Android: !Skill 'poor'
-  Ansible: !Skill 'poor'
-  Apache CloudStack: !Skill 'poor'
-  Apache HTTP Server: !Skill 'poor'
-  Apache Superset: !Skill 'poor'
-  Arduino: !Skill 'poor'
-  BGP: !Skill 'poor'
-  Bash: !Skill 'poor'
-  Bootstrap: !Skill 'poor'
-  C#: !Skill 'poor'
-  C++: !Skill 'poor'
-  Ceph: !Skill 'poor'
-  Cilium: !Skill 'poor'
-  CircleCI: !Skill 'poor'
-  Composer: !Skill 'poor'
-  ConcourseCI: !Skill 'poor'
-  D3: !Skill 'poor'
-  Docker: !Skill 'poor'
-  Doctrine: !Skill 'poor'
-  ESP32: !Skill 'poor'
-  ElasticSearch: !Skill 'poor'
-  Fail2Ban: !Skill 'poor'
-  Flutter: !Skill 'poor'
-  FreeIPA: !Skill 'poor'
-  Git: !Skill 'poor'
-  GitHub: !Skill 'poor'
-  GitLab: !Skill 'poor'
-  Gitea: !Skill 'poor'
-  Gradle: !Skill 'poor'
-  GraphQL: !Skill 'poor'
-  Groovy: !Skill 'poor'
-  HAProxy: !Skill 'poor'
-  Hardware: !Skill 'poor'
-  Hibernate: !Skill 'poor'
-  Hiera: !Skill 'poor'
-  Hiera-eyaml: !Skill 'poor'
-  Icinga2: !Skill 'poor'
-  JSX: !Skill 'poor'
-  Java: !Skill 'poor'
-  JavaScript: !Skill 'poor'
-  Jenkins: !Skill 'poor'
-  Kernel: !Skill 'poor'
-  Kubernetes: !Skill 'poor'
-  Laravel: !Skill 'poor'
-  Leadership: !Skill 'poor'
-  Linux: !Skill 'poor'
-  Logging: !Skill 'poor'
-  Lumen: !Skill 'poor'
-  Magento: !Skill 'poor'
-  Mediawiki: !Skill 'poor'
-  Memcached: !Skill 'poor'
-  MongoDB: !Skill 'poor'
-  MySQL: !Skill 'poor'
-  NHibernate: !Skill 'poor'
-  NPM: !Skill 'poor'
-  Networking: !Skill 'poor'
-  NodeJS: !Skill 'poor'
-  OpenDistro: !Skill 'poor'
-  OpenStack: !Skill 'poor'
-  PHP: !Skill 'poor'
-  PL/SQL: !Skill 'poor'
-  Postfix: !Skill 'poor'
-  PostgreSQL: !Skill 'poor'
-  Prometheus: !Skill 'poor'
-  Puppet: !Skill 'poor'
-  Python: !Skill 'poor'
-  Qualys: !Skill 'poor'
-  Rails: !Skill 'poor'
-  React Native: !Skill 'poor'
-  ReactJS: !Skill 'poor'
-  Redis: !Skill 'poor'
-  Relay: !Skill 'poor'
-  Ruby: !Skill 'poor'
-  SSH: !Skill 'poor'
-  Sequelize: !Skill 'poor'
-  Symfony: !Skill 'poor'
-  Tailscale: !Skill 'poor'
-  Terraform: !Skill 'poor'
-  Testing: !Skill 'poor'
-  VB.NET: !Skill 'poor'
-  Varnish: !Skill 'poor'
-  Wazuh: !Skill 'poor'
-  WireGuard: !Skill 'poor'
-  WordPress: !Skill 'poor'
-  gRPC: !Skill 'poor'
-  iptables: !Skill 'poor'
-  jQuery: !Skill 'poor'
-  nftables: !Skill 'poor'
-  nginx: !Skill 'poor'
+- &id055 !Skill {name: .NET, level: Poor}
+- &id001 !Skill {name: AWS, level: Poor}
+- &id089 !Skill {name: Android, level: Poor}
+- &id002 !Skill {name: Ansible, level: Poor}
+- &id003 !Skill {name: Apache CloudStack, level: Poor}
+- &id039 !Skill {name: Apache HTTP Server, level: Poor}
+- &id050 !Skill {name: Apache Superset, level: Poor}
+- &id004 !Skill {name: Arduino, level: Poor}
+- &id033 !Skill {name: BGP, level: Poor}
+- &id005 !Skill {name: Bash, level: Poor}
+- &id056 !Skill {name: Bootstrap, level: Poor}
+- &id057 !Skill {name: C#, level: Poor}
+- &id034 !Skill {name: C++, level: Poor}
+- &id035 !Skill {name: Ceph, level: Poor}
+- &id006 !Skill {name: Cilium, level: Poor}
+- &id058 !Skill {name: CircleCI, level: Poor}
+- &id059 !Skill {name: Composer, level: Poor}
+- &id060 !Skill {name: ConcourseCI, level: Poor}
+- &id061 !Skill {name: D3, level: Poor}
+- &id007 !Skill {name: Docker, level: Poor}
+- &id051 !Skill {name: Doctrine, level: Poor}
+- &id008 !Skill {name: ESP32, level: Poor}
+- &id036 !Skill {name: ElasticSearch, level: Poor}
+- &id009 !Skill {name: Fail2Ban, level: Poor}
+- &id062 !Skill {name: Flutter, level: Poor}
+- &id040 !Skill {name: FreeIPA, level: Poor}
+- &id010 !Skill {name: Git, level: Poor}
+- &id011 !Skill {name: GitHub, level: Poor}
+- &id012 !Skill {name: GitLab, level: Poor}
+- &id041 !Skill {name: Gitea, level: Poor}
+- &id042 !Skill {name: Gradle, level: Poor}
+- &id063 !Skill {name: GraphQL, level: Poor}
+- &id064 !Skill {name: Groovy, level: Poor}
+- &id043 !Skill {name: HAProxy, level: Poor}
+- &id087 !Skill {name: Hardware, level: Poor}
+- &id052 !Skill {name: Hibernate, level: Poor}
+- &id013 !Skill {name: Hiera, level: Poor}
+- &id014 !Skill {name: Hiera-eyaml, level: Poor}
+- &id015 !Skill {name: Icinga2, level: Poor}
+- &id065 !Skill {name: JSX, level: Poor}
+- &id066 !Skill {name: Java, level: Poor}
+- &id067 !Skill {name: JavaScript, level: Poor}
+- &id016 !Skill {name: Jenkins, level: Poor}
+- &id038 !Skill {name: Kernel, level: Poor}
+- &id017 !Skill {name: Kubernetes, level: Poor}
+- &id068 !Skill {name: Laravel, level: Poor}
+- &id088 !Skill {name: Leadership, level: Poor}
+- &id018 !Skill {name: Linux, level: Poor}
+- &id090 !Skill {name: Logging, level: Poor}
+- &id069 !Skill {name: Lumen, level: Poor}
+- &id070 !Skill {name: Magento, level: Poor}
+- &id071 !Skill {name: Mediawiki, level: Poor}
+- &id044 !Skill {name: Memcached, level: Poor}
+- &id037 !Skill {name: MongoDB, level: Poor}
+- &id045 !Skill {name: MySQL, level: Poor}
+- &id053 !Skill {name: NHibernate, level: Poor}
+- &id072 !Skill {name: NPM, level: Poor}
+- &id091 !Skill {name: Networking, level: Poor}
+- &id073 !Skill {name: NodeJS, level: Poor}
+- &id019 !Skill {name: OpenDistro, level: Poor}
+- &id020 !Skill {name: OpenStack, level: Poor}
+- &id074 !Skill {name: PHP, level: Poor}
+- &id054 !Skill {name: PL/SQL, level: Poor}
+- &id046 !Skill {name: Postfix, level: Poor}
+- &id047 !Skill {name: PostgreSQL, level: Poor}
+- &id021 !Skill {name: Prometheus, level: Poor}
+- &id022 !Skill {name: Puppet, level: Poor}
+- &id023 !Skill {name: Python, level: Poor}
+- &id024 !Skill {name: Qualys, level: Poor}
+- &id075 !Skill {name: Rails, level: Poor}
+- &id076 !Skill {name: React Native, level: Poor}
+- &id077 !Skill {name: ReactJS, level: Poor}
+- &id048 !Skill {name: Redis, level: Poor}
+- &id078 !Skill {name: Relay, level: Poor}
+- &id079 !Skill {name: Ruby, level: Poor}
+- &id025 !Skill {name: SSH, level: Poor}
+- &id080 !Skill {name: Sequelize, level: Poor}
+- &id081 !Skill {name: Symfony, level: Poor}
+- &id026 !Skill {name: Tailscale, level: Poor}
+- &id027 !Skill {name: Terraform, level: Poor}
+- &id082 !Skill {name: Testing, level: Poor}
+- &id083 !Skill {name: VB.NET, level: Poor}
+- &id028 !Skill {name: Varnish, level: Poor}
+- &id029 !Skill {name: Wazuh, level: Poor}
+- &id030 !Skill {name: WireGuard, level: Poor}
+- &id084 !Skill {name: WordPress, level: Poor}
+- &id085 !Skill {name: gRPC, level: Poor}
+- &id031 !Skill {name: iptables, level: Poor}
+- &id086 !Skill {name: jQuery, level: Poor}
+- &id032 !Skill {name: nftables, level: Poor}
+- &id049 !Skill {name: nginx, level: Poor}
+categories:
+- !Category {name: automation, skills: [*id001, *id002, *id003, *id004, *id005, *id006, *id007, *id008, *id009, *id010, *id011, *id012, *id013, *id014, *id015, *id016, *id017, *id018, *id019, *id020, *id021, *id022, *id023, *id024, *id025, *id026, *id027, *id028, *id029, *id030, *id031, *id032]}
+- !Category {name: cloud, skills: [*id001, *id002, *id003, *id033, *id034, *id035, *id006, *id007, *id036, *id009, *id017, *id018, *id037, *id019, *id020, *id022, *id024, *id025, *id026, *id027, *id028, *id029, *id030]}
+- !Category {name: compliance, skills: [*id001, *id002, *id009, *id015, *id038, *id018, *id021, *id024, *id026, *id029, *id030, *id031]}
+- !Category {name: configuration, skills: [*id001, *id002, *id003, *id039, *id033, *id035, *id006, *id007, *id009, *id040, *id010, *id011, *id012, *id041, *id042, *id043, *id013, *id014, *id015, *id016, *id038, *id017, *id018, *id044, *id037, *id045, *id019, *id020, *id046, *id047, *id021, *id022, *id023, *id024, *id048, *id025, *id026, *id027, *id028, *id029, *id030, *id031, *id032, *id049]}
+- !Category {name: database, skills: [*id001, *id050, *id051, *id036, *id052, *id037, *id045, *id053, *id054, *id047, *id048]}
+- !Category {name: dev, skills: [*id055, *id001, *id003, *id039, *id004, *id005, *id056, *id057, *id034, *id058, *id059, *id060, *id061, *id007, *id051, *id008, *id036, *id062, *id010, *id011, *id012, *id041, *id042, *id063, *id064, *id052, *id065, *id066, *id067, *id016, *id038, *id017, *id068, *id018, *id069, *id070, *id071, *id044, *id037, *id045, *id053, *id072, *id073, *id020, *id074, *id054, *id047, *id022, *id023, *id075, *id076, *id077, *id048, *id078, *id079, *id080, *id081, *id027, *id082,
+    *id083, *id084, *id085, *id086, *id049]}
+- !Category {name: embedded, skills: [*id004, *id034, *id008]}
+- !Category {name: hardware, skills: [*id003, *id004, *id005, *id034, *id035, *id008, *id009, *id087, *id015, *id038, *id017, *id018, *id020, *id022, *id024, *id076, *id025, *id026, *id027, *id029, *id030, *id031, *id032]}
+- !Category {name: iac, skills: [*id001, *id002, *id003, *id035, *id006, *id058, *id060, *id007, *id011, *id012, *id013, *id014, *id016, *id017, *id018, *id020, *id022, *id025, *id026, *id027, *id030]}
+- !Category {name: linux, skills: [*id001, *id002, *id003, *id039, *id004, *id005, *id034, *id035, *id007, *id008, *id009, *id040, *id043, *id015, *id066, *id038, *id017, *id018, *id073, *id019, *id020, *id046, *id021, *id022, *id023, *id024, *id048, *id025, *id026, *id027, *id028, *id029, *id030, *id031, *id032, *id049]}
+- !Category {name: management, skills: [*id088]}
+- !Category {name: mobile, skills: [*id055, *id089, *id004, *id057, *id034, *id008, *id062, *id042, *id063, *id052, *id065, *id066, *id067, *id038, *id018, *id044, *id037, *id053, *id073, *id074, *id076, *id048, *id078, *id030]}
+- !Category {name: monitoring, skills: [*id001, *id002, *id003, *id035, *id007, *id009, *id043, *id015, *id017, *id018, *id090, *id021, *id022, *id024, *id025, *id026, *id027, *id029, *id030]}
+- !Category {name: networking, skills: [*id001, *id002, *id003, *id039, *id004, *id033, *id035, *id006, *id007, *id008, *id009, *id040, *id043, *id038, *id017, *id018, *id091, *id019, *id020, *id022, *id024, *id025, *id026, *id027, *id028, *id029, *id030, *id031, *id032, *id049]}
+- !Category {name: ops, skills: [*id001, *id002, *id003, *id039, *id005, *id034, *id035, *id058, *id060, *id007, *id036, *id009, *id040, *id010, *id011, *id012, *id041, *id043, *id013, *id014, *id015, *id016, *id038, *id017, *id018, *id044, *id037, *id045, *id072, *id019, *id020, *id046, *id047, *id021, *id022, *id024, *id048, *id025, *id026, *id027, *id028, *id029, *id030, *id031, *id032, *id049]}
+- !Category {name: performance, skills: [*id001, *id002, *id003, *id039, *id004, *id033, *id034, *id035, *id006, *id007, *id008, *id036, *id043, *id015, *id038, *id017, *id018, *id044, *id037, *id045, *id073, *id019, *id020, *id054, *id047, *id021, *id022, *id023, *id076, *id077, *id048, *id078, *id025, *id080, *id026, *id027, *id028, *id030, *id031, *id032, *id049]}
+- !Category {name: security, skills: [*id001, *id002, *id003, *id004, *id007, *id008, *id009, *id040, *id010, *id038, *id017, *id018, *id020, *id021, *id022, *id024, *id025, *id026, *id027, *id029, *id030, *id031, *id032]}
+- !Category {name: web, skills: [*id055, *id001, *id002, *id039, *id056, *id057, *id058, *id059, *id060, *id061, *id007, *id051, *id036, *id010, *id011, *id012, *id041, *id063, *id043, *id052, *id065, *id067, *id017, *id068, *id069, *id070, *id071, *id044, *id037, *id045, *id053, *id072, *id073, *id074, *id054, *id047, *id023, *id075, *id076, *id077, *id048, *id078, *id079, *id080, *id081, *id083, *id028, *id084, *id086, *id049]}
+roles:
+- !Role {employer: Vitrifi Ltd, title: Platform Infrastructure Engineer, location: London, start_date: 2022-08, end_date: null}
+- !Role {employer: Unipart Digital, title: Senior Systems Engineer, location: Cambridge, start_date: 2018-10, end_date: 2022-08}
+- !Role {employer: PocketWorks, title: Lead Developer, location: Leeds, start_date: 2018-01, end_date: 2018-08}
+- !Role {employer: TempTribe, title: Lead Developer, location: London, start_date: 2017-06, end_date: 2018-01}
+- !Role {employer: The Student Room Group, title: Senior Developer, location: Brighton, start_date: 2015-12, end_date: 2017-05}
+- !Role {employer: Omnisis Ltd, title: Developer, location: Manchester, start_date: 2012-07, end_date: 2015-11}
+- !Role {employer: Pingala Media Ltd, title: Developer, location: Maidstone, start_date: 2011-07, end_date: 2012-06}
