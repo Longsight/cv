@@ -45,11 +45,6 @@ class Skill(yaml.YAMLObject):
             self.__class__.__name__, self.name, self.level)
 
     @classmethod
-    def from_yaml(cls, loader, node):
-        data = loader.construct_mapping(node)
-        return Skill(**data)
-
-    @classmethod
     def to_yaml(cls, dumper, data):
         node = dumper.represent_mapping(u'!Skill', {
             "name": data.name,
@@ -96,38 +91,6 @@ class Role(yaml.YAMLObject):
         node = dumper.represent_mapping(u'!Role', vars(data), flow_style=True)
         return node
     
-# def munge_skills(memo, row):
-#     try:
-#         skill = memo[row["category"]]
-#     except KeyError:
-#         memo[row["category"]] = []
-
-#     memo[row["category"]].append(row["skill"])
-
-#     return memo
-
-# def munge_history(memo, row):
-#     role = row["role_id"]
-#     try:
-#         role = memo[row["role_id"]]
-#     except KeyError:
-#         memo[row["role_id"]] = {
-#             "employer": row["employer"],
-#             "title": row["title"],
-#             "location": row["location"],
-#             "start_date": row["start_date"],
-#             "end_date": row["end_date"],
-#             "achievements": {}
-#         }
-
-#     try:
-#         achievements = memo[row["role_id"]]["achievements"][row["a_id"]]
-#     except KeyError:
-#         memo[row["role_id"]]["achievements"][row["a_id"]] = { "details": row[1], "skills": [] }
-
-#     memo[row["role_id"]]["achievements"][row["a_id"]]["skills"].append(row[2])
-
-#     return memo
 
 doc = {}
 
