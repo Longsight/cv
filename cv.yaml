@@ -1,0 +1,183 @@
+roles:
+- title: Platform Infrastructure Engineer
+  employer: Vitrifi Ltd
+  location: London
+  start_date: 2022-08
+  end_date: null
+- title: Senior Systems Engineer
+  employer: Unipart Digital
+  location: Cambridge
+  start_date: 2018-10
+  end_date: 2022-08
+- title: Lead Developer
+  employer: PocketWorks
+  location: Leeds
+  start_date: 2018-01
+  end_date: 2018-08
+- title: Lead Developer
+  employer: TempTribe
+  location: London
+  start_date: 2017-06
+  end_date: 2018-01
+- title: Senior Developer
+  employer: The Student Room Group
+  location: Brighton
+  start_date: 2015-12
+  end_date: 2017-05
+- title: Developer
+  employer: Omnisis Ltd
+  location: Manchester
+  start_date: 2012-07
+  end_date: 2015-11
+- title: Developer
+  employer: Pingala Media Ltd
+  location: Maidstone
+  start_date: 2011-07
+  end_date: 2012-06
+categories:
+  automation: !Category
+    name: automation
+    skills: []
+  cloud: !Category
+    name: cloud
+    skills: []
+  compliance: !Category
+    name: compliance
+    skills: []
+  configuration: !Category
+    name: configuration
+    skills: []
+  database: !Category
+    name: database
+    skills: []
+  dev: !Category
+    name: dev
+    skills: []
+  embedded: !Category
+    name: embedded
+    skills: []
+  hardware: !Category
+    name: hardware
+    skills: []
+  iac: !Category
+    name: iac
+    skills: []
+  linux: !Category
+    name: linux
+    skills: []
+  management: !Category
+    name: management
+    skills: []
+  mobile: !Category
+    name: mobile
+    skills: []
+  monitoring: !Category
+    name: monitoring
+    skills: []
+  networking: !Category
+    name: networking
+    skills: []
+  ops: !Category
+    name: ops
+    skills: []
+  performance: !Category
+    name: performance
+    skills: []
+  security: !Category
+    name: security
+    skills: []
+  web: !Category
+    name: web
+    skills: []
+skills:
+  .NET: !Skill 'poor'
+  AWS: !Skill 'poor'
+  Android: !Skill 'poor'
+  Ansible: !Skill 'poor'
+  Apache CloudStack: !Skill 'poor'
+  Apache HTTP Server: !Skill 'poor'
+  Apache Superset: !Skill 'poor'
+  Arduino: !Skill 'poor'
+  BGP: !Skill 'poor'
+  Bash: !Skill 'poor'
+  Bootstrap: !Skill 'poor'
+  C#: !Skill 'poor'
+  C++: !Skill 'poor'
+  Ceph: !Skill 'poor'
+  Cilium: !Skill 'poor'
+  CircleCI: !Skill 'poor'
+  Composer: !Skill 'poor'
+  ConcourseCI: !Skill 'poor'
+  D3: !Skill 'poor'
+  Docker: !Skill 'poor'
+  Doctrine: !Skill 'poor'
+  ESP32: !Skill 'poor'
+  ElasticSearch: !Skill 'poor'
+  Fail2Ban: !Skill 'poor'
+  Flutter: !Skill 'poor'
+  FreeIPA: !Skill 'poor'
+  Git: !Skill 'poor'
+  GitHub: !Skill 'poor'
+  GitLab: !Skill 'poor'
+  Gitea: !Skill 'poor'
+  Gradle: !Skill 'poor'
+  GraphQL: !Skill 'poor'
+  Groovy: !Skill 'poor'
+  HAProxy: !Skill 'poor'
+  Hardware: !Skill 'poor'
+  Hibernate: !Skill 'poor'
+  Hiera: !Skill 'poor'
+  Hiera-eyaml: !Skill 'poor'
+  Icinga2: !Skill 'poor'
+  JSX: !Skill 'poor'
+  Java: !Skill 'poor'
+  JavaScript: !Skill 'poor'
+  Jenkins: !Skill 'poor'
+  Kernel: !Skill 'poor'
+  Kubernetes: !Skill 'poor'
+  Laravel: !Skill 'poor'
+  Leadership: !Skill 'poor'
+  Linux: !Skill 'poor'
+  Logging: !Skill 'poor'
+  Lumen: !Skill 'poor'
+  Magento: !Skill 'poor'
+  Mediawiki: !Skill 'poor'
+  Memcached: !Skill 'poor'
+  MongoDB: !Skill 'poor'
+  MySQL: !Skill 'poor'
+  NHibernate: !Skill 'poor'
+  NPM: !Skill 'poor'
+  Networking: !Skill 'poor'
+  NodeJS: !Skill 'poor'
+  OpenDistro: !Skill 'poor'
+  OpenStack: !Skill 'poor'
+  PHP: !Skill 'poor'
+  PL/SQL: !Skill 'poor'
+  Postfix: !Skill 'poor'
+  PostgreSQL: !Skill 'poor'
+  Prometheus: !Skill 'poor'
+  Puppet: !Skill 'poor'
+  Python: !Skill 'poor'
+  Qualys: !Skill 'poor'
+  Rails: !Skill 'poor'
+  React Native: !Skill 'poor'
+  ReactJS: !Skill 'poor'
+  Redis: !Skill 'poor'
+  Relay: !Skill 'poor'
+  Ruby: !Skill 'poor'
+  SSH: !Skill 'poor'
+  Sequelize: !Skill 'poor'
+  Symfony: !Skill 'poor'
+  Tailscale: !Skill 'poor'
+  Terraform: !Skill 'poor'
+  Testing: !Skill 'poor'
+  VB.NET: !Skill 'poor'
+  Varnish: !Skill 'poor'
+  Wazuh: !Skill 'poor'
+  WireGuard: !Skill 'poor'
+  WordPress: !Skill 'poor'
+  gRPC: !Skill 'poor'
+  iptables: !Skill 'poor'
+  jQuery: !Skill 'poor'
+  nftables: !Skill 'poor'
+  nginx: !Skill 'poor'
