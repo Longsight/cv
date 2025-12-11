@@ -1,5 +1,6 @@
 import yaml
 from enum import auto, StrEnum
+from datetime import date
 
 class Competency(StrEnum):
     POOR = auto()
@@ -37,6 +38,7 @@ yaml.add_constructor(u'!Competency', competency_from_yaml)
 
 class Skill(yaml.YAMLObject):
     yaml_tag = u'!Skill'
+    yaml_flow_style = True
 
     def __init__(self, name, competency):
         self.name = name
@@ -46,13 +48,9 @@ class Skill(yaml.YAMLObject):
         return "%s(name=%r, competency=%r)" % (
             self.__class__.__name__, self.name, self.competency)
 
-    @classmethod
-    def to_yaml(cls, dumper, data):
-        node = dumper.represent_mapping(u'!Skill', vars(data), flow_style=True)
-        return node
-
 class Category(yaml.YAMLObject):
     yaml_tag = u'!Category'
+    yaml_flow_style = True
 
     def __init__(self, name):
         self.name = name
@@ -61,28 +59,51 @@ class Category(yaml.YAMLObject):
     def __repr__(self):
         return "%s(name=%r, skills=%r)" % (
             self.__class__.__name__, self.name, self.skills)
-    
-    @classmethod
-    def to_yaml(cls, dumper, data):
-        node = dumper.represent_mapping(u'!Category', vars(data), flow_style=True)
-        return node
 
 class Role(yaml.YAMLObject):
     yaml_tag = u'!Role'
+    yaml_flow_style = True
 
-    def __init__(self, employer, title, location, start_date, end_date):
-        self.employer = employer
-        self.title = title
-        self.location = location
-        self.start_date = start_date
-        self.end_date = end_date
+    def __init__(self, **kwargs):
+        self.employer = kwargs['employer']
+        self.title = kwargs['title']
+        self.location = kwargs['location']
+        if kwargs['start_date']:
+            self.start_date = date.fromisoformat(kwargs['start_date'])
+        else:
+            self.start_date = date.fromisoformat('1986-12-10')
+        if kwargs['start_date']:
+            self.end_date = date.fromisoformat(kwargs['end_date'])
+        else:
+            self.end_date = date.today()
+
+    def __lt__(self, other):
+        return self.start_date > other.start_date
+
+    def __eq__(self, other):
+        return self.employer == other.employer
+
+    def __hash__(self):
+        return hash((self.employer, ))
 
     def __repr__(self):
         return "%s(employer=%r, title=%r, location=%r, start_date=%r, end_date=%r)" % (
-            self.__class__.__name__, self.employer, self.title, self.location, self.start_date, self.end_date)
-
-    @classmethod
-    def to_yaml(cls, dumper, data):
-        node = dumper.represent_mapping(u'!Role', vars(data), flow_style=True)
-        return node
+            self.__class__.__name__, self.employer, self.title,
+            self.location, self.start_date, self.end_date
+        )
     
+class Achievement(yaml.YAMLObject):
+    yaml_tag = u'!Achievement'
+    yaml_flow_style = True
+
+    def __init__(self, role, **kwargs):
+        self.detail = kwargs['detail']
+        self.role = role
+        self.skills = []
+
+    def __hash__(self):
+        return hash((self.detail, ))
+
+    def __repr__(self):
+        return "%s(detail=%r, skills=%r)" % (
+            self.__class__.__name__, self.detail, self.skills)

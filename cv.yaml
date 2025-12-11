@@ -117,10 +117,78 @@ categories:
 - !Category {name: security, skills: [*id001, *id002, *id003, *id004, *id007, *id008, *id009, *id040, *id010, *id038, *id017, *id018, *id020, *id021, *id022, *id024, *id025, *id026, *id027, *id029, *id030, *id031, *id032]}
 - !Category {name: web, skills: [*id055, *id001, *id002, *id039, *id056, *id057, *id058, *id059, *id060, *id061, *id007, *id051, *id036, *id010, *id011, *id012, *id041, *id063, *id043, *id052, *id065, *id067, *id017, *id068, *id069, *id070, *id071, *id044, *id037, *id045, *id053, *id072, *id073, *id074, *id054, *id047, *id023, *id075, *id076, *id077, *id048, *id078, *id079, *id080, *id081, *id083, *id028, *id084, *id086, *id049]}
 roles:
-- !Role {employer: Vitrifi Ltd, title: Platform Infrastructure Engineer, location: London, start_date: 2022-08, end_date: null}
-- !Role {employer: Unipart Digital, title: Senior Systems Engineer, location: Cambridge, start_date: 2018-10, end_date: 2022-08}
-- !Role {employer: PocketWorks, title: Lead Developer, location: Leeds, start_date: 2018-01, end_date: 2018-08}
-- !Role {employer: TempTribe, title: Lead Developer, location: London, start_date: 2017-06, end_date: 2018-01}
-- !Role {employer: The Student Room Group, title: Senior Developer, location: Brighton, start_date: 2015-12, end_date: 2017-05}
-- !Role {employer: Omnisis Ltd, title: Developer, location: Manchester, start_date: 2012-07, end_date: 2015-11}
-- !Role {employer: Pingala Media Ltd, title: Developer, location: Maidstone, start_date: 2011-07, end_date: 2012-06}
+- &id098 !Role {employer: Unipart Digital, title: Senior Systems Engineer, location: Cambridge, start_date: 2018-10-01, end_date: 2022-08-19}
+- &id096 !Role {employer: PocketWorks, title: Lead Developer, location: Leeds, start_date: 2018-01-15, end_date: 2018-08-31}
+- &id097 !Role {employer: TempTribe, title: Lead Developer, location: London, start_date: 2017-06-01, end_date: 2018-01-14}
+- &id092 !Role {employer: The Student Room Group, title: Senior Developer, location: Brighton, start_date: 2015-12-01, end_date: 2017-05-31}
+- &id095 !Role {employer: Omnisis Ltd, title: Developer, location: Manchester, start_date: 2012-07-01, end_date: 2015-11-30}
+- &id094 !Role {employer: Pingala Media Ltd, title: Developer, location: Maidstone, start_date: 2011-07-01, end_date: 2012-06-30}
+- &id093 !Role {employer: null, title: null, location: null, start_date: 1986-12-10, end_date: 2025-12-11}
+achievements:
+- !Achievement {detail: 'Integration of Firebase, Google Analytics, TestFairy, and Sentry APIs, to keep track of everything', role: *id092, skills: [*id082]}
+- !Achievement {detail: Using Git for absolutely everything, role: *id093, skills: [*id010]}
+- !Achievement {detail: Experienced with Bootstrap for rapid application prototyping, role: *id093, skills: [*id067, *id056]}
+- !Achievement {detail: System administration for all development and production servers, role: *id094, skills: [*id018, *id087]}
+- !Achievement {detail: Project lead on TSR's mobile discussion app, role: *id092, skills: [*id076]}
+- !Achievement {detail: 'Supporting a vast range of clients through complex surveying needs, from local food companies to global pharmaceutical giants', role: *id095, skills: [*id088]}
+- !Achievement {detail: Built a prototype Android app to read and write complex data from STMicro's ST25DV NFC tags, role: *id096, skills: [*id089]}
+- !Achievement {detail: 'Built mobile-first web apps using React.JS, JSX and Apollo, embracing the latest language features in ES2015 and beyond', role: *id092, skills: [*id065]}
+- !Achievement {detail: 'Experienced with Apache and nginx for HTTP, including all kinds of authnz, and creating Puppet modules to automate everything', role: *id093, skills: [*id039, *id049, *id022]}
+- !Achievement {detail: 'Experience mentoring novice developers, having previously volunteered for CodeBar Brighton and helped new developers into their first professional roles', role: *id092, skills: [*id088, *id088]}
+- !Achievement {detail: 'Created interactive charts, singlepage applications, synthesized audio, procedurally-generated art', role: *id093, skills: [*id067]}
+- !Achievement {detail: Creation of extensive boilerplate code to integrate TSR with the Dynamic Yield personalisation platform, role: *id092, skills: [*id067]}
+- !Achievement {detail: Written complex maintenance scripts in Bash and Python, role: *id093, skills: [*id005, *id023]}
+- !Achievement {detail: 'Conceived and built a rapid and clean discussion app for TSR, using React Native, Relay, GraphQL, and more', role: *id092, skills: [*id076, *id078, *id063]}
+- !Achievement {detail: 4+ years' experience working with and developing .NET web and console applications in VB.NET and C#, role: *id097, skills: [*id055, *id083, *id057]}
+- !Achievement {detail: 'Developed a digital literacy tool for an education consultancy, handling massive datasets, animated graphing, file-based caching, map-reduce and PDF exports', role: *id093, skills: [*id074, *id045, *id067, *id061]}
+- !Achievement {detail: Built micro- and macro-services using Lumen and Laravel 5.* to support search and JSON API functionality for TSR's ever-growing services, role: *id092, skills: [*id074, *id045, *id067, *id069, *id068]}
+- !Achievement {detail: 'Testing with Mocha / Chai, including promise support through Chai-as-promised', role: *id092, skills: [*id082]}
+- !Achievement {detail: 'Confident at getting the best out of others, with a focus on efficient and accurate working, and using the right tools for the job', role: *id093, skills: [*id088]}
+- !Achievement {detail: 'Developed a range of personal sites, galleries, online game data crunching tools', role: *id093, skills: [*id067, *id045, *id047, *id018]}
+- !Achievement {detail: 'Sole day-to-day support of legacy and current systems for staff booking, job creation and payroll systems', role: *id097, skills: [*id083]}
+- !Achievement {detail: Implementation and support of AWS-based port of all the above, role: *id095, skills: [*id001, *id067, *id083, *id057]}
+- !Achievement {detail: Built and maintained two iterations of a Drupal site for a 500-member uni rock society, role: *id093, skills: [*id074, *id045, *id067]}
+- !Achievement {detail: 'Wrote FreeIPA plugins to support tree changes that reflect internal structure for an organisation of 10,000+ users', role: *id098, skills: [*id040]}
+- !Achievement {detail: 'Enabled the expansion of the company into international markets by porting and internationalising the entire backend, frontend and mobile platforms', role: *id097, skills: [*id089, *id045]}
+- !Achievement {detail: 'Written solid, test-driven code using Mocha, Chai and Enzyme, with Nuclide and React DevTools', role: *id092, skills: [*id073]}
+- !Achievement {detail: '~20 years'' experience with Linux in a personal and professional context, building servers, configuring kernels, patching modules, automating configuration', role: *id093, skills: [*id038, *id087, *id018]}
+- !Achievement {detail: 'Intimate with the packaging ecosystems for a wide range of modern distros (APT, DNF and the like) and languages (Composer, NPM, RubyGems, Bower and more)', role: *id093, skills: [*id072]}
+- !Achievement {detail: Built Docker images to run custom ConcourseCI resource types to streamline the automation of package builds, role: *id093, skills: [*id007, *id060]}
+- !Achievement {detail: Been taking physical machines apart and putting them together again (still working) since I was in single figures, role: *id093, skills: [*id087]}
+- !Achievement {detail: 'Implemented solutions against MongoDB for document-based storage, and Redis for key-value storage', role: *id093, skills: [*id037, *id048]}
+- !Achievement {detail: 'Augmented services with custom build scripts and continuous integration, built in Ruby and Java', role: *id092, skills: [*id079, *id066]}
+- !Achievement {detail: 'Complete delivery of a brand new staff management mobile app for iOS and Android, built in React Native against a distributed Node.JS API and caching platform', role: *id097, skills: [*id076, *id089]}
+- !Achievement {detail: Built Puppet modules for everything, role: *id098, skills: [*id022]}
+- !Achievement {detail: 'Dragging a 10+ year old .NET system into the 21st century, with endless bugfixes, UI updates, features, security and performance improvements', role: *id097, skills: [*id083, *id055]}
+- !Achievement {detail: 'Worked extensively with Puppet, PuppetDB, and Hiera, including writing my own ENCs, managing secrets with hiera-eyaml at Enterprise level, and creating modules for the management of OpenStack, Apache Superset, Mediawiki, Taiga, Jitsi and more, with security concerns managed up front', role: *id093, skills: [*id050, *id022, *id013, *id014, *id020, *id071]}
+- !Achievement {detail: 'A more than keen interest in security, with strong skills in SSH configuration, key management, iptables and nftables, and SELinux', role: *id093, skills: [*id025, *id031, *id032]}
+- !Achievement {detail: Made significant improvements to a Rails-based UML diagram tool, role: *id096, skills: [*id075]}
+- !Achievement {detail: 'Worked extensively with MySQL and PostgreSQL for relational data persistence, including PL/SQL, sequencing and complex indexing', role: *id093, skills: [*id045, *id047, *id054]}
+- !Achievement {detail: Replaced the aging TSR search pages with a sleek and powerful system built on Google Search Appliances, role: *id092, skills: [*id067, *id074]}
+- !Achievement {detail: Spent a year on a major site migration and maintenance project (~50 corporate / school sites) supporting and improving a bespoke CMS, role: *id094, skills: [*id074, *id045, *id067]}
+- !Achievement {detail: Redesigned and deployed the monitoring and backup systems for hundreds of production systems, role: *id098, skills: [*id020, *id018, *id022]}
+- !Achievement {detail: 'Developed a Ruby / JS build system with full App Store integration, using nodegit and fastlane', role: *id092, skills: [*id079]}
+- !Achievement {detail: 'Managed the logging of events from hundreds of production systems using a combination of rsyslog2, ElasticSearch and OpenDistro', role: *id093, skills: [*id090, *id036, *id019]}
+- !Achievement {detail: Developed fast and scalable backend services in Node.JS, role: *id092, skills: [*id073]}
+- !Achievement {detail: 'Ran icinga2 clusters to monitor all of the above, including custom checks for new services', role: *id093, skills: [*id015]}
+- !Achievement {detail: 'Developed against a range of caching solutions, including Varnish, Memcached, and node-cache', role: *id093, skills: [*id028, *id044]}
+- !Achievement {detail: '~18 years messing with networks, routers, switches, physical and virtual, at home and at work', role: *id093, skills: [*id091, *id087]}
+- !Achievement {detail: Implemented bugfixes and features to a long-running iOS / Rails sales app, role: *id096, skills: [*id075]}
+- !Achievement {detail: 'Built scalable data support with Relay and GraphQL, with Memcached backing', role: *id092, skills: [*id078, *id063, *id044]}
+- !Achievement {detail: 'Proficient with Apple and Android code-signing, user testing and delivery practices, and the automation of such with Gradle, fastlane and match', role: *id092, skills: [*id089, *id082, *id042]}
+- !Achievement {detail: 'Delivered scalable, testable Android code with extensive use of RxJava for observables and Dagger for dependency injection', role: *id092, skills: [*id089]}
+- !Achievement {detail: 'Worked extensively with modern JS APIs for responsiveness, async communication, JSON data encoding and more', role: *id093, skills: [*id067]}
+- !Achievement {detail: 'Wrote a complete BBCode parser in Node.JS, and accompanying renderer in React Native', role: *id092, skills: [*id073]}
+- !Achievement {detail: Aided in the design and conception of apps for new clients as part of a concerted marketing drive, role: *id096, skills: [*id089, *id062]}
+- !Achievement {detail: 'Experienced with WordPress, Composer, Zend, Symfony, Doctrine, Eloquent, Magento - you name it, I''ve taken it apart', role: *id094, skills: [*id084, *id059, *id081, *id051, *id070, *id084, *id059, *id081, *id051, *id070]}
+- !Achievement {detail: 'Development of full inhouse CMS for new clients, based on the Symfony2 platform', role: *id094, skills: [*id074]}
+- !Achievement {detail: 'Built plugins and config management for FreeIPA, Postfix, Dovecot and more internal tools', role: *id093, skills: [*id040, *id046]}
+- !Achievement {detail: '~11 years on-and-off experience with OpenStack, including 4 years managing three clusters running Nova, Neutron, Designate and the like, supporting ~1300 cores in production across three sites', role: *id093, skills: [*id091, *id020]}
+- !Achievement {detail: 'Built a client-ready VR demo app in my first week, using Flutter and Google Cardboard', role: *id096, skills: [*id089, *id062]}
+- !Achievement {detail: 'Written applications using standalone Eloquent, Sequelize, Hibernate, NHibernate and Doctrine ORMs against a variety of backends', role: *id096, skills: [*id080, *id052, *id053, *id051]}
+- !Achievement {detail: Developed a cross-platform VR demo using Google's new Flutter platform, role: *id096, skills: [*id089, *id062]}
+- !Achievement {detail: 'Porting, maintenance and redevelopment of 50+ PHP sites for schools and small enterprises', role: *id094, skills: [*id045, *id074]}
+- !Achievement {detail: 'Confident configuring, maintaining and integrating everything into CI platforms like ConcourseCI and CircleCI, as well as legacy systems like Jenkins', role: *id093, skills: [*id060, *id058, *id016]}
+- !Achievement {detail: Frontline support and sole full-time developer on a large .NET web application, role: *id095, skills: [*id083, *id057, *id055]}
+- !Achievement {detail: 'Extremely experienced working within Agile processes, adapting Scrum working practices to different cross-functional teams, tracking work in Jira / Confluence etc', role: *id093, skills: [*id088]}
+- !Achievement {detail: 'Development of RN component structure, navigation, styling, and higher-order components', role: *id092, skills: [*id076]}
