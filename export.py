@@ -2,9 +2,8 @@
 import sqlite3
 import yaml
 from models import *
-from functools import reduce
 
-con = sqlite3.connect('cv.db')
+con = sqlite3.connect('cv-old.db')
 con.row_factory = sqlite3.Row
 cur = con.cursor()
 
@@ -47,10 +46,7 @@ doc = {
     "achievements": list(achievements.values()),
 }
 
-# stream = open('cv.yaml', 'w')
-# yaml.dump(doc, stream, indent=2, width=500, sort_keys=False)
-
-stream = open('cv.yaml', 'r')
-print(yaml.load(stream, Loader=yaml.Loader))
+stream = open('cv-old.yaml', 'w')
+yaml.dump(doc, stream, indent=2, width=500, sort_keys=False)
 
 con.close()

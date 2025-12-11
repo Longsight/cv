@@ -5,190 +5,192 @@ competencies:
 - !Competency 'Good'
 - !Competency 'Excellent'
 skills:
-- &id055 !Skill {name: .NET, competency: !Competency 'Good'}
-- &id001 !Skill {name: AWS, competency: !Competency 'Good'}
-- &id089 !Skill {name: Android, competency: !Competency 'Good'}
-- &id002 !Skill {name: Ansible, competency: !Competency 'Good'}
-- &id003 !Skill {name: Apache CloudStack, competency: !Competency 'Good'}
-- &id039 !Skill {name: Apache HTTP Server, competency: !Competency 'Good'}
-- &id050 !Skill {name: Apache Superset, competency: !Competency 'Good'}
-- &id004 !Skill {name: Arduino, competency: !Competency 'Good'}
-- &id033 !Skill {name: BGP, competency: !Competency 'Good'}
-- &id005 !Skill {name: Bash, competency: !Competency 'Good'}
-- &id056 !Skill {name: Bootstrap, competency: !Competency 'Good'}
-- &id057 !Skill {name: C#, competency: !Competency 'Good'}
-- &id034 !Skill {name: C++, competency: !Competency 'Good'}
-- &id035 !Skill {name: Ceph, competency: !Competency 'Good'}
-- &id006 !Skill {name: Cilium, competency: !Competency 'Good'}
-- &id058 !Skill {name: CircleCI, competency: !Competency 'Good'}
-- &id059 !Skill {name: Composer, competency: !Competency 'Good'}
-- &id060 !Skill {name: ConcourseCI, competency: !Competency 'Good'}
-- &id061 !Skill {name: D3, competency: !Competency 'Good'}
-- &id007 !Skill {name: Docker, competency: !Competency 'Good'}
-- &id051 !Skill {name: Doctrine, competency: !Competency 'Good'}
-- &id008 !Skill {name: ESP32, competency: !Competency 'Good'}
-- &id036 !Skill {name: ElasticSearch, competency: !Competency 'Good'}
-- &id009 !Skill {name: Fail2Ban, competency: !Competency 'Good'}
-- &id062 !Skill {name: Flutter, competency: !Competency 'Good'}
-- &id040 !Skill {name: FreeIPA, competency: !Competency 'Good'}
-- &id010 !Skill {name: Git, competency: !Competency 'Good'}
-- &id011 !Skill {name: GitHub, competency: !Competency 'Good'}
-- &id012 !Skill {name: GitLab, competency: !Competency 'Good'}
-- &id041 !Skill {name: Gitea, competency: !Competency 'Good'}
-- &id042 !Skill {name: Gradle, competency: !Competency 'Good'}
-- &id063 !Skill {name: GraphQL, competency: !Competency 'Good'}
-- &id064 !Skill {name: Groovy, competency: !Competency 'Good'}
-- &id043 !Skill {name: HAProxy, competency: !Competency 'Good'}
-- &id087 !Skill {name: Hardware, competency: !Competency 'Good'}
-- &id052 !Skill {name: Hibernate, competency: !Competency 'Good'}
-- &id013 !Skill {name: Hiera, competency: !Competency 'Good'}
-- &id014 !Skill {name: Hiera-eyaml, competency: !Competency 'Good'}
-- &id015 !Skill {name: Icinga2, competency: !Competency 'Good'}
-- &id065 !Skill {name: JSX, competency: !Competency 'Good'}
-- &id066 !Skill {name: Java, competency: !Competency 'Good'}
-- &id067 !Skill {name: JavaScript, competency: !Competency 'Good'}
-- &id016 !Skill {name: Jenkins, competency: !Competency 'Good'}
-- &id038 !Skill {name: Kernel, competency: !Competency 'Good'}
-- &id017 !Skill {name: Kubernetes, competency: !Competency 'Good'}
-- &id068 !Skill {name: Laravel, competency: !Competency 'Good'}
-- &id088 !Skill {name: Leadership, competency: !Competency 'Good'}
-- &id018 !Skill {name: Linux, competency: !Competency 'Good'}
-- &id090 !Skill {name: Logging, competency: !Competency 'Good'}
-- &id069 !Skill {name: Lumen, competency: !Competency 'Good'}
-- &id070 !Skill {name: Magento, competency: !Competency 'Good'}
-- &id071 !Skill {name: Mediawiki, competency: !Competency 'Good'}
-- &id044 !Skill {name: Memcached, competency: !Competency 'Good'}
-- &id037 !Skill {name: MongoDB, competency: !Competency 'Good'}
-- &id045 !Skill {name: MySQL, competency: !Competency 'Good'}
-- &id053 !Skill {name: NHibernate, competency: !Competency 'Good'}
-- &id072 !Skill {name: NPM, competency: !Competency 'Good'}
-- &id091 !Skill {name: Networking, competency: !Competency 'Good'}
-- &id073 !Skill {name: NodeJS, competency: !Competency 'Good'}
-- &id019 !Skill {name: OpenDistro, competency: !Competency 'Good'}
-- &id020 !Skill {name: OpenStack, competency: !Competency 'Good'}
-- &id074 !Skill {name: PHP, competency: !Competency 'Good'}
-- &id054 !Skill {name: PL/SQL, competency: !Competency 'Good'}
-- &id046 !Skill {name: Postfix, competency: !Competency 'Good'}
-- &id047 !Skill {name: PostgreSQL, competency: !Competency 'Good'}
-- &id021 !Skill {name: Prometheus, competency: !Competency 'Good'}
-- &id022 !Skill {name: Puppet, competency: !Competency 'Good'}
-- &id023 !Skill {name: Python, competency: !Competency 'Good'}
-- &id024 !Skill {name: Qualys, competency: !Competency 'Good'}
-- &id075 !Skill {name: Rails, competency: !Competency 'Good'}
-- &id076 !Skill {name: React Native, competency: !Competency 'Good'}
-- &id077 !Skill {name: ReactJS, competency: !Competency 'Good'}
-- &id048 !Skill {name: Redis, competency: !Competency 'Good'}
-- &id078 !Skill {name: Relay, competency: !Competency 'Good'}
-- &id079 !Skill {name: Ruby, competency: !Competency 'Good'}
-- &id025 !Skill {name: SSH, competency: !Competency 'Good'}
-- &id080 !Skill {name: Sequelize, competency: !Competency 'Good'}
-- &id081 !Skill {name: Symfony, competency: !Competency 'Good'}
-- &id026 !Skill {name: Tailscale, competency: !Competency 'Good'}
-- &id027 !Skill {name: Terraform, competency: !Competency 'Good'}
-- &id082 !Skill {name: Testing, competency: !Competency 'Good'}
-- &id083 !Skill {name: VB.NET, competency: !Competency 'Good'}
-- &id028 !Skill {name: Varnish, competency: !Competency 'Good'}
-- &id029 !Skill {name: Wazuh, competency: !Competency 'Good'}
-- &id030 !Skill {name: WireGuard, competency: !Competency 'Good'}
-- &id084 !Skill {name: WordPress, competency: !Competency 'Good'}
-- &id085 !Skill {name: gRPC, competency: !Competency 'Good'}
-- &id031 !Skill {name: iptables, competency: !Competency 'Good'}
-- &id086 !Skill {name: jQuery, competency: !Competency 'Good'}
-- &id032 !Skill {name: nftables, competency: !Competency 'Good'}
-- &id049 !Skill {name: nginx, competency: !Competency 'Good'}
+- &skill_055 !Skill {name: .NET, competency: !Competency 'Rusty'}
+- &skill_001 !Skill {name: AWS, competency: !Competency 'Good'}
+- &skill_089 !Skill {name: Android, competency: !Competency 'Okay'}
+- &skill_002 !Skill {name: Ansible, competency: !Competency 'Good'}
+- &skill_003 !Skill {name: Apache CloudStack, competency: !Competency 'Excellent'}
+- &skill_039 !Skill {name: Apache HTTP Server, competency: !Competency 'Exellent'}
+- &skill_050 !Skill {name: Apache Superset, competency: !Competency 'Rusty'}
+- &skill_004 !Skill {name: Arduino, competency: !Competency 'Good'}
+- &skill_033 !Skill {name: BGP, competency: !Competency 'Good'}
+- &skill_005 !Skill {name: Bash, competency: !Competency 'Good'}
+- &skill_056 !Skill {name: Bootstrap, competency: !Competency 'Okay'}
+- &skill_057 !Skill {name: C#, competency: !Competency 'Rusty'}
+- &skill_034 !Skill {name: C++, competency: !Competency 'Okay'}
+- &skill_035 !Skill {name: Ceph, competency: !Competency 'Good'}
+- &skill_006 !Skill {name: Cilium, competency: !Competency 'Good'}
+- &skill_058 !Skill {name: CircleCI, competency: !Competency 'Okay'}
+- &skill_059 !Skill {name: Composer, competency: !Competency 'Good'}
+- &skill_060 !Skill {name: ConcourseCI, competency: !Competency 'Okay'}
+- &skill_061 !Skill {name: D3, competency: !Competency 'Good'}
+- &skill_007 !Skill {name: Docker, competency: !Competency 'Good'}
+- &skill_051 !Skill {name: Doctrine, competency: !Competency 'Good'}
+- &skill_008 !Skill {name: ESP32, competency: !Competency 'Good'}
+- &skill_036 !Skill {name: ElasticSearch, competency: !Competency 'Good'}
+- &skill_009 !Skill {name: Fail2Ban, competency: !Competency 'Good'}
+- &skill_062 !Skill {name: Flutter, competency: !Competency 'Rusty'}
+- &skill_040 !Skill {name: FreeIPA, competency: !Competency 'Excellent'}
+- &skill_010 !Skill {name: Git, competency: !Competency 'Excellent'}
+- &skill_011 !Skill {name: GitHub, competency: !Competency 'Excellent'}
+- &skill_012 !Skill {name: GitLab, competency: !Competency 'Excellent'}
+- &skill_041 !Skill {name: Gitea, competency: !Competency 'Excellent'}
+- &skill_042 !Skill {name: Gradle, competency: !Competency 'Okay'}
+- &skill_063 !Skill {name: GraphQL, competency: !Competency 'Good'}
+- &skill_064 !Skill {name: Groovy, competency: !Competency 'Rusty'}
+- &skill_043 !Skill {name: HAProxy, competency: !Competency 'Good'}
+- &skill_087 !Skill {name: Hardware, competency: !Competency 'Good'}
+- &skill_052 !Skill {name: Hibernate, competency: !Competency 'Okay'}
+- &skill_013 !Skill {name: Hiera, competency: !Competency 'Excellent'}
+- &skill_014 !Skill {name: Hiera-eyaml, competency: !Competency 'Excellent'}
+- &skill_015 !Skill {name: Icinga2, competency: !Competency 'Excellent'}
+- &skill_065 !Skill {name: JSX, competency: !Competency 'Good'}
+- &skill_066 !Skill {name: Java, competency: !Competency 'Okay'}
+- &skill_067 !Skill {name: JavaScript, competency: !Competency 'Excellent'}
+- &skill_016 !Skill {name: Jenkins, competency: !Competency 'Good'}
+- &skill_038 !Skill {name: Kernel, competency: !Competency 'Okay'}
+- &skill_017 !Skill {name: Kubernetes, competency: !Competency 'Good'}
+- &skill_068 !Skill {name: Laravel, competency: !Competency 'Good'}
+- &skill_088 !Skill {name: Leadership, competency: !Competency 'Excellent'}
+- &skill_018 !Skill {name: Linux, competency: !Competency 'Excellent'}
+- &skill_090 !Skill {name: Logging, competency: !Competency 'Excellent'}
+- &skill_069 !Skill {name: Lumen, competency: !Competency 'Okay'}
+- &skill_070 !Skill {name: Magento, competency: !Competency 'Rusty'}
+- &skill_071 !Skill {name: Mediawiki, competency: !Competency 'Good'}
+- &skill_044 !Skill {name: Memcached, competency: !Competency 'Good'}
+- &skill_037 !Skill {name: MongoDB, competency: !Competency 'Okay'}
+- &skill_045 !Skill {name: MySQL, competency: !Competency 'Excellent'}
+- &skill_099 !Skill {name: MariaDB, competency: !Competency 'Excellent'}
+- &skill_053 !Skill {name: NHibernate, competency: !Competency 'Okay'}
+- &skill_072 !Skill {name: NPM, competency: !Competency 'Good'}
+- &skill_091 !Skill {name: Networking, competency: !Competency 'Excellent'}
+- &skill_073 !Skill {name: NodeJS, competency: !Competency 'Excellent'}
+- &skill_019 !Skill {name: OpenDistro, competency: !Competency 'Rusty'}
+- &skill_020 !Skill {name: OpenStack, competency: !Competency 'Excellent'}
+- &skill_074 !Skill {name: PHP, competency: !Competency 'Good'}
+- &skill_054 !Skill {name: PL/SQL, competency: !Competency 'Good'}
+- &skill_046 !Skill {name: Postfix, competency: !Competency 'Good'}
+- &skill_047 !Skill {name: PostgreSQL, competency: !Competency 'Excellent'}
+- &skill_021 !Skill {name: Prometheus, competency: !Competency 'Good'}
+- &skill_022 !Skill {name: Puppet, competency: !Competency 'Excellent'}
+- &skill_023 !Skill {name: Python, competency: !Competency 'Good'}
+- &skill_024 !Skill {name: Qualys, competency: !Competency 'Good'}
+- &skill_075 !Skill {name: Rails, competency: !Competency 'Okay'}
+- &skill_076 !Skill {name: React Native, competency: !Competency 'Okay'}
+- &skill_077 !Skill {name: ReactJS, competency: !Competency 'Good'}
+- &skill_048 !Skill {name: Redis, competency: !Competency 'Good'}
+- &skill_078 !Skill {name: Relay, competency: !Competency 'Good'}
+- &skill_079 !Skill {name: Ruby, competency: !Competency 'Good'}
+- &skill_025 !Skill {name: SSH, competency: !Competency 'Excellent'}
+- &skill_080 !Skill {name: Sequelize, competency: !Competency 'Good'}
+- &skill_081 !Skill {name: Symfony, competency: !Competency 'Good'}
+- &skill_026 !Skill {name: Tailscale, competency: !Competency 'Excellent'}
+- &skill_027 !Skill {name: Terraform, competency: !Competency 'Excellent'}
+- &skill_082 !Skill {name: Testing, competency: !Competency 'Excellent'}
+- &skill_083 !Skill {name: VB.NET, competency: !Competency 'Rusty'}
+- &skill_028 !Skill {name: Varnish, competency: !Competency 'Good'}
+- &skill_029 !Skill {name: Wazuh, competency: !Competency 'Good'}
+- &skill_030 !Skill {name: WireGuard, competency: !Competency 'Excellent'}
+- &skill_084 !Skill {name: WordPress, competency: !Competency 'Excellent'}
+- &skill_085 !Skill {name: gRPC, competency: !Competency 'Good'}
+- &skill_031 !Skill {name: iptables, competency: !Competency 'Excellent'}
+- &skill_086 !Skill {name: jQuery, competency: !Competency 'Good'}
+- &skill_032 !Skill {name: nftables, competency: !Competency 'Excellent'}
+- &skill_049 !Skill {name: nginx, competency: !Competency 'Good'}
 categories:
-- !Category {name: automation, skills: [*id001, *id002, *id003, *id004, *id005, *id006, *id007, *id008, *id009, *id010, *id011, *id012, *id013, *id014, *id015, *id016, *id017, *id018, *id019, *id020, *id021, *id022, *id023, *id024, *id025, *id026, *id027, *id028, *id029, *id030, *id031, *id032]}
-- !Category {name: cloud, skills: [*id001, *id002, *id003, *id033, *id034, *id035, *id006, *id007, *id036, *id009, *id017, *id018, *id037, *id019, *id020, *id022, *id024, *id025, *id026, *id027, *id028, *id029, *id030]}
-- !Category {name: compliance, skills: [*id001, *id002, *id009, *id015, *id038, *id018, *id021, *id024, *id026, *id029, *id030, *id031]}
-- !Category {name: configuration, skills: [*id001, *id002, *id003, *id039, *id033, *id035, *id006, *id007, *id009, *id040, *id010, *id011, *id012, *id041, *id042, *id043, *id013, *id014, *id015, *id016, *id038, *id017, *id018, *id044, *id037, *id045, *id019, *id020, *id046, *id047, *id021, *id022, *id023, *id024, *id048, *id025, *id026, *id027, *id028, *id029, *id030, *id031, *id032, *id049]}
-- !Category {name: database, skills: [*id001, *id050, *id051, *id036, *id052, *id037, *id045, *id053, *id054, *id047, *id048]}
-- !Category {name: dev, skills: [*id055, *id001, *id003, *id039, *id004, *id005, *id056, *id057, *id034, *id058, *id059, *id060, *id061, *id007, *id051, *id008, *id036, *id062, *id010, *id011, *id012, *id041, *id042, *id063, *id064, *id052, *id065, *id066, *id067, *id016, *id038, *id017, *id068, *id018, *id069, *id070, *id071, *id044, *id037, *id045, *id053, *id072, *id073, *id020, *id074, *id054, *id047, *id022, *id023, *id075, *id076, *id077, *id048, *id078, *id079, *id080, *id081, *id027, *id082,
-    *id083, *id084, *id085, *id086, *id049]}
-- !Category {name: embedded, skills: [*id004, *id034, *id008]}
-- !Category {name: hardware, skills: [*id003, *id004, *id005, *id034, *id035, *id008, *id009, *id087, *id015, *id038, *id017, *id018, *id020, *id022, *id024, *id076, *id025, *id026, *id027, *id029, *id030, *id031, *id032]}
-- !Category {name: iac, skills: [*id001, *id002, *id003, *id035, *id006, *id058, *id060, *id007, *id011, *id012, *id013, *id014, *id016, *id017, *id018, *id020, *id022, *id025, *id026, *id027, *id030]}
-- !Category {name: linux, skills: [*id001, *id002, *id003, *id039, *id004, *id005, *id034, *id035, *id007, *id008, *id009, *id040, *id043, *id015, *id066, *id038, *id017, *id018, *id073, *id019, *id020, *id046, *id021, *id022, *id023, *id024, *id048, *id025, *id026, *id027, *id028, *id029, *id030, *id031, *id032, *id049]}
-- !Category {name: management, skills: [*id088]}
-- !Category {name: mobile, skills: [*id055, *id089, *id004, *id057, *id034, *id008, *id062, *id042, *id063, *id052, *id065, *id066, *id067, *id038, *id018, *id044, *id037, *id053, *id073, *id074, *id076, *id048, *id078, *id030]}
-- !Category {name: monitoring, skills: [*id001, *id002, *id003, *id035, *id007, *id009, *id043, *id015, *id017, *id018, *id090, *id021, *id022, *id024, *id025, *id026, *id027, *id029, *id030]}
-- !Category {name: networking, skills: [*id001, *id002, *id003, *id039, *id004, *id033, *id035, *id006, *id007, *id008, *id009, *id040, *id043, *id038, *id017, *id018, *id091, *id019, *id020, *id022, *id024, *id025, *id026, *id027, *id028, *id029, *id030, *id031, *id032, *id049]}
-- !Category {name: ops, skills: [*id001, *id002, *id003, *id039, *id005, *id034, *id035, *id058, *id060, *id007, *id036, *id009, *id040, *id010, *id011, *id012, *id041, *id043, *id013, *id014, *id015, *id016, *id038, *id017, *id018, *id044, *id037, *id045, *id072, *id019, *id020, *id046, *id047, *id021, *id022, *id024, *id048, *id025, *id026, *id027, *id028, *id029, *id030, *id031, *id032, *id049]}
-- !Category {name: performance, skills: [*id001, *id002, *id003, *id039, *id004, *id033, *id034, *id035, *id006, *id007, *id008, *id036, *id043, *id015, *id038, *id017, *id018, *id044, *id037, *id045, *id073, *id019, *id020, *id054, *id047, *id021, *id022, *id023, *id076, *id077, *id048, *id078, *id025, *id080, *id026, *id027, *id028, *id030, *id031, *id032, *id049]}
-- !Category {name: security, skills: [*id001, *id002, *id003, *id004, *id007, *id008, *id009, *id040, *id010, *id038, *id017, *id018, *id020, *id021, *id022, *id024, *id025, *id026, *id027, *id029, *id030, *id031, *id032]}
-- !Category {name: web, skills: [*id055, *id001, *id002, *id039, *id056, *id057, *id058, *id059, *id060, *id061, *id007, *id051, *id036, *id010, *id011, *id012, *id041, *id063, *id043, *id052, *id065, *id067, *id017, *id068, *id069, *id070, *id071, *id044, *id037, *id045, *id053, *id072, *id073, *id074, *id054, *id047, *id023, *id075, *id076, *id077, *id048, *id078, *id079, *id080, *id081, *id083, *id028, *id084, *id086, *id049]}
+- !Category {name: automation, skills: [*skill_001, *skill_002, *skill_003, *skill_004, *skill_005, *skill_006, *skill_007, *skill_008, *skill_009, *skill_010, *skill_011, *skill_012, *skill_013, *skill_014, *skill_015, *skill_016, *skill_017, *skill_018, *skill_019, *skill_020, *skill_021, *skill_022, *skill_023, *skill_024, *skill_025, *skill_026, *skill_027, *skill_028, *skill_029, *skill_030, *skill_031, *skill_032]}
+- !Category {name: cloud, skills: [*skill_001, *skill_002, *skill_003, *skill_033, *skill_034, *skill_035, *skill_006, *skill_007, *skill_036, *skill_009, *skill_017, *skill_018, *skill_037, *skill_019, *skill_020, *skill_022, *skill_024, *skill_025, *skill_026, *skill_027, *skill_028, *skill_029, *skill_030]}
+- !Category {name: compliance, skills: [*skill_001, *skill_002, *skill_009, *skill_015, *skill_038, *skill_018, *skill_021, *skill_024, *skill_026, *skill_029, *skill_030, *skill_031]}
+- !Category {name: configuration, skills: [*skill_001, *skill_002, *skill_003, *skill_039, *skill_033, *skill_035, *skill_006, *skill_007, *skill_009, *skill_040, *skill_010, *skill_011, *skill_012, *skill_041, *skill_042, *skill_043, *skill_013, *skill_014, *skill_015, *skill_016, *skill_038, *skill_017, *skill_018, *skill_044, *skill_037, *skill_045, *skill_019, *skill_020, *skill_046, *skill_047, *skill_021, *skill_022, *skill_023, *skill_024, *skill_048, *skill_025, *skill_026, *skill_027, *skill_028, *skill_029, *skill_030, *skill_031, *skill_032, *skill_049]}
+- !Category {name: database, skills: [*skill_001, *skill_050, *skill_051, *skill_036, *skill_052, *skill_037, *skill_045, *skill_099, *skill_053, *skill_054, *skill_047, *skill_048]}
+- !Category {name: dev, skills: [*skill_055, *skill_001, *skill_003, *skill_039, *skill_004, *skill_005, *skill_056, *skill_057, *skill_034, *skill_058, *skill_059, *skill_060, *skill_061, *skill_007, *skill_051, *skill_008, *skill_036, *skill_062, *skill_010, *skill_011, *skill_012, *skill_041, *skill_042, *skill_063, *skill_064, *skill_052, *skill_065, *skill_066, *skill_067, *skill_016, *skill_038, *skill_017, *skill_068, *skill_018, *skill_069, *skill_070, *skill_071, *skill_044, *skill_037, *skill_045, *skill_053, *skill_072, *skill_073, *skill_020, *skill_074, *skill_054, *skill_047, *skill_022, *skill_023, *skill_075, *skill_076, *skill_077, *skill_048, *skill_078, *skill_079, *skill_080, *skill_081, *skill_027, *skill_082,
+    *skill_083, *skill_084, *skill_085, *skill_086, *skill_049]}
+- !Category {name: embedded, skills: [*skill_004, *skill_034, *skill_008]}
+- !Category {name: hardware, skills: [*skill_003, *skill_004, *skill_005, *skill_034, *skill_035, *skill_008, *skill_009, *skill_087, *skill_015, *skill_038, *skill_017, *skill_018, *skill_020, *skill_022, *skill_024, *skill_076, *skill_025, *skill_026, *skill_027, *skill_029, *skill_030, *skill_031, *skill_032]}
+- !Category {name: iac, skills: [*skill_001, *skill_002, *skill_003, *skill_035, *skill_006, *skill_058, *skill_060, *skill_007, *skill_011, *skill_012, *skill_013, *skill_014, *skill_016, *skill_017, *skill_018, *skill_020, *skill_022, *skill_025, *skill_026, *skill_027, *skill_030]}
+- !Category {name: linux, skills: [*skill_001, *skill_002, *skill_003, *skill_039, *skill_004, *skill_005, *skill_034, *skill_035, *skill_007, *skill_008, *skill_009, *skill_040, *skill_043, *skill_015, *skill_066, *skill_038, *skill_017, *skill_018, *skill_073, *skill_019, *skill_020, *skill_046, *skill_021, *skill_022, *skill_023, *skill_024, *skill_048, *skill_025, *skill_026, *skill_027, *skill_028, *skill_029, *skill_030, *skill_031, *skill_032, *skill_049]}
+- !Category {name: management, skills: [*skill_088]}
+- !Category {name: mobile, skills: [*skill_055, *skill_089, *skill_004, *skill_057, *skill_034, *skill_008, *skill_062, *skill_042, *skill_063, *skill_052, *skill_065, *skill_066, *skill_067, *skill_038, *skill_018, *skill_044, *skill_037, *skill_053, *skill_073, *skill_074, *skill_076, *skill_048, *skill_078, *skill_030]}
+- !Category {name: monitoring, skills: [*skill_001, *skill_002, *skill_003, *skill_035, *skill_007, *skill_009, *skill_043, *skill_015, *skill_017, *skill_018, *skill_090, *skill_021, *skill_022, *skill_024, *skill_025, *skill_026, *skill_027, *skill_029, *skill_030]}
+- !Category {name: networking, skills: [*skill_001, *skill_002, *skill_003, *skill_039, *skill_004, *skill_033, *skill_035, *skill_006, *skill_007, *skill_008, *skill_009, *skill_040, *skill_043, *skill_038, *skill_017, *skill_018, *skill_091, *skill_019, *skill_020, *skill_022, *skill_024, *skill_025, *skill_026, *skill_027, *skill_028, *skill_029, *skill_030, *skill_031, *skill_032, *skill_049]}
+- !Category {name: ops, skills: [*skill_001, *skill_002, *skill_003, *skill_039, *skill_005, *skill_034, *skill_035, *skill_058, *skill_060, *skill_007, *skill_036, *skill_009, *skill_040, *skill_010, *skill_011, *skill_012, *skill_041, *skill_043, *skill_013, *skill_014, *skill_015, *skill_016, *skill_038, *skill_017, *skill_018, *skill_044, *skill_037, *skill_045, *skill_072, *skill_019, *skill_020, *skill_046, *skill_047, *skill_021, *skill_022, *skill_024, *skill_048, *skill_025, *skill_026, *skill_027, *skill_028, *skill_029, *skill_030, *skill_031, *skill_032, *skill_049]}
+- !Category {name: performance, skills: [*skill_001, *skill_002, *skill_003, *skill_039, *skill_004, *skill_033, *skill_034, *skill_035, *skill_006, *skill_007, *skill_008, *skill_036, *skill_043, *skill_015, *skill_038, *skill_017, *skill_018, *skill_044, *skill_037, *skill_045, *skill_073, *skill_019, *skill_020, *skill_054, *skill_047, *skill_021, *skill_022, *skill_023, *skill_076, *skill_077, *skill_048, *skill_078, *skill_025, *skill_080, *skill_026, *skill_027, *skill_028, *skill_030, *skill_031, *skill_032, *skill_049]}
+- !Category {name: security, skills: [*skill_001, *skill_002, *skill_003, *skill_004, *skill_007, *skill_008, *skill_009, *skill_040, *skill_010, *skill_038, *skill_017, *skill_018, *skill_020, *skill_021, *skill_022, *skill_024, *skill_025, *skill_026, *skill_027, *skill_029, *skill_030, *skill_031, *skill_032]}
+- !Category {name: web, skills: [*skill_055, *skill_001, *skill_002, *skill_039, *skill_056, *skill_057, *skill_058, *skill_059, *skill_060, *skill_061, *skill_007, *skill_051, *skill_036, *skill_010, *skill_011, *skill_012, *skill_041, *skill_063, *skill_043, *skill_052, *skill_065, *skill_067, *skill_017, *skill_068, *skill_069, *skill_070, *skill_071, *skill_044, *skill_037, *skill_045, *skill_053, *skill_072, *skill_073, *skill_074, *skill_054, *skill_047, *skill_023, *skill_075, *skill_076, *skill_077, *skill_048, *skill_078, *skill_079, *skill_080, *skill_081, *skill_083, *skill_028, *skill_084, *skill_086, *skill_049]}
 roles:
-- &id098 !Role {employer: Unipart Digital, title: Senior Systems Engineer, location: Cambridge, start_date: 2018-10-01, end_date: 2022-08-19}
-- &id096 !Role {employer: PocketWorks, title: Lead Developer, location: Leeds, start_date: 2018-01-15, end_date: 2018-08-31}
-- &id097 !Role {employer: TempTribe, title: Lead Developer, location: London, start_date: 2017-06-01, end_date: 2018-01-14}
-- &id092 !Role {employer: The Student Room Group, title: Senior Developer, location: Brighton, start_date: 2015-12-01, end_date: 2017-05-31}
-- &id095 !Role {employer: Omnisis Ltd, title: Developer, location: Manchester, start_date: 2012-07-01, end_date: 2015-11-30}
-- &id094 !Role {employer: Pingala Media Ltd, title: Developer, location: Maidstone, start_date: 2011-07-01, end_date: 2012-06-30}
-- &id093 !Role {employer: null, title: null, location: null, start_date: 1986-12-10, end_date: 2025-12-11}
+- &role_vitrifi !Role {employer: Vitrifi Ltd, title: Platform Infrastructure Engineer, location: London (remote), start_date: 2022-08-24, end_date: 2025-12-11}
+- &role_unipart !Role {employer: Unipart Digital, title: Senior Systems Engineer, location: Cambridge (remote), start_date: 2018-10-01, end_date: 2022-08-19}
+- &role_pocketworks !Role {employer: PocketWorks, title: Lead Developer, location: Leeds, start_date: 2018-01-15, end_date: 2018-08-31}
+- &role_temptribe !Role {employer: TempTribe, title: Lead Developer, location: London, start_date: 2017-06-01, end_date: 2018-01-14}
+- &role_tsr !Role {employer: The Student Room Group, title: Senior Developer, location: Brighton, start_date: 2015-12-01, end_date: 2017-05-31}
+- &role_omnisis !Role {employer: Omnisis Ltd, title: Developer, location: Manchester, start_date: 2012-07-01, end_date: 2015-11-30}
+- &role_pingala !Role {employer: Pingala Media Ltd, title: Developer, location: Maidstone, start_date: 2011-07-01, end_date: 2012-06-30}
+- &role_none !Role {employer: null, title: null, location: null, start_date: 1986-12-10, end_date: null}
 achievements:
-- !Achievement {detail: 'Integration of Firebase, Google Analytics, TestFairy, and Sentry APIs, to keep track of everything', role: *id092, skills: [*id082]}
-- !Achievement {detail: Using Git for absolutely everything, role: *id093, skills: [*id010]}
-- !Achievement {detail: Experienced with Bootstrap for rapid application prototyping, role: *id093, skills: [*id067, *id056]}
-- !Achievement {detail: System administration for all development and production servers, role: *id094, skills: [*id018, *id087]}
-- !Achievement {detail: Project lead on TSR's mobile discussion app, role: *id092, skills: [*id076]}
-- !Achievement {detail: 'Supporting a vast range of clients through complex surveying needs, from local food companies to global pharmaceutical giants', role: *id095, skills: [*id088]}
-- !Achievement {detail: Built a prototype Android app to read and write complex data from STMicro's ST25DV NFC tags, role: *id096, skills: [*id089]}
-- !Achievement {detail: 'Built mobile-first web apps using React.JS, JSX and Apollo, embracing the latest language features in ES2015 and beyond', role: *id092, skills: [*id065]}
-- !Achievement {detail: 'Experienced with Apache and nginx for HTTP, including all kinds of authnz, and creating Puppet modules to automate everything', role: *id093, skills: [*id039, *id049, *id022]}
-- !Achievement {detail: 'Experience mentoring novice developers, having previously volunteered for CodeBar Brighton and helped new developers into their first professional roles', role: *id092, skills: [*id088, *id088]}
-- !Achievement {detail: 'Created interactive charts, singlepage applications, synthesized audio, procedurally-generated art', role: *id093, skills: [*id067]}
-- !Achievement {detail: Creation of extensive boilerplate code to integrate TSR with the Dynamic Yield personalisation platform, role: *id092, skills: [*id067]}
-- !Achievement {detail: Written complex maintenance scripts in Bash and Python, role: *id093, skills: [*id005, *id023]}
-- !Achievement {detail: 'Conceived and built a rapid and clean discussion app for TSR, using React Native, Relay, GraphQL, and more', role: *id092, skills: [*id076, *id078, *id063]}
-- !Achievement {detail: 4+ years' experience working with and developing .NET web and console applications in VB.NET and C#, role: *id097, skills: [*id055, *id083, *id057]}
-- !Achievement {detail: 'Developed a digital literacy tool for an education consultancy, handling massive datasets, animated graphing, file-based caching, map-reduce and PDF exports', role: *id093, skills: [*id074, *id045, *id067, *id061]}
-- !Achievement {detail: Built micro- and macro-services using Lumen and Laravel 5.* to support search and JSON API functionality for TSR's ever-growing services, role: *id092, skills: [*id074, *id045, *id067, *id069, *id068]}
-- !Achievement {detail: 'Testing with Mocha / Chai, including promise support through Chai-as-promised', role: *id092, skills: [*id082]}
-- !Achievement {detail: 'Confident at getting the best out of others, with a focus on efficient and accurate working, and using the right tools for the job', role: *id093, skills: [*id088]}
-- !Achievement {detail: 'Developed a range of personal sites, galleries, online game data crunching tools', role: *id093, skills: [*id067, *id045, *id047, *id018]}
-- !Achievement {detail: 'Sole day-to-day support of legacy and current systems for staff booking, job creation and payroll systems', role: *id097, skills: [*id083]}
-- !Achievement {detail: Implementation and support of AWS-based port of all the above, role: *id095, skills: [*id001, *id067, *id083, *id057]}
-- !Achievement {detail: Built and maintained two iterations of a Drupal site for a 500-member uni rock society, role: *id093, skills: [*id074, *id045, *id067]}
-- !Achievement {detail: 'Wrote FreeIPA plugins to support tree changes that reflect internal structure for an organisation of 10,000+ users', role: *id098, skills: [*id040]}
-- !Achievement {detail: 'Enabled the expansion of the company into international markets by porting and internationalising the entire backend, frontend and mobile platforms', role: *id097, skills: [*id089, *id045]}
-- !Achievement {detail: 'Written solid, test-driven code using Mocha, Chai and Enzyme, with Nuclide and React DevTools', role: *id092, skills: [*id073]}
-- !Achievement {detail: '~20 years'' experience with Linux in a personal and professional context, building servers, configuring kernels, patching modules, automating configuration', role: *id093, skills: [*id038, *id087, *id018]}
-- !Achievement {detail: 'Intimate with the packaging ecosystems for a wide range of modern distros (APT, DNF and the like) and languages (Composer, NPM, RubyGems, Bower and more)', role: *id093, skills: [*id072]}
-- !Achievement {detail: Built Docker images to run custom ConcourseCI resource types to streamline the automation of package builds, role: *id093, skills: [*id007, *id060]}
-- !Achievement {detail: Been taking physical machines apart and putting them together again (still working) since I was in single figures, role: *id093, skills: [*id087]}
-- !Achievement {detail: 'Implemented solutions against MongoDB for document-based storage, and Redis for key-value storage', role: *id093, skills: [*id037, *id048]}
-- !Achievement {detail: 'Augmented services with custom build scripts and continuous integration, built in Ruby and Java', role: *id092, skills: [*id079, *id066]}
-- !Achievement {detail: 'Complete delivery of a brand new staff management mobile app for iOS and Android, built in React Native against a distributed Node.JS API and caching platform', role: *id097, skills: [*id076, *id089]}
-- !Achievement {detail: Built Puppet modules for everything, role: *id098, skills: [*id022]}
-- !Achievement {detail: 'Dragging a 10+ year old .NET system into the 21st century, with endless bugfixes, UI updates, features, security and performance improvements', role: *id097, skills: [*id083, *id055]}
-- !Achievement {detail: 'Worked extensively with Puppet, PuppetDB, and Hiera, including writing my own ENCs, managing secrets with hiera-eyaml at Enterprise level, and creating modules for the management of OpenStack, Apache Superset, Mediawiki, Taiga, Jitsi and more, with security concerns managed up front', role: *id093, skills: [*id050, *id022, *id013, *id014, *id020, *id071]}
-- !Achievement {detail: 'A more than keen interest in security, with strong skills in SSH configuration, key management, iptables and nftables, and SELinux', role: *id093, skills: [*id025, *id031, *id032]}
-- !Achievement {detail: Made significant improvements to a Rails-based UML diagram tool, role: *id096, skills: [*id075]}
-- !Achievement {detail: 'Worked extensively with MySQL and PostgreSQL for relational data persistence, including PL/SQL, sequencing and complex indexing', role: *id093, skills: [*id045, *id047, *id054]}
-- !Achievement {detail: Replaced the aging TSR search pages with a sleek and powerful system built on Google Search Appliances, role: *id092, skills: [*id067, *id074]}
-- !Achievement {detail: Spent a year on a major site migration and maintenance project (~50 corporate / school sites) supporting and improving a bespoke CMS, role: *id094, skills: [*id074, *id045, *id067]}
-- !Achievement {detail: Redesigned and deployed the monitoring and backup systems for hundreds of production systems, role: *id098, skills: [*id020, *id018, *id022]}
-- !Achievement {detail: 'Developed a Ruby / JS build system with full App Store integration, using nodegit and fastlane', role: *id092, skills: [*id079]}
-- !Achievement {detail: 'Managed the logging of events from hundreds of production systems using a combination of rsyslog2, ElasticSearch and OpenDistro', role: *id093, skills: [*id090, *id036, *id019]}
-- !Achievement {detail: Developed fast and scalable backend services in Node.JS, role: *id092, skills: [*id073]}
-- !Achievement {detail: 'Ran icinga2 clusters to monitor all of the above, including custom checks for new services', role: *id093, skills: [*id015]}
-- !Achievement {detail: 'Developed against a range of caching solutions, including Varnish, Memcached, and node-cache', role: *id093, skills: [*id028, *id044]}
-- !Achievement {detail: '~18 years messing with networks, routers, switches, physical and virtual, at home and at work', role: *id093, skills: [*id091, *id087]}
-- !Achievement {detail: Implemented bugfixes and features to a long-running iOS / Rails sales app, role: *id096, skills: [*id075]}
-- !Achievement {detail: 'Built scalable data support with Relay and GraphQL, with Memcached backing', role: *id092, skills: [*id078, *id063, *id044]}
-- !Achievement {detail: 'Proficient with Apple and Android code-signing, user testing and delivery practices, and the automation of such with Gradle, fastlane and match', role: *id092, skills: [*id089, *id082, *id042]}
-- !Achievement {detail: 'Delivered scalable, testable Android code with extensive use of RxJava for observables and Dagger for dependency injection', role: *id092, skills: [*id089]}
-- !Achievement {detail: 'Worked extensively with modern JS APIs for responsiveness, async communication, JSON data encoding and more', role: *id093, skills: [*id067]}
-- !Achievement {detail: 'Wrote a complete BBCode parser in Node.JS, and accompanying renderer in React Native', role: *id092, skills: [*id073]}
-- !Achievement {detail: Aided in the design and conception of apps for new clients as part of a concerted marketing drive, role: *id096, skills: [*id089, *id062]}
-- !Achievement {detail: 'Experienced with WordPress, Composer, Zend, Symfony, Doctrine, Eloquent, Magento - you name it, I''ve taken it apart', role: *id094, skills: [*id084, *id059, *id081, *id051, *id070, *id084, *id059, *id081, *id051, *id070]}
-- !Achievement {detail: 'Development of full inhouse CMS for new clients, based on the Symfony2 platform', role: *id094, skills: [*id074]}
-- !Achievement {detail: 'Built plugins and config management for FreeIPA, Postfix, Dovecot and more internal tools', role: *id093, skills: [*id040, *id046]}
-- !Achievement {detail: '~11 years on-and-off experience with OpenStack, including 4 years managing three clusters running Nova, Neutron, Designate and the like, supporting ~1300 cores in production across three sites', role: *id093, skills: [*id091, *id020]}
-- !Achievement {detail: 'Built a client-ready VR demo app in my first week, using Flutter and Google Cardboard', role: *id096, skills: [*id089, *id062]}
-- !Achievement {detail: 'Written applications using standalone Eloquent, Sequelize, Hibernate, NHibernate and Doctrine ORMs against a variety of backends', role: *id096, skills: [*id080, *id052, *id053, *id051]}
-- !Achievement {detail: Developed a cross-platform VR demo using Google's new Flutter platform, role: *id096, skills: [*id089, *id062]}
-- !Achievement {detail: 'Porting, maintenance and redevelopment of 50+ PHP sites for schools and small enterprises', role: *id094, skills: [*id045, *id074]}
-- !Achievement {detail: 'Confident configuring, maintaining and integrating everything into CI platforms like ConcourseCI and CircleCI, as well as legacy systems like Jenkins', role: *id093, skills: [*id060, *id058, *id016]}
-- !Achievement {detail: Frontline support and sole full-time developer on a large .NET web application, role: *id095, skills: [*id083, *id057, *id055]}
-- !Achievement {detail: 'Extremely experienced working within Agile processes, adapting Scrum working practices to different cross-functional teams, tracking work in Jira / Confluence etc', role: *id093, skills: [*id088]}
-- !Achievement {detail: 'Development of RN component structure, navigation, styling, and higher-order components', role: *id092, skills: [*id076]}
+- !Achievement {detail: System administration for all development and production servers, role: *role_pingala, skills: [*skill_018, *skill_087]}
+- !Achievement {detail: 'Managed the logging of events from hundreds of production systems using a combination of rsyslog2, ElasticSearch and OpenDistro', role: *role_none, skills: [*skill_090, *skill_036, *skill_019]}
+- !Achievement {detail: 'Wrote FreeIPA plugins to support tree changes that reflect internal structure for an organisation of 10,000+ users', role: *role_unipart, skills: [*skill_040]}
+- !Achievement {detail: 'Porting, maintenance and redevelopment of 50+ PHP sites for schools and small enterprises', role: *role_pingala, skills: [*skill_045, *skill_074]}
+- !Achievement {detail: 'Dragging a 10+ year old .NET system into the 21st century, with endless bugfixes, UI updates, features, security and performance improvements', role: *role_temptribe, skills: [*skill_083, *skill_055]}
+- !Achievement {detail: 'Implemented solutions against MongoDB for document-based storage, and Redis for key-value storage', role: *role_none, skills: [*skill_037, *skill_048]}
+- !Achievement {detail: 'Built scalable data support with Relay and GraphQL, with Memcached backing', role: *role_tsr, skills: [*skill_078, *skill_063, *skill_044]}
+- !Achievement {detail: 'Extremely experienced working within Agile processes, adapting Scrum working practices to different cross-functional teams, tracking work in Jira / Confluence etc', role: *role_none, skills: [*skill_088]}
+- !Achievement {detail: Experienced with Bootstrap for rapid application prototyping, role: *role_none, skills: [*skill_067, *skill_056]}
+- !Achievement {detail: '~11 years on-and-off experience with OpenStack, including 4 years managing three clusters running Nova, Neutron, Designate and the like, supporting ~1300 cores in production across three sites', role: *role_none, skills: [*skill_091, *skill_020]}
+- !Achievement {detail: 'Developed against a range of caching solutions, including Varnish, Memcached, and node-cache', role: *role_none, skills: [*skill_028, *skill_044]}
+- !Achievement {detail: 'Developed a range of personal sites, galleries, online game data crunching tools', role: *role_none, skills: [*skill_067, *skill_045, *skill_047, *skill_018]}
+- !Achievement {detail: 'Proficient with Apple and Android code-signing, user testing and delivery practices, and the automation of such with Gradle, fastlane and match', role: *role_tsr, skills: [*skill_089, *skill_082, *skill_042]}
+- !Achievement {detail: 'Ran icinga2 clusters to monitor all of the above, including custom checks for new services', role: *role_none, skills: [*skill_015]}
+- !Achievement {detail: 'Worked extensively with MySQL and PostgreSQL for relational data persistence, including PL/SQL, sequencing and complex indexing', role: *role_none, skills: [*skill_045, *skill_047, *skill_054]}
+- !Achievement {detail: 'Built mobile-first web apps using React.JS, JSX and Apollo, embracing the latest language features in ES2015 and beyond', role: *role_tsr, skills: [*skill_065]}
+- !Achievement {detail: 'Developed a Ruby / JS build system with full App Store integration, using nodegit and fastlane', role: *role_tsr, skills: [*skill_079]}
+- !Achievement {detail: 'Confident at getting the best out of others, with a focus on efficient and accurate working, and using the right tools for the job', role: *role_none, skills: [*skill_088]}
+- !Achievement {detail: Redesigned and deployed the monitoring and backup systems for hundreds of production systems, role: *role_unipart, skills: [*skill_020, *skill_018, *skill_022]}
+- !Achievement {detail: 'Development of full inhouse CMS for new clients, based on the Symfony2 platform', role: *role_pingala, skills: [*skill_074]}
+- !Achievement {detail: Spent a year on a major site migration and maintenance project (~50 corporate / school sites) supporting and improving a bespoke CMS, role: *role_pingala, skills: [*skill_074, *skill_045, *skill_067]}
+- !Achievement {detail: 'Experience mentoring novice developers, having previously volunteered for CodeBar Brighton and helped new developers into their first professional roles', role: *role_tsr, skills: [*skill_088, *skill_088]}
+- !Achievement {detail: Using Git for absolutely everything, role: *role_none, skills: [*skill_010]}
+- !Achievement {detail: 'Built a client-ready VR demo app in my first week, using Flutter and Google Cardboard', role: *role_pocketworks, skills: [*skill_089, *skill_062]}
+- !Achievement {detail: Built and maintained two iterations of a Drupal site for a 500-member uni rock society, role: *role_none, skills: [*skill_074, *skill_045, *skill_067]}
+- !Achievement {detail: Made significant improvements to a Rails-based UML diagram tool, role: *role_pocketworks, skills: [*skill_075]}
+- !Achievement {detail: 'Enabled the expansion of the company into international markets by porting and internationalising the entire backend, frontend and mobile platforms', role: *role_temptribe, skills: [*skill_089, *skill_045]}
+- !Achievement {detail: Written complex maintenance scripts in Bash and Python, role: *role_none, skills: [*skill_005, *skill_023]}
+- !Achievement {detail: Project lead on TSR's mobile discussion app, role: *role_tsr, skills: [*skill_076]}
+- !Achievement {detail: 'Confident configuring, maintaining and integrating everything into CI platforms like ConcourseCI and CircleCI, as well as legacy systems like Jenkins', role: *role_none, skills: [*skill_060, *skill_058, *skill_016]}
+- !Achievement {detail: 'Intimate with the packaging ecosystems for a wide range of modern distros (APT, DNF and the like) and languages (Composer, NPM, RubyGems, Bower and more)', role: *role_none, skills: [*skill_072]}
+- !Achievement {detail: 'Integration of Firebase, Google Analytics, TestFairy, and Sentry APIs, to keep track of everything', role: *role_tsr, skills: [*skill_082]}
+- !Achievement {detail: 'Written solid, test-driven code using Mocha, Chai and Enzyme, with Nuclide and React DevTools', role: *role_tsr, skills: [*skill_073]}
+- !Achievement {detail: Frontline support and sole full-time developer on a large .NET web application, role: *role_omnisis, skills: [*skill_083, *skill_057, *skill_055]}
+- !Achievement {detail: Built micro- and macro-services using Lumen and Laravel 5.* to support search and JSON API functionality for TSR's ever-growing services, role: *role_tsr, skills: [*skill_074, *skill_045, *skill_067, *skill_069, *skill_068]}
+- !Achievement {detail: 'Created interactive charts, singlepage applications, synthesized audio, procedurally-generated art', role: *role_none, skills: [*skill_067]}
+- !Achievement {detail: 'Augmented services with custom build scripts and continuous integration, built in Ruby and Java', role: *role_tsr, skills: [*skill_079, *skill_066]}
+- !Achievement {detail: 'Wrote a complete BBCode parser in Node.JS, and accompanying renderer in React Native', role: *role_tsr, skills: [*skill_073]}
+- !Achievement {detail: 'Worked extensively with modern JS APIs for responsiveness, async communication, JSON data encoding and more', role: *role_none, skills: [*skill_067]}
+- !Achievement {detail: 'Complete delivery of a brand new staff management mobile app for iOS and Android, built in React Native against a distributed Node.JS API and caching platform', role: *role_temptribe, skills: [*skill_076, *skill_089]}
+- !Achievement {detail: 'Sole day-to-day support of legacy and current systems for staff booking, job creation and payroll systems', role: *role_temptribe, skills: [*skill_083]}
+- !Achievement {detail: Aided in the design and conception of apps for new clients as part of a concerted marketing drive, role: *role_pocketworks, skills: [*skill_089, *skill_062]}
+- !Achievement {detail: Built Docker images to run custom ConcourseCI resource types to streamline the automation of package builds, role: *role_none, skills: [*skill_007, *skill_060]}
+- !Achievement {detail: 'Experienced with Apache and nginx for HTTP, including all kinds of authnz, and creating Puppet modules to automate everything', role: *role_none, skills: [*skill_039, *skill_049, *skill_022]}
+- !Achievement {detail: 'Worked extensively with Puppet, PuppetDB, and Hiera, including writing my own ENCs, managing secrets with hiera-eyaml at Enterprise level, and creating modules for the management of OpenStack, Apache Superset, Mediawiki, Taiga, Jitsi and more, with security concerns managed up front', role: *role_none, skills: [*skill_050, *skill_022, *skill_013, *skill_014, *skill_020, *skill_071]}
+- !Achievement {detail: Implemented bugfixes and features to a long-running iOS / Rails sales app, role: *role_pocketworks, skills: [*skill_075]}
+- !Achievement {detail: Creation of extensive boilerplate code to integrate TSR with the Dynamic Yield personalisation platform, role: *role_tsr, skills: [*skill_067]}
+- !Achievement {detail: 4+ years' experience working with and developing .NET web and console applications in VB.NET and C#, role: *role_temptribe, skills: [*skill_055, *skill_083, *skill_057]}
+- !Achievement {detail: 'Supporting a vast range of clients through complex surveying needs, from local food companies to global pharmaceutical giants', role: *role_omnisis, skills: [*skill_088]}
+- !Achievement {detail: Been taking physical machines apart and putting them together again (still working) since I was in single figures, role: *role_none, skills: [*skill_087]}
+- !Achievement {detail: 'A more than keen interest in security, with strong skills in SSH configuration, key management, iptables and nftables, and SELinux', role: *role_none, skills: [*skill_025, *skill_031, *skill_032]}
+- !Achievement {detail: Built Puppet modules for everything, role: *role_unipart, skills: [*skill_022]}
+- !Achievement {detail: Developed fast and scalable backend services in Node.JS, role: *role_tsr, skills: [*skill_073]}
+- !Achievement {detail: 'Delivered scalable, testable Android code with extensive use of RxJava for observables and Dagger for dependency injection', role: *role_tsr, skills: [*skill_089]}
+- !Achievement {detail: 'Written applications using standalone Eloquent, Sequelize, Hibernate, NHibernate and Doctrine ORMs against a variety of backends', role: *role_pocketworks, skills: [*skill_080, *skill_052, *skill_053, *skill_051]}
+- !Achievement {detail: 'Testing with Mocha / Chai, including promise support through Chai-as-promised', role: *role_tsr, skills: [*skill_082]}
+- !Achievement {detail: Replaced the aging TSR search pages with a sleek and powerful system built on Google Search Appliances, role: *role_tsr, skills: [*skill_067, *skill_074]}
+- !Achievement {detail: 'Conceived and built a rapid and clean discussion app for TSR, using React Native, Relay, GraphQL, and more', role: *role_tsr, skills: [*skill_076, *skill_078, *skill_063]}
+- !Achievement {detail: 'Experienced with WordPress, Composer, Zend, Symfony, Doctrine, Eloquent, Magento - you name it, I''ve taken it apart', role: *role_pingala, skills: [*skill_084, *skill_059, *skill_081, *skill_051, *skill_070, *skill_084, *skill_059, *skill_081, *skill_051, *skill_070]}
+- !Achievement {detail: '~18 years messing with networks, routers, switches, physical and virtual, at home and at work', role: *role_none, skills: [*skill_091, *skill_087]}
+- !Achievement {detail: 'Developed a digital literacy tool for an education consultancy, handling massive datasets, animated graphing, file-based caching, map-reduce and PDF exports', role: *role_none, skills: [*skill_074, *skill_045, *skill_067, *skill_061]}
+- !Achievement {detail: 'Built plugins and config management for FreeIPA, Postfix, Dovecot and more internal tools', role: *role_none, skills: [*skill_040, *skill_046]}
+- !Achievement {detail: Built a prototype Android app to read and write complex data from STMicro's ST25DV NFC tags, role: *role_pocketworks, skills: [*skill_089]}
+- !Achievement {detail: 'Development of RN component structure, navigation, styling, and higher-order components', role: *role_tsr, skills: [*skill_076]}
+- !Achievement {detail: Developed a cross-platform VR demo using Google's new Flutter platform, role: *role_pocketworks, skills: [*skill_089, *skill_062]}
+- !Achievement {detail: Implementation and support of AWS-based port of all the above, role: *role_omnisis, skills: [*skill_001, *skill_067, *skill_083, *skill_057]}
+- !Achievement {detail: '~20 years'' experience with Linux in a personal and professional context, building servers, configuring kernels, patching modules, automating configuration', role: *role_none, skills: [*skill_038, *skill_087, *skill_018]}
