@@ -3,7 +3,6 @@ from enum import auto, StrEnum
 from datetime import date
 
 class Competency(StrEnum):
-    POOR = auto()
     RUSTY = auto()
     OKAY = auto()
     GOOD = auto()

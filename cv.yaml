@@ -1,5 +1,4 @@
 competencies:
-- !Competency 'Poor'
 - !Competency 'Rusty'
 - !Competency 'Okay'
 - !Competency 'Good'
@@ -9,9 +8,9 @@ skills:
 - &skill_001 !Skill {name: AWS, competency: !Competency 'Good'}
 - &skill_089 !Skill {name: Android, competency: !Competency 'Okay'}
 - &skill_002 !Skill {name: Ansible, competency: !Competency 'Good'}
-- &skill_003 !Skill {name: Apache CloudStack, competency: !Competency 'Excellent'}
-- &skill_039 !Skill {name: Apache HTTP Server, competency: !Competency 'Exellent'}
-- &skill_050 !Skill {name: Apache Superset, competency: !Competency 'Rusty'}
+- &skill_003 !Skill {name: CloudStack, competency: !Competency 'Excellent'}
+- &skill_039 !Skill {name: Apache, competency: !Competency 'Exellent'}
+- &skill_050 !Skill {name: Superset, competency: !Competency 'Rusty'}
 - &skill_004 !Skill {name: Arduino, competency: !Competency 'Good'}
 - &skill_033 !Skill {name: BGP, competency: !Competency 'Good'}
 - &skill_005 !Skill {name: Bash, competency: !Competency 'Good'}
