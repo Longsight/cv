@@ -55,9 +55,11 @@
 -- select categories.category as c, skills.skill as s from categories join skill_categories on categories.rowid = skill_categories.category
 -- join skills on skill_categories.skill = skills.rowid order by c asc, s asc;
 
-select a.rowid as a_id, a.detail, skills.skill as s, null, null, null
-                  from achievements as a
-                  join achievement_skills on a_id = achievement_skills.achievement
-                  join skills on achievement_skills.skill = skills.rowid
-                  where a_id not in (select distinct rowid from achievement_roles)
-                  order by a_id asc, s asc;
+-- select a.rowid as a_id, a.detail, skills.skill as s, null, null, null
+--                   from achievements as a
+--                   join achievement_skills on a_id = achievement_skills.achievement
+--                   join skills on achievement_skills.skill = skills.rowid
+--                   where a_id not in (select distinct rowid from achievement_roles)
+--                   order by a_id asc, s asc;
+select title, employer, location, strftime(`start`, '%Y-%m'), strftime(`end`, '%Y-%m')
+                  from roles order by start desc

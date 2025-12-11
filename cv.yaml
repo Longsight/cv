@@ -1,95 +1,101 @@
+competencies:
+- !Competency 'Poor'
+- !Competency 'Rusty'
+- !Competency 'Okay'
+- !Competency 'Good'
+- !Competency 'Excellent'
 skills:
-- &id055 !Skill {name: .NET, level: Poor}
-- &id001 !Skill {name: AWS, level: Poor}
-- &id089 !Skill {name: Android, level: Poor}
-- &id002 !Skill {name: Ansible, level: Poor}
-- &id003 !Skill {name: Apache CloudStack, level: Poor}
-- &id039 !Skill {name: Apache HTTP Server, level: Poor}
-- &id050 !Skill {name: Apache Superset, level: Poor}
-- &id004 !Skill {name: Arduino, level: Poor}
-- &id033 !Skill {name: BGP, level: Poor}
-- &id005 !Skill {name: Bash, level: Poor}
-- &id056 !Skill {name: Bootstrap, level: Poor}
-- &id057 !Skill {name: C#, level: Poor}
-- &id034 !Skill {name: C++, level: Poor}
-- &id035 !Skill {name: Ceph, level: Poor}
-- &id006 !Skill {name: Cilium, level: Poor}
-- &id058 !Skill {name: CircleCI, level: Poor}
-- &id059 !Skill {name: Composer, level: Poor}
-- &id060 !Skill {name: ConcourseCI, level: Poor}
-- &id061 !Skill {name: D3, level: Poor}
-- &id007 !Skill {name: Docker, level: Poor}
-- &id051 !Skill {name: Doctrine, level: Poor}
-- &id008 !Skill {name: ESP32, level: Poor}
-- &id036 !Skill {name: ElasticSearch, level: Poor}
-- &id009 !Skill {name: Fail2Ban, level: Poor}
-- &id062 !Skill {name: Flutter, level: Poor}
-- &id040 !Skill {name: FreeIPA, level: Poor}
-- &id010 !Skill {name: Git, level: Poor}
-- &id011 !Skill {name: GitHub, level: Poor}
-- &id012 !Skill {name: GitLab, level: Poor}
-- &id041 !Skill {name: Gitea, level: Poor}
-- &id042 !Skill {name: Gradle, level: Poor}
-- &id063 !Skill {name: GraphQL, level: Poor}
-- &id064 !Skill {name: Groovy, level: Poor}
-- &id043 !Skill {name: HAProxy, level: Poor}
-- &id087 !Skill {name: Hardware, level: Poor}
-- &id052 !Skill {name: Hibernate, level: Poor}
-- &id013 !Skill {name: Hiera, level: Poor}
-- &id014 !Skill {name: Hiera-eyaml, level: Poor}
-- &id015 !Skill {name: Icinga2, level: Poor}
-- &id065 !Skill {name: JSX, level: Poor}
-- &id066 !Skill {name: Java, level: Poor}
-- &id067 !Skill {name: JavaScript, level: Poor}
-- &id016 !Skill {name: Jenkins, level: Poor}
-- &id038 !Skill {name: Kernel, level: Poor}
-- &id017 !Skill {name: Kubernetes, level: Poor}
-- &id068 !Skill {name: Laravel, level: Poor}
-- &id088 !Skill {name: Leadership, level: Poor}
-- &id018 !Skill {name: Linux, level: Poor}
-- &id090 !Skill {name: Logging, level: Poor}
-- &id069 !Skill {name: Lumen, level: Poor}
-- &id070 !Skill {name: Magento, level: Poor}
-- &id071 !Skill {name: Mediawiki, level: Poor}
-- &id044 !Skill {name: Memcached, level: Poor}
-- &id037 !Skill {name: MongoDB, level: Poor}
-- &id045 !Skill {name: MySQL, level: Poor}
-- &id053 !Skill {name: NHibernate, level: Poor}
-- &id072 !Skill {name: NPM, level: Poor}
-- &id091 !Skill {name: Networking, level: Poor}
-- &id073 !Skill {name: NodeJS, level: Poor}
-- &id019 !Skill {name: OpenDistro, level: Poor}
-- &id020 !Skill {name: OpenStack, level: Poor}
-- &id074 !Skill {name: PHP, level: Poor}
-- &id054 !Skill {name: PL/SQL, level: Poor}
-- &id046 !Skill {name: Postfix, level: Poor}
-- &id047 !Skill {name: PostgreSQL, level: Poor}
-- &id021 !Skill {name: Prometheus, level: Poor}
-- &id022 !Skill {name: Puppet, level: Poor}
-- &id023 !Skill {name: Python, level: Poor}
-- &id024 !Skill {name: Qualys, level: Poor}
-- &id075 !Skill {name: Rails, level: Poor}
-- &id076 !Skill {name: React Native, level: Poor}
-- &id077 !Skill {name: ReactJS, level: Poor}
-- &id048 !Skill {name: Redis, level: Poor}
-- &id078 !Skill {name: Relay, level: Poor}
-- &id079 !Skill {name: Ruby, level: Poor}
-- &id025 !Skill {name: SSH, level: Poor}
-- &id080 !Skill {name: Sequelize, level: Poor}
-- &id081 !Skill {name: Symfony, level: Poor}
-- &id026 !Skill {name: Tailscale, level: Poor}
-- &id027 !Skill {name: Terraform, level: Poor}
-- &id082 !Skill {name: Testing, level: Poor}
-- &id083 !Skill {name: VB.NET, level: Poor}
-- &id028 !Skill {name: Varnish, level: Poor}
-- &id029 !Skill {name: Wazuh, level: Poor}
-- &id030 !Skill {name: WireGuard, level: Poor}
-- &id084 !Skill {name: WordPress, level: Poor}
-- &id085 !Skill {name: gRPC, level: Poor}
-- &id031 !Skill {name: iptables, level: Poor}
-- &id086 !Skill {name: jQuery, level: Poor}
-- &id032 !Skill {name: nftables, level: Poor}
-- &id049 !Skill {name: nginx, level: Poor}
+- &id055 !Skill {name: .NET, competency: !Competency 'Good'}
+- &id001 !Skill {name: AWS, competency: !Competency 'Good'}
+- &id089 !Skill {name: Android, competency: !Competency 'Good'}
+- &id002 !Skill {name: Ansible, competency: !Competency 'Good'}
+- &id003 !Skill {name: Apache CloudStack, competency: !Competency 'Good'}
+- &id039 !Skill {name: Apache HTTP Server, competency: !Competency 'Good'}
+- &id050 !Skill {name: Apache Superset, competency: !Competency 'Good'}
+- &id004 !Skill {name: Arduino, competency: !Competency 'Good'}
+- &id033 !Skill {name: BGP, competency: !Competency 'Good'}
+- &id005 !Skill {name: Bash, competency: !Competency 'Good'}
+- &id056 !Skill {name: Bootstrap, competency: !Competency 'Good'}
+- &id057 !Skill {name: C#, competency: !Competency 'Good'}
+- &id034 !Skill {name: C++, competency: !Competency 'Good'}
+- &id035 !Skill {name: Ceph, competency: !Competency 'Good'}
+- &id006 !Skill {name: Cilium, competency: !Competency 'Good'}
+- &id058 !Skill {name: CircleCI, competency: !Competency 'Good'}
+- &id059 !Skill {name: Composer, competency: !Competency 'Good'}
+- &id060 !Skill {name: ConcourseCI, competency: !Competency 'Good'}
+- &id061 !Skill {name: D3, competency: !Competency 'Good'}
+- &id007 !Skill {name: Docker, competency: !Competency 'Good'}
+- &id051 !Skill {name: Doctrine, competency: !Competency 'Good'}
+- &id008 !Skill {name: ESP32, competency: !Competency 'Good'}
+- &id036 !Skill {name: ElasticSearch, competency: !Competency 'Good'}
+- &id009 !Skill {name: Fail2Ban, competency: !Competency 'Good'}
+- &id062 !Skill {name: Flutter, competency: !Competency 'Good'}
+- &id040 !Skill {name: FreeIPA, competency: !Competency 'Good'}
+- &id010 !Skill {name: Git, competency: !Competency 'Good'}
+- &id011 !Skill {name: GitHub, competency: !Competency 'Good'}
+- &id012 !Skill {name: GitLab, competency: !Competency 'Good'}
+- &id041 !Skill {name: Gitea, competency: !Competency 'Good'}
+- &id042 !Skill {name: Gradle, competency: !Competency 'Good'}
+- &id063 !Skill {name: GraphQL, competency: !Competency 'Good'}
+- &id064 !Skill {name: Groovy, competency: !Competency 'Good'}
+- &id043 !Skill {name: HAProxy, competency: !Competency 'Good'}
+- &id087 !Skill {name: Hardware, competency: !Competency 'Good'}
+- &id052 !Skill {name: Hibernate, competency: !Competency 'Good'}
+- &id013 !Skill {name: Hiera, competency: !Competency 'Good'}
+- &id014 !Skill {name: Hiera-eyaml, competency: !Competency 'Good'}
+- &id015 !Skill {name: Icinga2, competency: !Competency 'Good'}
+- &id065 !Skill {name: JSX, competency: !Competency 'Good'}
+- &id066 !Skill {name: Java, competency: !Competency 'Good'}
+- &id067 !Skill {name: JavaScript, competency: !Competency 'Good'}
+- &id016 !Skill {name: Jenkins, competency: !Competency 'Good'}
+- &id038 !Skill {name: Kernel, competency: !Competency 'Good'}
+- &id017 !Skill {name: Kubernetes, competency: !Competency 'Good'}
+- &id068 !Skill {name: Laravel, competency: !Competency 'Good'}
+- &id088 !Skill {name: Leadership, competency: !Competency 'Good'}
+- &id018 !Skill {name: Linux, competency: !Competency 'Good'}
+- &id090 !Skill {name: Logging, competency: !Competency 'Good'}
+- &id069 !Skill {name: Lumen, competency: !Competency 'Good'}
+- &id070 !Skill {name: Magento, competency: !Competency 'Good'}
+- &id071 !Skill {name: Mediawiki, competency: !Competency 'Good'}
+- &id044 !Skill {name: Memcached, competency: !Competency 'Good'}
+- &id037 !Skill {name: MongoDB, competency: !Competency 'Good'}
+- &id045 !Skill {name: MySQL, competency: !Competency 'Good'}
+- &id053 !Skill {name: NHibernate, competency: !Competency 'Good'}
+- &id072 !Skill {name: NPM, competency: !Competency 'Good'}
+- &id091 !Skill {name: Networking, competency: !Competency 'Good'}
+- &id073 !Skill {name: NodeJS, competency: !Competency 'Good'}
+- &id019 !Skill {name: OpenDistro, competency: !Competency 'Good'}
+- &id020 !Skill {name: OpenStack, competency: !Competency 'Good'}
+- &id074 !Skill {name: PHP, competency: !Competency 'Good'}
+- &id054 !Skill {name: PL/SQL, competency: !Competency 'Good'}
+- &id046 !Skill {name: Postfix, competency: !Competency 'Good'}
+- &id047 !Skill {name: PostgreSQL, competency: !Competency 'Good'}
+- &id021 !Skill {name: Prometheus, competency: !Competency 'Good'}
+- &id022 !Skill {name: Puppet, competency: !Competency 'Good'}
+- &id023 !Skill {name: Python, competency: !Competency 'Good'}
+- &id024 !Skill {name: Qualys, competency: !Competency 'Good'}
+- &id075 !Skill {name: Rails, competency: !Competency 'Good'}
+- &id076 !Skill {name: React Native, competency: !Competency 'Good'}
+- &id077 !Skill {name: ReactJS, competency: !Competency 'Good'}
+- &id048 !Skill {name: Redis, competency: !Competency 'Good'}
+- &id078 !Skill {name: Relay, competency: !Competency 'Good'}
+- &id079 !Skill {name: Ruby, competency: !Competency 'Good'}
+- &id025 !Skill {name: SSH, competency: !Competency 'Good'}
+- &id080 !Skill {name: Sequelize, competency: !Competency 'Good'}
+- &id081 !Skill {name: Symfony, competency: !Competency 'Good'}
+- &id026 !Skill {name: Tailscale, competency: !Competency 'Good'}
+- &id027 !Skill {name: Terraform, competency: !Competency 'Good'}
+- &id082 !Skill {name: Testing, competency: !Competency 'Good'}
+- &id083 !Skill {name: VB.NET, competency: !Competency 'Good'}
+- &id028 !Skill {name: Varnish, competency: !Competency 'Good'}
+- &id029 !Skill {name: Wazuh, competency: !Competency 'Good'}
+- &id030 !Skill {name: WireGuard, competency: !Competency 'Good'}
+- &id084 !Skill {name: WordPress, competency: !Competency 'Good'}
+- &id085 !Skill {name: gRPC, competency: !Competency 'Good'}
+- &id031 !Skill {name: iptables, competency: !Competency 'Good'}
+- &id086 !Skill {name: jQuery, competency: !Competency 'Good'}
+- &id032 !Skill {name: nftables, competency: !Competency 'Good'}
+- &id049 !Skill {name: nginx, competency: !Competency 'Good'}
 categories:
 - !Category {name: automation, skills: [*id001, *id002, *id003, *id004, *id005, *id006, *id007, *id008, *id009, *id010, *id011, *id012, *id013, *id014, *id015, *id016, *id017, *id018, *id019, *id020, *id021, *id022, *id023, *id024, *id025, *id026, *id027, *id028, *id029, *id030, *id031, *id032]}
 - !Category {name: cloud, skills: [*id001, *id002, *id003, *id033, *id034, *id035, *id006, *id007, *id036, *id009, *id017, *id018, *id037, *id019, *id020, *id022, *id024, *id025, *id026, *id027, *id028, *id029, *id030]}
