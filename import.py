@@ -20,6 +20,7 @@ with con:
             CREATE TABLE categories (name text primary key);
             CREATE TABLE achievements(detail text primary key, role_id text,
                                    foreign key(role_id)references roles(employer));
+            CREATE TABLE education(institution text primary key, qualification text, detail text, start_date text, end_date text);
             CREATE TABLE skill_categories(skill_id text, category_id text,
                                    foreign key(skill_id) references skills(name) on update cascade on delete cascade,
                                    foreign key(category_id) references categories(name) on update cascade on delete cascade);
@@ -65,6 +66,15 @@ with con:
             con.executemany(
                 'insert into skill_achievements (skill_id, achievement_id) values (?, ?)',
                 [(s.name, a.detail,) for s in a.skills])
+        except sqlite3.IntegrityError:
+            pass
+
+    for e in tree['education']:
+        try:
+            con.execute('insert into education values (?, ?, ?, ?, ?)',
+                        (e.institution, e.qualification, e.detail,
+                         e.start_date if e.start_date else None,
+                         e.end_date if e.end_date else None, ))
         except sqlite3.IntegrityError:
             pass
 

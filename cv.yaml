@@ -3,6 +3,8 @@ competencies:
 - !Competency 'Okay'
 - !Competency 'Good'
 - !Competency 'Excellent'
+education:
+ - !Education {institution: Keele University, qualification: BA 2:1, detail: English & Media, start_date: 2006, end_date: 2011}
 skills:
 - &skill_055 !Skill {name: .NET, competency: !Competency 'Rusty'}
 - &skill_001 !Skill {name: AWS, competency: !Competency 'Good'}

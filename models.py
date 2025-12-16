@@ -71,7 +71,7 @@ class Role(yaml.YAMLObject):
             self.start_date = date.fromisoformat(kwargs['start_date'])
         else:
             self.start_date = date.fromisoformat('1986-12-10')
-        if kwargs['start_date']:
+        if kwargs['end_date']:
             self.end_date = date.fromisoformat(kwargs['end_date'])
         else:
             self.end_date = date.today()
@@ -91,6 +91,32 @@ class Role(yaml.YAMLObject):
             self.location, self.start_date, self.end_date
         )
     
+class Education(yaml.YAMLObject):
+    yaml_tag = u'!Education'
+    yaml_flow_style = True
+
+    def __init__(self, **kwargs):
+        self.qualification = kwargs['qualification']
+        self.detail = kwargs['detail']
+        self.institution = kwargs['institution']
+        self.start_date = date(kwargs['start_date'], 1, 1)
+        self.end_date = date(kwargs['end_date'], 1, 1)
+
+    def __lt__(self, other):
+        return self.start_date > other.start_date
+
+    def __eq__(self, other):
+        return self.institution == other.institution
+
+    def __hash__(self):
+        return hash((self.institution, ))
+
+    def __repr__(self):
+        return "%s(qualification=%r, detail=%r, institution=%r, start_date=%r, end_date=%r)" % (
+            self.__class__.__name__, self.qualification, self.detail,
+            self.institution, self.start_date, self.end_date
+        )
+
 class Achievement(yaml.YAMLObject):
     yaml_tag = u'!Achievement'
     yaml_flow_style = True
