@@ -124,7 +124,7 @@ roles:
 - &role_tsr !Role {employer: The Student Room Group, title: Senior Developer, location: Brighton, start_date: 2015-12-01, end_date: 2017-05-31}
 - &role_omnisis !Role {employer: Omnisis Ltd, title: Developer, location: Manchester, start_date: 2012-07-01, end_date: 2015-11-30}
 - &role_pingala !Role {employer: Pingala Media Ltd, title: Developer, location: Maidstone, start_date: 2011-07-01, end_date: 2012-06-30}
-- &role_none !Role {employer: null, title: null, location: null, start_date: 1986-12-10, end_date: null}
+- &role_none !Role {employer: Other, title: null, location: null, start_date: 1986-12-10, end_date: null}
 achievements:
 - !Achievement {detail: System administration for all development and production servers, role: *role_pingala, skills: [*skill_018, *skill_087]}
 - !Achievement {detail: 'Managed the logging of events from hundreds of production systems using a combination of rsyslog2, ElasticSearch and OpenDistro', role: *role_none, skills: [*skill_090, *skill_036, *skill_019]}
