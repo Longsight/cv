@@ -18,9 +18,9 @@ class Competency(StrEnum):
     def _missing_(cls, value):
         if value is None:
             value = 'Good'
-        value = value.lower()
+        value = value.title()
         for member in cls:
-            if member.value.lower() == value:
+            if member.value.title() == value:
                 return member
         return Competency.GOOD
         
@@ -39,9 +39,9 @@ class Skill(yaml.YAMLObject):
     yaml_tag = u'!Skill'
     yaml_flow_style = True
 
-    def __init__(self, name, competency):
-        self.name = name
-        self.competency = Competency(competency)
+    def __init__(self, **kwargs):
+        self.name = kwargs['name']
+        self.competency = Competency(kwargs['competency'])
 
     def __repr__(self):
         return "%s(name=%r, competency=%r)" % (
@@ -51,8 +51,8 @@ class Category(yaml.YAMLObject):
     yaml_tag = u'!Category'
     yaml_flow_style = True
 
-    def __init__(self, name):
-        self.name = name
+    def __init__(self, **kwargs):
+        self.name = kwargs['name']
         self.skills = []
 
     def __repr__(self):
@@ -61,7 +61,7 @@ class Category(yaml.YAMLObject):
 
 class Role(yaml.YAMLObject):
     yaml_tag = u'!Role'
-    yaml_flow_style = True
+    yaml_flow_style = False
 
     def __init__(self, **kwargs):
         self.employer = kwargs['employer']
@@ -93,7 +93,7 @@ class Role(yaml.YAMLObject):
     
 class Education(yaml.YAMLObject):
     yaml_tag = u'!Education'
-    yaml_flow_style = True
+    yaml_flow_style = False
 
     def __init__(self, **kwargs):
         self.qualification = kwargs['qualification']
@@ -121,9 +121,9 @@ class Achievement(yaml.YAMLObject):
     yaml_tag = u'!Achievement'
     yaml_flow_style = True
 
-    def __init__(self, role, **kwargs):
+    def __init__(self, **kwargs):
         self.detail = kwargs['detail']
-        self.role = role
+        self.role = kwargs['role']
         self.skills = []
 
     def __hash__(self):
@@ -132,3 +132,18 @@ class Achievement(yaml.YAMLObject):
     def __repr__(self):
         return "%s(detail=%r, skills=%r)" % (
             self.__class__.__name__, self.detail, self.skills)
+
+class Version(yaml.YAMLObject):
+    yaml_tag = u'!Version'
+    yaml_flow_style = False
+
+    def __init__(self, **kwargs):
+        self.name = kwargs['name']
+        self.categories = []
+
+    def __hash__(self):
+        return hash((self.name, ))
+
+    def __repr__(self):
+        return "%s(name=%r, categories=%r)" % (
+            self.__class__.__name__, self.name, self.categories)
