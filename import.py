@@ -125,7 +125,4 @@ with con:
         except sqlite3.IntegrityError:
             pass
 
-# print(yaml.dump(tree['achievements'], ))
-
-
 con.close()
