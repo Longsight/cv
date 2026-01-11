@@ -3,40 +3,45 @@ import sys
 import sqlite3
 import yaml
 from itertools import groupby
+from jinja2 import Environment, PackageLoader, select_autoescape
+
 from models import *
 
 con = sqlite3.connect('cv.db')
 con.row_factory = sqlite3.Row
 cur = con.cursor()
 
-def group_rows(type, rows, key_name, sort=False):
-    result = []
-    for key, group in groupby(rows, lambda x: x[key_name]):
-        rows = list(group)
-        obj = type(**rows[0])
-        obj.skills = {r["skill"]: r["competency"] for r in rows}
-        result.append(obj)
-    if sort:
-        return sorted(result)
-    return result
-
 try:
     version = sys.argv[1]
+    all = 0
+    res = cur.execute("select slug from versions where name = ?", (version, )).fetchone()
 except IndexError:
-    version = "dev"
+    version = ""
+    all = 1
+    count = 500
+    res = cur.execute("select slug from versions where name = 'platform-engineer'").fetchone()
 
-res = cur.execute("select slug from versions where name = ?", (version, )).fetchone()
-slug = res['slug']
+if all == 0:
+    try:
+        count = sys.argv[2]
+    except IndexError:
+        count = 40
+
+try:
+    slug = res['slug']
+except TypeError:
+    print("version %s not found" % version)
+    sys.exit(1)
 
 res = cur.execute("""
                   select skills.name, skills.competency from skills
                   join skill_categories on skill_categories.skill_id = skills.skill_id
                   join version_categories on version_categories.category_id = skill_categories.category_id
                   join versions on version_categories.version_id = versions.version_id
-                  where versions.name = ?
+                  where versions.name = ? or 1 = ?
                   group by skills.name
                   order by lower(skills.name) asc
-                  """, (version, )).fetchall()
+                  """, (version, all, )).fetchall()
 
 skills = [Skill(**row) for row in res]
 
@@ -61,7 +66,7 @@ res = cur.execute("""
                   group_concat(
                     distinct concat(skills.name, ':', skills.competency) order by lower(skills.name) asc
                   ) as skills,
-                  roles.employer as employer, roles.title as role,
+                  roles.employer as employer, roles.title as role, roles.location,
                   strftime('%Y-%m-%d', roles.start_date) as start_date,
                   strftime('%Y-%m-%d', roles.end_date) as end_date
                   from achievements join skill_achievements
@@ -71,14 +76,18 @@ res = cur.execute("""
                   join version_categories on version_categories.category_id = skill_categories.category_id
                   join versions on version_categories.version_id = versions.version_id
                   left outer join roles on achievements.role_id = roles.role_id
-                  where versions.name = ?
+                  where versions.name = ? or 1 = ?
                   group by achievements.detail
                   order by roles.start_date desc, achievements.achievement_id asc
-                  """, (version, )).fetchall()
+                  limit ?
+                  """, (version, all, count, )).fetchall()
 
 achievements = [Achievement(**row) for row in res]
 
+con.close()
+
 doc = {
+    "version": version,
     "slug": slug,
     "education": education,
     "skills": skills,
@@ -86,6 +95,11 @@ doc = {
     "achievements": achievements,
 }
 
-print(yaml.dump(doc, indent=2, width=500, sort_keys=False))
+env = Environment(
+    loader=PackageLoader("export"),
+    autoescape=select_autoescape()
+)
+template = env.get_template("index.html")
+with open("versions/%s.html" % (version if version != "" else "all"), "w") as file:
+    file.write(template.render(doc))
 
-con.close()

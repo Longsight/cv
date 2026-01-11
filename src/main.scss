@@ -1,6 +1,8 @@
 @use "sass:string";
 @use "nord";
 
+$subtitle: 1.3em;
+
 * {
   box-sizing: border-box;
 }
@@ -40,12 +42,25 @@ a.highlight:hover {
   background: nord.$nord8 !important;
 }
 li {
-  line-height: 1.2em;
+  line-height: $subtitle;
   margin: 0.3em 0;
 }
 #languages li {
   line-height: 1.5em;
   margin: 0.3em 0;
+}
+.history strong {
+  margin-right: 1em;
+  font-size: $subtitle;
+}
+.history em {
+  font-size: $subtitle;
+}
+.history .dates {
+  float: right;
+}
+.history ul {
+  margin-bottom: 2em;
 }
 p.lead {
   clear: both;
@@ -68,19 +83,19 @@ h1, .tab-pane#home {
   text-align: left !important;
 }
 .navbar li:first-of-type a {
-  font-size: 1.2em;
+  font-size: $subtitle;
   font-weight: bold;
 }
 [data-toggle="tooltip"] {
   cursor: help;
 }
-.subtitle {
+.dates {
   color: nord.$nord7;
 }
-.subtitle:before {
+.dates:before {
   content: " (";
 }
-.subtitle:after {
+.dates:after {
   content: ")";
 }
 .tab-pane {
@@ -223,11 +238,8 @@ ul ul {
     margin-bottom: 5pt;
   }
   li {
-    line-height: 1.2em !important;
+    line-height: $subtitle !important;
     margin: 1pt !important;
-  }
-  .subtitle {
-    display: none;
   }
   #me {
     break-before: page;

@@ -40,32 +40,39 @@
         <h1>What I'm looking for</h1>
         <ul>
           <li class="">
-            <h3>Linux systems admin, cloud engineering, design, architecture.</h3>
+            <h3>{{ slug }}.</h3>
           </li>
         </ul>
       </div>
       <div role="tabpanel" class="tab-pane fade" id="languages">
         <h1>What I've done</h1>
         <ul>
-          <li class=""><strong>Ops</strong><span class="subtitle" title="for the metal" data-toggle="tooltip">dem bones, dem bones, dem bare bones</span>:
+          {% for role in roles if role.title or version == "" %}
+          <li class="history">
+            &mdash; <strong>{{ role.employer }}</strong>
+            <span class="dates" data-toggle="tooltip">{{ role.start_date }} &ndash; {{ role.end_date }}</span><br />
+            {% if role.title %}<em>{{ role.title }}</em><br />{% endif %}
+            {% if role.location %}<span>{{ role.location }}</span>{% endif %}
             <ul>
-              <li skills="Kernel,Hardware,Automation">~20 years' experience with Linux in a personal and professional context, building servers, configuring kernels, patching modules, automating configuration</li>
+              {% for achievement in achievements if achievement.employer == role.employer %}
+              <li skills="">{{ achievement.detail }}</li>
+              {% endfor %}
             </ul>
           </li>
+          {% endfor %}
         </ul>
-      </div>
-      <div role="tabpanel" class="tab-pane fade" id="employment">
-        <h1>Places I've done it</h1>
-          <ul>
-            <li employer="Unipart Digital"><span class="date">October 2018  current:</span><br /><strong>Senior Systems Engineer, Unipart Digital</strong>
-            </li>
-          </ul>
       </div>
       <div role="tabpanel" class="tab-pane fade" id="education">
         <h1>Education</h1>
           <ul>
-            <li employer="Unipart Digital"><span class="date">October 2018  current:</span><br /><strong>Senior Systems Engineer, Unipart Digital</strong>
+            {% for edu in education %}
+            <li class="history">
+              &mdash; <strong>{{ edu.institution }}</strong>
+              <span class="dates" data-toggle="tooltip">{{ edu.start_date }} &ndash; {{ edu.end_date }}</span><br />
+              {% if edu.qualification %}<em>{{ edu.qualification }}</em><br />{% endif %}
+              {% if edu.detail %}<span>{{ edu.detail }}</span>{% endif %}
             </li>
+            {% endfor %}
           </ul>
       </div>
       <div role="tabpanel" class="tab-pane fade" id="me">
@@ -76,8 +83,8 @@
     </div><!-- /.container -->
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
     <script>
     (function () {
       'use strict';
