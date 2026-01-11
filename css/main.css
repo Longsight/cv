@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  text-align: justify;
+  text-align: left;
   background: #2E3440;
   max-width: 1024px;
   margin: 10px auto;
@@ -80,7 +80,7 @@ p.lead {
 .tab-content {
   padding: 30pt 40pt;
   margin: 0;
-  text-align: justify;
+  text-align: left;
 }
 
 .tab-content ul {
