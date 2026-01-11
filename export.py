@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+import sys
 import sqlite3
 import yaml
 from itertools import groupby
@@ -19,8 +20,10 @@ def group_rows(type, rows, key_name, sort=False):
         return sorted(result)
     return result
 
-# version = "platform-engineer"
-version = "dev"
+try:
+    version = sys.argv[1]
+except IndexError:
+    version = "dev"
 
 res = cur.execute("""
                   select skills.name, skills.competency from skills
@@ -81,7 +84,6 @@ doc = {
     "achievements": achievements,
 }
 
-# print(yaml.dump(doc, indent=2, width=500, sort_keys=False))
-print(len(achievements))
+print(yaml.dump(doc, indent=2, width=500, sort_keys=False))
 
 con.close()
