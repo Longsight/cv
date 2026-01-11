@@ -37,15 +37,6 @@ res = cur.execute("""
 
 skills = list(sorted(set([Skill(**row) for row in res])))
 
-# res = cur.execute("""
-#                   select categories.name, skills.name as skill, skills.competency from categories 
-#                   join skill_categories on categories.category_id = skill_categories.category_id
-#                   join skills on skill_categories.skill_id = skills.skill_id
-#                   order by categories.name asc, skill asc
-#                   """).fetchall()
-
-# categories = group_rows(Category, res, "name")
-
 res = cur.execute("""
                   select roles.role_id, roles.employer, roles.title, roles.location,
                   strftime('%Y-%m-%d', roles.start_date) as start_date, 
@@ -63,8 +54,11 @@ res = cur.execute("""
 education = list(sorted(set([Education(**row) for row in res])))
 
 res = cur.execute("""
-                  select achievements.achievement_id, achievements.detail, skills.name as skill,
-                  skills.competency, roles.employer as role from achievements join skill_achievements
+                  select achievements.achievement_id, achievements.detail, 
+                  group_concat(
+                    distinct concat(skills.name, ':', skills.competency) order by lower(skills.name) asc
+                  ) as skills,
+                  roles.employer as role from achievements join skill_achievements
                   on achievements.achievement_id = skill_achievements.achievement_id
                   join skills on skill_achievements.skill_id = skills.skill_id
                   join skill_categories on skill_categories.skill_id = skills.skill_id
@@ -72,10 +66,11 @@ res = cur.execute("""
                   join versions on version_categories.version_id = versions.version_id
                   left outer join roles on achievements.role_id = roles.role_id
                   where versions.name = ?
-                  order by roles.start_date desc, achievements.achievement_id asc, lower(skill) asc
+                  group by achievements.detail
+                  order by roles.start_date desc, achievements.achievement_id asc
                   """, (version, )).fetchall()
 
-achievements = group_rows(Achievement, res, "detail")
+achievements = list(set([Achievement(**row) for row in res]))
 
 doc = {
     "education": education,

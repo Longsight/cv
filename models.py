@@ -62,7 +62,7 @@ class Category(yaml.YAMLObject):
 
     def __init__(self, **kwargs):
         self.name = kwargs['name']
-        self.skills = []
+        self.skills = {skill[0]: skill[1] for skill in [term.split(':') for term in kwargs['skills'].split(',')]}
 
     def __hash__(self):
         return hash((self.name, ))
@@ -136,7 +136,7 @@ class Achievement(yaml.YAMLObject):
     def __init__(self, **kwargs):
         self.detail = kwargs['detail']
         self.role = kwargs['role']
-        self.skills = []
+        self.skills = {skill[0]: skill[1] for skill in [term.split(':') for term in kwargs['skills'].split(',')]}
 
     def __hash__(self):
         return hash((self.detail, ))
