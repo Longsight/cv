@@ -1,0 +1,286 @@
+* {
+  box-sizing: border-box;
+}
+
+@page {
+  margin: 0.8cm;
+}
+html {
+  background: #3B4252;
+}
+
+body {
+  text-align: justify;
+  background: #2E3440;
+  max-width: 1024px;
+  margin: 10px auto;
+  font-size: 12pt;
+  color: #D8DEE9;
+  border: 1px solid #4C566A;
+}
+
+h1 {
+  font-family: "DejaVu Sans", sans-serif;
+  font-size: 28pt;
+  margin: 24pt 0 12pt;
+  line-height: 1.3em;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+#intro {
+  margin-right: 250px;
+}
+
+a, #intro, h1 .highlight {
+  font-weight: bold;
+  text-decoration: none !important;
+}
+
+a.highlight:hover {
+  color: #434C5E !important;
+  background: #88C0D0 !important;
+}
+
+li {
+  line-height: 1.3em;
+  margin: 0.3em 0;
+}
+
+#languages li {
+  line-height: 1.5em;
+  margin: 0.3em 0;
+}
+
+.history strong {
+  margin-right: 1em;
+  font-size: 1.3em;
+}
+
+.history em {
+  font-size: 1.3em;
+}
+
+.history .dates {
+  float: right;
+}
+
+.history ul {
+  margin-bottom: 2em;
+}
+
+p.lead {
+  clear: both;
+  font-size: 16pt;
+  margin-bottom: 20pt;
+}
+
+.tab-content {
+  padding: 30pt 40pt;
+  margin: 0;
+  text-align: justify;
+}
+
+.tab-content ul {
+  text-align: left;
+  line-height: 1.5em;
+}
+
+.tab-pane > ul {
+  list-style: none;
+}
+
+h1, .tab-pane#home {
+  text-align: left !important;
+}
+
+.navbar li:first-of-type a {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+[data-toggle=tooltip] {
+  cursor: help;
+}
+
+.dates {
+  color: #8FBCBB;
+}
+
+.dates:before {
+  content: " (";
+}
+
+.dates:after {
+  content: ")";
+}
+
+.tab-pane {
+  display: block !important;
+  opacity: 1 !important;
+}
+
+.todo, .next, .done {
+  padding: 0.1em 0.2em 0.2em;
+}
+
+#social {
+  float: right;
+}
+
+.glyph-link {
+  filter: invert();
+  display: inline-block;
+  height: 48px;
+  width: 48px;
+  margin: 8px;
+  opacity: 0.6;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.glyph-link:hover {
+  opacity: 0.9;
+  height: 60px;
+  width: 60px;
+  margin: 2px;
+}
+
+.email {
+  background-image: url("icons/email.png");
+}
+
+.linkedin {
+  background-image: url("icons/linkedin.png");
+}
+
+.github {
+  background-image: url("icons/github.png");
+}
+
+.glyph-list:before {
+  content: "";
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  margin-left: -32px;
+  filter: invert(90%);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-device-width: 800px) {
+  .highlight {
+    padding: 2px 5px;
+  }
+  li {
+    line-height: 1.7em;
+  }
+}
+@media only screen and (max-device-width: 600px) {
+  body, .tab-content {
+    padding: 0;
+    margin: 10pt;
+  }
+  #intro {
+    margin-right: 0;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .date {
+    font-size: 0.8em;
+  }
+  #employment, #me {
+    margin-top: 40pt;
+  }
+  .tab-pane strong {
+    text-decoration: underline;
+  }
+  #social {
+    float: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .tab-pane > ul > li:nth-of-type(n+2) {
+    margin-top: 1.5em;
+    padding-top: 1.4em;
+    border-top: 1px solid #4C566A;
+  }
+}
+@keyframes colorrotate1 {
+  0% {
+    filter: saturate(10) hue-rotate(0deg);
+  }
+  50% {
+    filter: saturate(50) hue-rotate(180deg);
+  }
+  100% {
+    filter: saturate(10) hue-rotate(360deg);
+  }
+}
+@keyframes colorrotate2 {
+  0% {
+    filter: saturate(1) hue-rotate(0deg);
+  }
+  50% {
+    filter: saturate(5) hue-rotate(180deg);
+  }
+  100% {
+    filter: saturate(1) hue-rotate(360deg);
+  }
+}
+ul ul {
+  list-style-image: url(list.png);
+}
+
+.print-links {
+  display: none;
+}
+
+@media print {
+  * {
+    background: none;
+    border-radius: none;
+    animation: none;
+  }
+  .print-links {
+    display: block;
+  }
+  h1 {
+    font-size: 20pt;
+    margin: 10pt 0;
+  }
+  #intro {
+    margin: 0 0 6pt !important;
+  }
+  body {
+    border: 0;
+  }
+  .tab-content {
+    padding: 0 20pt;
+  }
+  a[href]:after {
+    content: none !important;
+  }
+  .highlight {
+    padding: 0 !important;
+  }
+  ul ul {
+    margin-bottom: 5pt;
+  }
+  li {
+    line-height: 1.3em !important;
+    margin: 1pt !important;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
