@@ -53,7 +53,7 @@ res = cur.execute("""
                   order by roles.start_date desc, achievements.achievement_id asc
                   """).fetchall()
 
-achievements = group_rows(Achievement, res, "detail")
+achievements = group_rows(Achievement, res, "detail", sort=True)
 
 doc = {
     "skills": skills,
