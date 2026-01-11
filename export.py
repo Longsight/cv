@@ -19,12 +19,20 @@ def group_rows(type, rows, key_name, sort=False):
         return sorted(result)
     return result
 
+# version = "platform-engineer"
+version = "dev"
+
 res = cur.execute("""
                   select skills.name, skills.competency from skills
+                  join skill_categories on skill_categories.skill_id = skills.skill_id
+                  join version_categories on version_categories.category_id = skill_categories.category_id
+                  join versions on version_categories.version_id = versions.version_id
+                  where versions.name = ?
+                  group by skills.name
                   order by skills.name asc
-                  """).fetchall()
+                  """, (version, )).fetchall()
 
-skills = list(set([Skill(**row) for row in res]))
+skills = list(sorted(set([Skill(**row) for row in res])))
 
 # res = cur.execute("""
 #                   select categories.name, skills.name as skill, skills.competency from categories 
@@ -45,22 +53,35 @@ res = cur.execute("""
 roles = list(sorted(set([Role(**row) for row in res])))
 
 res = cur.execute("""
+                  select education.*
+                  from education order by education.start_date desc
+                  """).fetchall()
+
+education = list(sorted(set([Education(**row) for row in res])))
+
+res = cur.execute("""
                   select achievements.achievement_id, achievements.detail, skills.name as skill,
                   skills.competency, roles.employer as role from achievements join skill_achievements
                   on achievements.achievement_id = skill_achievements.achievement_id
                   join skills on skill_achievements.skill_id = skills.skill_id
+                  join skill_categories on skill_categories.skill_id = skills.skill_id
+                  join version_categories on version_categories.category_id = skill_categories.category_id
+                  join versions on version_categories.version_id = versions.version_id
                   left outer join roles on achievements.role_id = roles.role_id
-                  order by roles.start_date desc, achievements.achievement_id asc
-                  """).fetchall()
+                  where versions.name = ?
+                  order by roles.start_date desc, achievements.achievement_id asc, lower(skill) asc
+                  """, (version, )).fetchall()
 
-achievements = group_rows(Achievement, res, "detail", sort=True)
+achievements = group_rows(Achievement, res, "detail")
 
 doc = {
+    "education": education,
     "skills": skills,
     "roles": roles,
     "achievements": achievements,
 }
 
-print(yaml.dump(doc, indent=2, width=500, sort_keys=False))
+# print(yaml.dump(doc, indent=2, width=500, sort_keys=False))
+print(len(achievements))
 
 con.close()

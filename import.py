@@ -28,7 +28,7 @@ with con:
             CREATE TABLE achievements(achievement_id integer primary key autoincrement, detail text unique, role_id integer,
                 foreign key(role_id) references roles(role_id) on update cascade on delete set null);
             CREATE TABLE education(education_id integer primary key autoincrement, institution text unique,
-                qualification text, detail text, start_date text, end_date text);
+                qualification text, detail text, start_date integer, end_date integer);
             CREATE TABLE skill_categories(skill_id integer, category_id integer,
                 foreign key(skill_id) references skills(skill_id) on update cascade on delete cascade,
                 foreign key(category_id) references categories(category_id) on update cascade on delete cascade);

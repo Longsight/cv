@@ -46,6 +46,12 @@ class Skill(yaml.YAMLObject):
     def __hash__(self):
         return hash((self.name, ))
 
+    def __lt__(self, other):
+        return self.name.lower() < other.name.lower()
+
+    def __eq__(self, other):
+        return self.name.lower() == other.name.lower()
+
     def __repr__(self):
         return "%s(name=%r, competency=%r)" % (
             self.__class__.__name__, self.name, self.competency)
@@ -105,8 +111,8 @@ class Education(yaml.YAMLObject):
         self.qualification = kwargs['qualification']
         self.detail = kwargs['detail']
         self.institution = kwargs['institution']
-        self.start_date = date(kwargs['start_date'], 1, 1)
-        self.end_date = date(kwargs['end_date'], 1, 1)
+        self.start_date = kwargs['start_date']
+        self.end_date = kwargs['end_date']
 
     def __lt__(self, other):
         return self.start_date > other.start_date

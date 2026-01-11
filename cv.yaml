@@ -250,8 +250,5 @@ versions:
   - *category_database
   - *category_dev
   - *category_embedded
-  - *category_iac
-  - *category_linux
   - *category_mobile
-  - *category_ops
   - *category_web
