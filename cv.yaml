@@ -226,6 +226,7 @@ achievements:
 versions:
 - !Version
   name: platform-engineer
+  slug: Linux systems admin, cloud engineering, platform design and architecture
   categories:
   - *category_automation
   - *category_cloud
@@ -244,6 +245,7 @@ versions:
   - *category_security
 - !Version
   name: dev
+  slug: Development & solutions architecture
   categories:
   - *category_cloud
   - *category_configuration

@@ -138,6 +138,15 @@ class Achievement(yaml.YAMLObject):
         self.detail = kwargs['detail']
         self.start_date = date.fromisoformat(kwargs['start_date'])
         self.role = kwargs['role']
+        self.employer = kwargs['employer']
+        if kwargs['start_date']:
+            self.start_date = date.fromisoformat(kwargs['start_date'])
+        else:
+            self.start_date = date.fromisoformat('1986-12-10')
+        if kwargs['end_date']:
+            self.end_date = date.fromisoformat(kwargs['end_date'])
+        else:
+            self.end_date = date.today()
         self.skills = {skill[0]: skill[1] for skill in [term.split(':') for term in kwargs['skills'].split(',')]}
 
     def __lt__(self, other):

@@ -25,6 +25,9 @@ try:
 except IndexError:
     version = "dev"
 
+res = cur.execute("select slug from versions where name = ?", (version, )).fetchone()
+slug = res['slug']
+
 res = cur.execute("""
                   select skills.name, skills.competency from skills
                   join skill_categories on skill_categories.skill_id = skills.skill_id
@@ -58,8 +61,9 @@ res = cur.execute("""
                   group_concat(
                     distinct concat(skills.name, ':', skills.competency) order by lower(skills.name) asc
                   ) as skills,
-                  roles.employer as role,
-                  strftime('%Y-%m-%d', roles.start_date) as start_date
+                  roles.employer as employer, roles.title as role,
+                  strftime('%Y-%m-%d', roles.start_date) as start_date,
+                  strftime('%Y-%m-%d', roles.end_date) as end_date
                   from achievements join skill_achievements
                   on achievements.achievement_id = skill_achievements.achievement_id
                   join skills on skill_achievements.skill_id = skills.skill_id
@@ -75,6 +79,7 @@ res = cur.execute("""
 achievements = [Achievement(**row) for row in res]
 
 doc = {
+    "slug": slug,
     "education": education,
     "skills": skills,
     "roles": roles,

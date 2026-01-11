@@ -131,21 +131,6 @@ h1, .tab-pane#home {
   background-position: center center;
   background-repeat: no-repeat;
 }
-.mobile:before {
-  background-image: url("glyphicons/glyphicons-social-49-android.png");
-}  
-.php:before {
-  background-image: url("glyphicons/glyphicons-social-10-wordpress.png");
-}
-.data:before {
-  background-image: url("glyphicons/glyphicons-social-3-google-plus.png");
-} 
-.ops:before {
-  background-image: url("glyphicons/glyphicons-social-66-linux.png");
-}
-.other:before {
-  background-image: url("glyphicons/glyphicons-social-45-windows.png");
-}
 
 @media only screen and (max-device-width : 800px) {
   .highlight {

@@ -35,7 +35,7 @@ with con:
             CREATE TABLE skill_achievements(skill_id integer, achievement_id integer,
                 foreign key(skill_id) references skills(skill_id) on update cascade on delete cascade,
                 foreign key(achievement_id) references achievements(achievement_id) on update cascade on delete cascade);
-            CREATE TABLE versions (version_id integer primary key autoincrement, name text unqiue);
+            CREATE TABLE versions (version_id integer primary key autoincrement, name text unqiue, slug text);
             CREATE TABLE version_categories (version_id integer, category_id integer,
                 foreign key(version_id) references versions(version_id) on update cascade on delete cascade,
                 foreign key(category_id) references categories(category_id) on update cascade on delete cascade);
@@ -111,9 +111,9 @@ with con:
         try:
             cur = con.execute(
                 '''
-                insert into versions (name) values (?) returning version_id
+                insert into versions (name, slug) values (?, ?) returning version_id
                 '''
-                , (v.name, ))
+                , (v.name, v.slug, ))
             version_id = cur.fetchone()[0]
             con.executemany(
                 '''
