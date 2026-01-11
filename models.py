@@ -134,9 +134,19 @@ class Achievement(yaml.YAMLObject):
     yaml_flow_style = True
 
     def __init__(self, **kwargs):
+        self.id = kwargs['achievement_id']
         self.detail = kwargs['detail']
+        self.start_date = date.fromisoformat(kwargs['start_date'])
         self.role = kwargs['role']
         self.skills = {skill[0]: skill[1] for skill in [term.split(':') for term in kwargs['skills'].split(',')]}
+
+    def __lt__(self, other):
+        if self.role == other.role:
+            return self.id < other.id
+        return self.start_date > other.start_date
+
+    def __eq__(self, other):
+        return self.id == other.id
 
     def __hash__(self):
         return hash((self.detail, ))

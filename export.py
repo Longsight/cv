@@ -32,10 +32,10 @@ res = cur.execute("""
                   join versions on version_categories.version_id = versions.version_id
                   where versions.name = ?
                   group by skills.name
-                  order by skills.name asc
+                  order by lower(skills.name) asc
                   """, (version, )).fetchall()
 
-skills = list(sorted(set([Skill(**row) for row in res])))
+skills = [Skill(**row) for row in res]
 
 res = cur.execute("""
                   select roles.role_id, roles.employer, roles.title, roles.location,
@@ -44,21 +44,23 @@ res = cur.execute("""
                   from roles order by roles.start_date desc
                   """).fetchall()
 
-roles = list(sorted(set([Role(**row) for row in res])))
+roles = [Role(**row) for row in res]
 
 res = cur.execute("""
                   select education.*
                   from education order by education.start_date desc
                   """).fetchall()
 
-education = list(sorted(set([Education(**row) for row in res])))
+education = [Education(**row) for row in res]
 
 res = cur.execute("""
                   select achievements.achievement_id, achievements.detail, 
                   group_concat(
                     distinct concat(skills.name, ':', skills.competency) order by lower(skills.name) asc
                   ) as skills,
-                  roles.employer as role from achievements join skill_achievements
+                  roles.employer as role,
+                  strftime('%Y-%m-%d', roles.start_date) as start_date
+                  from achievements join skill_achievements
                   on achievements.achievement_id = skill_achievements.achievement_id
                   join skills on skill_achievements.skill_id = skills.skill_id
                   join skill_categories on skill_categories.skill_id = skills.skill_id
@@ -70,7 +72,7 @@ res = cur.execute("""
                   order by roles.start_date desc, achievements.achievement_id asc
                   """, (version, )).fetchall()
 
-achievements = list(set([Achievement(**row) for row in res]))
+achievements = [Achievement(**row) for row in res]
 
 doc = {
     "education": education,
