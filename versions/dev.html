@@ -9,14 +9,8 @@
 
     <title>Ashleigh Crosby | CV</title>
 
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"></link>
+    <link href="css/bootstrap.min.css" rel="stylesheet"></link>
     <link href="css/main.css" rel="stylesheet"></link>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
 
   <body>
@@ -35,6 +29,13 @@
           +447950 825615<br />
         </p>
         <p class="lead">Hacker, runner, tinkerer, wonderer.</p>
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="me">
+        <p>I'm a problem-solver, an explorer, and a bit of an adventurer.</p>
+        <p>I think about systems on the grand and micro scale, I'm extremely quick to pick up on messy concepts and see the patterns as they emerge, and I'm always learning new skills.</p>
+        <p>I built a Wifi-enabled Ouija board as a prop for a horror LARP.</p>
+        <p>I can build furniture, bathrooms, bikes, and PCBs.</p>
+        <p>I repair my own clothes, which are frequently described as 'loud' and 'flamboyant as hell'.</p>
       </div>
       <div role="tabpanel" class="tab-pane fade" id="wants">
         <h1>What I'm looking for</h1>
@@ -55,29 +56,65 @@
             <span>London (remote)</span>
             <ul>
               
-              <li skills="">Designed, deployed and maintained an on-premises cloud platform built on Apache CloudStack, using HAProxy, Puppet, and Node.JS to automate deployment on controllers, compute hosts, and network devices</li>
+              <li
+                data-skills="Ceph, CloudStack, HAProxy, NodeJS, Puppet"
+                title="Ceph: good, CloudStack: excellent, HAProxy: good, NodeJS: excellent, Puppet: excellent"
+              >Designed, deployed and maintained an on-premises cloud platform built on Apache CloudStack, using HAProxy, Puppet, and Node.JS to automate deployment on controllers, compute hosts, and network devices</li>
               
-              <li skills="">Automated DNS and BGP configuration within a CloudStack environment with the use of Python in conjunction with knot-resolver and exaBGP APIs</li>
+              <li
+                data-skills="BGP, CloudStack, Python"
+                title="BGP: good, CloudStack: excellent, Python: good"
+              >Automated DNS and BGP configuration within a CloudStack environment with the use of Python in conjunction with knot-resolver and exaBGP APIs</li>
               
-              <li skills="">Wrote numerous bugfixes and new features for the CloudStack Terraform provider</li>
+              <li
+                data-skills="CloudStack, GoLang, Terraform"
+                title="CloudStack: excellent, GoLang: good, Terraform: excellent"
+              >Wrote numerous bugfixes and new features for the CloudStack Terraform provider</li>
               
-              <li skills="">Integrated new cloud platform with existing deployment mechanisms, using Ansible playbooks run by GitLab CI</li>
+              <li
+                data-skills="Ansible, CloudStack, GitLab"
+                title="Ansible: good, CloudStack: excellent, GitLab: excellent"
+              >Integrated new cloud platform with existing deployment mechanisms, using Ansible playbooks run by GitLab CI</li>
               
-              <li skills="">Automated the deployment of dozens of internal Linux-based systems, comprising an entire production delivery network</li>
+              <li
+                data-skills="Linux, Puppet"
+                title="Linux: excellent, Puppet: excellent"
+              >Automated the deployment of dozens of internal Linux-based systems, comprising an entire production delivery network</li>
               
-              <li skills="">Implemented firewalls, logging, monitoring, and SIEM integration with automated service discovery across the entire on-premises estate</li>
+              <li
+                data-skills="iptables, Linux, nftables, Qualys, Wazuh"
+                title="iptables: excellent, Linux: excellent, nftables: excellent, Qualys: good, Wazuh: good"
+              >Implemented firewalls, logging, monitoring, and SIEM integration with automated service discovery across the entire on-premises estate</li>
               
-              <li skills="">Migrated development and production systems from local users and groups to SSSD and PAM</li>
+              <li
+                data-skills="FreeIPA, Linux, SSH"
+                title="FreeIPA: excellent, Linux: excellent, SSH: excellent"
+              >Migrated development and production systems from local users and groups to SSSD and PAM</li>
               
-              <li skills="">Investigated and demonstrated the integration of Cilium BGP with externally-managed WireGuard VPNs, allowing for natively-routed Kubernetes clusters spread across multiple PoPs</li>
+              <li
+                data-skills="Cilium, Kubernetes, WireGuard"
+                title="Cilium: good, Kubernetes: good, WireGuard: excellent"
+              >Investigated and demonstrated the integration of Cilium BGP with externally-managed WireGuard VPNs, allowing for natively-routed Kubernetes clusters spread across multiple PoPs</li>
               
-              <li skills="">Deployed Harbor with RadosGW backend for internal image storage and management</li>
+              <li
+                data-skills="Ceph, Docker, Linux"
+                title="Ceph: good, Docker: good, Linux: excellent"
+              >Deployed Harbor with RadosGW backend for internal image storage and management</li>
               
-              <li skills="">Created a live embedded network monitoring map by polling gRPC endpoints and representing the results with JS</li>
+              <li
+                data-skills="gRPC, JavaScript"
+                title="gRPC: good, JavaScript: excellent"
+              >Created a live embedded network monitoring map by polling gRPC endpoints and representing the results with JS</li>
               
-              <li skills="">Wrote management scripts for the automation of NVIDIA virtual devices, for MLOps purposes</li>
+              <li
+                data-skills="Bash, Kernel, Linux"
+                title="Bash: good, Kernel: okay, Linux: excellent"
+              >Wrote management scripts for the automation of NVIDIA virtual devices, for MLOps purposes</li>
               
-              <li skills="">Deployed a fully-automated, tuned, highly-available, general-purpose Ceph storage cluster, with RadosGW for object storage, RDB for disk imaging, and CephFS for shared filesystems</li>
+              <li
+                data-skills="Ceph, CloudStack, Kernel, Linux, Puppet"
+                title="Ceph: good, CloudStack: excellent, Kernel: okay, Linux: excellent, Puppet: excellent"
+              >Deployed a fully-automated, tuned, highly-available, general-purpose Ceph storage cluster, with RadosGW for object storage, RDB for disk imaging, and CephFS for shared filesystems</li>
               
             </ul>
           </li>
@@ -89,15 +126,35 @@
             <span>Cambridge (hybrid)</span>
             <ul>
               
-              <li skills="">Wrote FreeIPA plugins to support tree changes that reflect internal structure for an organisation of 10,000+ users</li>
+              <li
+                data-skills="FreeIPA"
+                title="FreeIPA: excellent"
+              >Wrote FreeIPA plugins to support tree changes that reflect internal structure for an organisation of 10,000+ users</li>
               
-              <li skills="">Managed three production OpenStack clusters, supporting ~1300 cores across three sites</li>
+              <li
+                data-skills="OpenStack"
+                title="OpenStack: excellent"
+              >Managed three production OpenStack clusters, supporting ~1300 cores across three sites</li>
               
-              <li skills="">Redesigned and deployed the monitoring and backup systems for hundreds of production systems</li>
+              <li
+                data-skills="Bash, OpenStack, Python"
+                title="Bash: good, OpenStack: excellent, Python: good"
+              >Extended OpenStack with Python and Bash to simplify networking and DNS at the user level</li>
               
-              <li skills="">Built Puppet modules for just about everything at UD</li>
+              <li
+                data-skills="Linux, OpenStack, Puppet"
+                title="Linux: excellent, OpenStack: excellent, Puppet: excellent"
+              >Redesigned and deployed the monitoring and backup systems for hundreds of production systems</li>
               
-              <li skills="">Built plugins and config management for FreeIPA, Postfix, Dovecot to represent internal user structures</li>
+              <li
+                data-skills="Puppet"
+                title="Puppet: excellent"
+              >Built Puppet modules for just about everything at UD</li>
+              
+              <li
+                data-skills="FreeIPA, Postfix"
+                title="FreeIPA: excellent, Postfix: good"
+              >Built plugins and config management for FreeIPA, Postfix, Dovecot to represent internal user structures</li>
               
             </ul>
           </li>
@@ -109,19 +166,40 @@
             <span>Leeds</span>
             <ul>
               
-              <li skills="">Built a client-ready VR demo app in my first week, using Flutter and Google Cardboard</li>
+              <li
+                data-skills="Android, Flutter"
+                title="Android: okay, Flutter: rusty"
+              >Built a client-ready VR demo app in my first week, using Flutter and Google Cardboard</li>
               
-              <li skills="">Made significant UX and reliability improvements to a Rails-based UML diagram tool</li>
+              <li
+                data-skills="Rails"
+                title="Rails: okay"
+              >Made significant UX and reliability improvements to a Rails-based UML diagram tool</li>
               
-              <li skills="">Aided in the design and conception of apps for new clients as part of a concerted marketing drive</li>
+              <li
+                data-skills="Android, Flutter"
+                title="Android: okay, Flutter: rusty"
+              >Aided in the design and conception of apps for new clients as part of a concerted marketing drive</li>
               
-              <li skills="">Implemented bugfixes and features to a long-running iOS / Rails sales app</li>
+              <li
+                data-skills="Rails"
+                title="Rails: okay"
+              >Implemented bugfixes and features to a long-running iOS / Rails sales app</li>
               
-              <li skills="">Written applications using standalone Eloquent, Sequelize, Hibernate, NHibernate and Doctrine ORMs against a variety of backends</li>
+              <li
+                data-skills="Doctrine, Hibernate, NHibernate, Sequelize"
+                title="Doctrine: good, Hibernate: okay, NHibernate: okay, Sequelize: good"
+              >Written applications using standalone Eloquent, Sequelize, Hibernate, NHibernate and Doctrine ORMs against a variety of backends</li>
               
-              <li skills="">Built a prototype Android app to read and write complex data from STMicro&#39;s ST25DV NFC tags</li>
+              <li
+                data-skills="Android"
+                title="Android: okay"
+              >Built a prototype Android app to read and write complex data from STMicro&#39;s ST25DV NFC tags</li>
               
-              <li skills="">Developed a cross-platform VR demo using Flutter and Google Cardboard</li>
+              <li
+                data-skills="Android, Flutter"
+                title="Android: okay, Flutter: rusty"
+              >Developed a cross-platform VR demo using Flutter and Google Cardboard</li>
               
             </ul>
           </li>
@@ -133,15 +211,30 @@
             <span>London</span>
             <ul>
               
-              <li skills="">Dragged a legacy VB.NET staff management platform into the 21st century, with endless bugfixes, UI updates, features, security and performance improvements, and more</li>
+              <li
+                data-skills=".NET, VB.NET"
+                title=".NET: rusty, VB.NET: rusty"
+              >Dragged a legacy VB.NET staff management platform into the 21st century, with endless bugfixes, UI updates, features, security and performance improvements, and more</li>
               
-              <li skills="">Enabled the expansion of the company into international markets by porting and internationalising the entire backend, frontend and mobile platforms</li>
+              <li
+                data-skills="Android, MySQL"
+                title="Android: okay, MySQL: excellent"
+              >Enabled the expansion of the company into international markets by porting and internationalising the entire backend, frontend and mobile platforms</li>
               
-              <li skills="">Delivered a brand new staff management mobile app for iOS and Android, built in React Native against a distributed Node.JS API and caching platform</li>
+              <li
+                data-skills="Android, React Native"
+                title="Android: okay, React Native: okay"
+              >Delivered a brand new staff management mobile app for iOS and Android, built in React Native against a distributed Node.JS API and caching platform</li>
               
-              <li skills="">Sole day-to-day support of legacy and current systems for staff booking, job creation and payroll systems</li>
+              <li
+                data-skills="VB.NET"
+                title="VB.NET: rusty"
+              >Sole day-to-day support of legacy and current systems for staff booking, job creation and payroll systems</li>
               
-              <li skills="">4+ years&#39; experience working with and developing .NET web and console applications in VB.NET and C#</li>
+              <li
+                data-skills=".NET, C#, VB.NET"
+                title=".NET: rusty, C#: rusty, VB.NET: rusty"
+              >4+ years&#39; experience working with and developing .NET web and console applications in VB.NET and C#</li>
               
             </ul>
           </li>
@@ -153,27 +246,55 @@
             <span>Brighton</span>
             <ul>
               
-              <li skills="">Used Relay, GraphQL, and Memcached to build a scalable API for a forum with tens of millions of posts</li>
+              <li
+                data-skills="GraphQL, Memcached, Relay"
+                title="GraphQL: good, Memcached: good, Relay: good"
+              >Used Relay, GraphQL, and Memcached to build a scalable API for a forum with tens of millions of posts</li>
               
-              <li skills="">Delivered Apple and Android apps to their respective app stores, with experience in code-signing, user testing and delivery practices</li>
+              <li
+                data-skills="Android, Gradle, Testing"
+                title="Android: okay, Gradle: okay, Testing: excellent"
+              >Delivered Apple and Android apps to their respective app stores, with experience in code-signing, user testing and delivery practices</li>
               
-              <li skills="">Built mobile-first web apps using React.JS, JSX and Apollo, embracing the latest language features in ES2015 and beyond</li>
+              <li
+                data-skills="JSX"
+                title="JSX: good"
+              >Built mobile-first web apps using React.JS, JSX and Apollo, embracing the latest language features in ES2015 and beyond</li>
               
-              <li skills="">Developed a Ruby / JS build system with full App Store integration, using nodegit and fastlane</li>
+              <li
+                data-skills="Ruby"
+                title="Ruby: good"
+              >Developed a Ruby / JS build system with full App Store integration, using nodegit and fastlane</li>
               
-              <li skills="">Project lead on TSR&#39;s mobile discussion app</li>
+              <li
+                data-skills="React Native"
+                title="React Native: okay"
+              >Project lead on TSR&#39;s mobile discussion app</li>
               
-              <li skills="">Integration of Firebase, Google Analytics, TestFairy, and Sentry APIs, to keep track of everything in the TSR codebase</li>
+              <li
+                data-skills="Testing"
+                title="Testing: excellent"
+              >Integration of Firebase, Google Analytics, TestFairy, and Sentry APIs, to keep track of everything in the TSR codebase</li>
               
-              <li skills="">Written solid, test-driven code using Mocha, Chai and Enzyme, with Nuclide and React DevTools</li>
+              <li
+                data-skills="NodeJS"
+                title="NodeJS: excellent"
+              >Written solid, test-driven code using Mocha, Chai and Enzyme, with Nuclide and React DevTools</li>
               
-              <li skills="">Built micro- and macro-services using Lumen and Laravel 5.* to support search and JSON API functionality for TSR&#39;s ever-growing services</li>
+              <li
+                data-skills="JavaScript, Laravel, Lumen, MySQL, PHP"
+                title="JavaScript: excellent, Laravel: good, Lumen: okay, MySQL: excellent, PHP: good"
+              >Built micro- and macro-services using Lumen and Laravel 5.* to support search and JSON API functionality for TSR&#39;s ever-growing services</li>
               
-              <li skills="">Augmented services with custom build scripts and continuous integration, built in Ruby and Java</li>
+              <li
+                data-skills="Java, Ruby"
+                title="Java: okay, Ruby: good"
+              >Augmented services with custom build scripts and continuous integration, built in Ruby and Java</li>
               
-              <li skills="">Wrote a complete BBCode parser in Node.JS, and accompanying renderer in React Native, to correctly render phpBB posts in a native mobile app</li>
-              
-              <li skills="">Created extensive boilerplate code to integrate TSR with the Dynamic Yield personalisation platform</li>
+              <li
+                data-skills="NodeJS"
+                title="NodeJS: excellent"
+              >Wrote a complete BBCode parser in Node.JS, and accompanying renderer in React Native, to correctly render phpBB posts in a native mobile app</li>
               
             </ul>
           </li>
@@ -201,39 +322,18 @@
         </ul>
       </div>
       <div role="tabpanel" class="tab-pane fade" id="education">
-        <h1>Education</h1>
+        <h1>What I've (officially) learned</h1>
           <ul>
-            <li employer="Unipart Digital"><span class="date">October 2018  current:</span><br /><strong>Senior Systems Engineer, Unipart Digital</strong>
+            
+            <li class="history">
+              &mdash; <strong>Keele University</strong>
+              <span class="dates" data-toggle="tooltip">2006 &ndash; 2011</span><br />
+              <em>BA 2:1</em><br />
+              <span>English &amp; Media</span>
             </li>
+            
           </ul>
       </div>
-      <div role="tabpanel" class="tab-pane fade" id="me">
-        <h1>Me</h1>
-        <p>I'm an avid problem-solver but also an explorer at heart. Though I'm probably never happier than when I'm completely lost and relying on my navigational senses, I love spacial data, mapping, and using it to my advantage to find new places to wander. I know the shortcuts, footpaths, woodlands, hidden meadows of my surrounding area, I've cycled all over the Peak District and Yorkshire Dales without any particular direction in mind, hiked up to Swiss glaciers, walked the length of the South Downs.</p>
-        <p>When I'm not out on my bike or solving problems that I didn't know I had, I can be found listening to (and occasionally making) an eclectic range of music, watching films that make you scratch your head, sketching the world around me, playing obscure board games, and building my engagement in local activism.</p>
-      </div>
     </div><!-- /.container -->
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script>
-    (function () {
-      'use strict';
-
-      if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
-        var msViewportStyle = document.createElement('style')
-        msViewportStyle.appendChild(
-          document.createTextNode(
-            '@-ms-viewport{width:auto!important}'
-          )
-        )
-        document.querySelector('head').appendChild(msViewportStyle)
-      }
-      $(document).ready(function() {
-        $('[data-toggle="tooltip"]').tooltip();
-      });
-    })();
-    </script>
   </body>
 </html>

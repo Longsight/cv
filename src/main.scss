@@ -217,6 +217,7 @@ ul ul {
     display: block;
   }
   h1 {
+    font-size: 20pt;
     margin: 10pt 0;
   }
   #intro {
@@ -240,9 +241,6 @@ ul ul {
   li {
     line-height: $subtitle !important;
     margin: 1pt !important;
-  }
-  #me {
-    break-before: page;
   }
 }
 

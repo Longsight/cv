@@ -9,7 +9,7 @@
 
     <title>Ashleigh Crosby | CV</title>
 
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"></link>
+    <link href="css/bootstrap.min.css" rel="stylesheet"></link>
     <link href="css/main.css" rel="stylesheet"></link>
   </head>
 
@@ -30,6 +30,13 @@
         </p>
         <p class="lead">Hacker, runner, tinkerer, wonderer.</p>
       </div>
+      <div role="tabpanel" class="tab-pane fade" id="me">
+        <p>I'm a problem-solver, an explorer, and a bit of an adventurer.</p>
+        <p>I think about systems on the grand and micro scale, I'm extremely quick to pick up on messy concepts and see the patterns as they emerge, and I'm always learning new skills.</p>
+        <p>I built a Wifi-enabled Ouija board as a prop for a horror LARP.</p>
+        <p>I can build furniture, bathrooms, bikes, and PCBs.</p>
+        <p>I repair my own clothes, which are frequently described as 'loud' and 'flamboyant as hell'.</p>
+      </div>
       <div role="tabpanel" class="tab-pane fade" id="wants">
         <h1>What I'm looking for</h1>
         <ul>
@@ -49,29 +56,65 @@
             <span>London (remote)</span>
             <ul>
               
-              <li skills="">Designed, deployed and maintained an on-premises cloud platform built on Apache CloudStack, using HAProxy, Puppet, and Node.JS to automate deployment on controllers, compute hosts, and network devices</li>
+              <li
+                data-skills="Ceph, CloudStack, HAProxy, Hardware, NodeJS, Puppet"
+                title="Ceph: good, CloudStack: excellent, HAProxy: good, Hardware: good, NodeJS: excellent, Puppet: excellent"
+              >Designed, deployed and maintained an on-premises cloud platform built on Apache CloudStack, using HAProxy, Puppet, and Node.JS to automate deployment on controllers, compute hosts, and network devices</li>
               
-              <li skills="">Automated DNS and BGP configuration within a CloudStack environment with the use of Python in conjunction with knot-resolver and exaBGP APIs</li>
+              <li
+                data-skills="BGP, CloudStack, Python"
+                title="BGP: good, CloudStack: excellent, Python: good"
+              >Automated DNS and BGP configuration within a CloudStack environment with the use of Python in conjunction with knot-resolver and exaBGP APIs</li>
               
-              <li skills="">Wrote numerous bugfixes and new features for the CloudStack Terraform provider</li>
+              <li
+                data-skills="CloudStack, GoLang, Terraform"
+                title="CloudStack: excellent, GoLang: good, Terraform: excellent"
+              >Wrote numerous bugfixes and new features for the CloudStack Terraform provider</li>
               
-              <li skills="">Integrated new cloud platform with existing deployment mechanisms, using Ansible playbooks run by GitLab CI</li>
+              <li
+                data-skills="Ansible, CloudStack, GitLab"
+                title="Ansible: good, CloudStack: excellent, GitLab: excellent"
+              >Integrated new cloud platform with existing deployment mechanisms, using Ansible playbooks run by GitLab CI</li>
               
-              <li skills="">Automated the deployment of dozens of internal Linux-based systems, comprising an entire production delivery network</li>
+              <li
+                data-skills="Linux, Networking, Puppet"
+                title="Linux: excellent, Networking: excellent, Puppet: excellent"
+              >Automated the deployment of dozens of internal Linux-based systems, comprising an entire production delivery network</li>
               
-              <li skills="">Implemented firewalls, logging, monitoring, and SIEM integration with automated service discovery across the entire on-premises estate</li>
+              <li
+                data-skills="iptables, Linux, nftables, Qualys, Wazuh"
+                title="iptables: excellent, Linux: excellent, nftables: excellent, Qualys: good, Wazuh: good"
+              >Implemented firewalls, logging, monitoring, and SIEM integration with automated service discovery across the entire on-premises estate</li>
               
-              <li skills="">Migrated development and production systems from local users and groups to SSSD and PAM</li>
+              <li
+                data-skills="FreeIPA, Linux, SSH"
+                title="FreeIPA: excellent, Linux: excellent, SSH: excellent"
+              >Migrated development and production systems from local users and groups to SSSD and PAM</li>
               
-              <li skills="">Investigated and demonstrated the integration of Cilium BGP with externally-managed WireGuard VPNs, allowing for natively-routed Kubernetes clusters spread across multiple PoPs</li>
+              <li
+                data-skills="Cilium, Kubernetes, WireGuard"
+                title="Cilium: good, Kubernetes: good, WireGuard: excellent"
+              >Investigated and demonstrated the integration of Cilium BGP with externally-managed WireGuard VPNs, allowing for natively-routed Kubernetes clusters spread across multiple PoPs</li>
               
-              <li skills="">Deployed Harbor with RadosGW backend for internal image storage and management</li>
+              <li
+                data-skills="Ceph, Docker, Linux"
+                title="Ceph: good, Docker: good, Linux: excellent"
+              >Deployed Harbor with RadosGW backend for internal image storage and management</li>
               
-              <li skills="">Created a live embedded network monitoring map by polling gRPC endpoints and representing the results with JS</li>
+              <li
+                data-skills="gRPC, JavaScript"
+                title="gRPC: good, JavaScript: excellent"
+              >Created a live embedded network monitoring map by polling gRPC endpoints and representing the results with JS</li>
               
-              <li skills="">Wrote management scripts for the automation of NVIDIA virtual devices, for MLOps purposes</li>
+              <li
+                data-skills="Bash, Hardware, Kernel, Linux"
+                title="Bash: good, Hardware: good, Kernel: okay, Linux: excellent"
+              >Wrote management scripts for the automation of NVIDIA virtual devices, for MLOps purposes</li>
               
-              <li skills="">Deployed a fully-automated, tuned, highly-available, general-purpose Ceph storage cluster, with RadosGW for object storage, RDB for disk imaging, and CephFS for shared filesystems</li>
+              <li
+                data-skills="Ceph, CloudStack, Hardware, Kernel, Linux, Puppet"
+                title="Ceph: good, CloudStack: excellent, Hardware: good, Kernel: okay, Linux: excellent, Puppet: excellent"
+              >Deployed a fully-automated, tuned, highly-available, general-purpose Ceph storage cluster, with RadosGW for object storage, RDB for disk imaging, and CephFS for shared filesystems</li>
               
             </ul>
           </li>
@@ -83,15 +126,35 @@
             <span>Cambridge (hybrid)</span>
             <ul>
               
-              <li skills="">Wrote FreeIPA plugins to support tree changes that reflect internal structure for an organisation of 10,000+ users</li>
+              <li
+                data-skills="FreeIPA"
+                title="FreeIPA: excellent"
+              >Wrote FreeIPA plugins to support tree changes that reflect internal structure for an organisation of 10,000+ users</li>
               
-              <li skills="">Managed three production OpenStack clusters, supporting ~1300 cores across three sites</li>
+              <li
+                data-skills="Networking, OpenStack"
+                title="Networking: excellent, OpenStack: excellent"
+              >Managed three production OpenStack clusters, supporting ~1300 cores across three sites</li>
               
-              <li skills="">Redesigned and deployed the monitoring and backup systems for hundreds of production systems</li>
+              <li
+                data-skills="Bash, OpenStack, Python"
+                title="Bash: good, OpenStack: excellent, Python: good"
+              >Extended OpenStack with Python and Bash to simplify networking and DNS at the user level</li>
               
-              <li skills="">Built Puppet modules for just about everything at UD</li>
+              <li
+                data-skills="Linux, OpenStack, Puppet"
+                title="Linux: excellent, OpenStack: excellent, Puppet: excellent"
+              >Redesigned and deployed the monitoring and backup systems for hundreds of production systems</li>
               
-              <li skills="">Built plugins and config management for FreeIPA, Postfix, Dovecot to represent internal user structures</li>
+              <li
+                data-skills="Puppet"
+                title="Puppet: excellent"
+              >Built Puppet modules for just about everything at UD</li>
+              
+              <li
+                data-skills="FreeIPA, Postfix"
+                title="FreeIPA: excellent, Postfix: good"
+              >Built plugins and config management for FreeIPA, Postfix, Dovecot to represent internal user structures</li>
               
             </ul>
           </li>
@@ -103,19 +166,40 @@
             <span>Leeds</span>
             <ul>
               
-              <li skills="">Built a client-ready VR demo app in my first week, using Flutter and Google Cardboard</li>
+              <li
+                data-skills="Android, Flutter"
+                title="Android: okay, Flutter: rusty"
+              >Built a client-ready VR demo app in my first week, using Flutter and Google Cardboard</li>
               
-              <li skills="">Made significant UX and reliability improvements to a Rails-based UML diagram tool</li>
+              <li
+                data-skills="Rails"
+                title="Rails: okay"
+              >Made significant UX and reliability improvements to a Rails-based UML diagram tool</li>
               
-              <li skills="">Aided in the design and conception of apps for new clients as part of a concerted marketing drive</li>
+              <li
+                data-skills="Android, Flutter"
+                title="Android: okay, Flutter: rusty"
+              >Aided in the design and conception of apps for new clients as part of a concerted marketing drive</li>
               
-              <li skills="">Implemented bugfixes and features to a long-running iOS / Rails sales app</li>
+              <li
+                data-skills="Rails"
+                title="Rails: okay"
+              >Implemented bugfixes and features to a long-running iOS / Rails sales app</li>
               
-              <li skills="">Written applications using standalone Eloquent, Sequelize, Hibernate, NHibernate and Doctrine ORMs against a variety of backends</li>
+              <li
+                data-skills="Doctrine, Hibernate, NHibernate, Sequelize"
+                title="Doctrine: good, Hibernate: okay, NHibernate: okay, Sequelize: good"
+              >Written applications using standalone Eloquent, Sequelize, Hibernate, NHibernate and Doctrine ORMs against a variety of backends</li>
               
-              <li skills="">Built a prototype Android app to read and write complex data from STMicro&#39;s ST25DV NFC tags</li>
+              <li
+                data-skills="Android, Hardware"
+                title="Android: okay, Hardware: good"
+              >Built a prototype Android app to read and write complex data from STMicro&#39;s ST25DV NFC tags</li>
               
-              <li skills="">Developed a cross-platform VR demo using Flutter and Google Cardboard</li>
+              <li
+                data-skills="Android, Flutter"
+                title="Android: okay, Flutter: rusty"
+              >Developed a cross-platform VR demo using Flutter and Google Cardboard</li>
               
             </ul>
           </li>
@@ -127,15 +211,30 @@
             <span>London</span>
             <ul>
               
-              <li skills="">Dragged a legacy VB.NET staff management platform into the 21st century, with endless bugfixes, UI updates, features, security and performance improvements, and more</li>
+              <li
+                data-skills=".NET, VB.NET"
+                title=".NET: rusty, VB.NET: rusty"
+              >Dragged a legacy VB.NET staff management platform into the 21st century, with endless bugfixes, UI updates, features, security and performance improvements, and more</li>
               
-              <li skills="">Enabled the expansion of the company into international markets by porting and internationalising the entire backend, frontend and mobile platforms</li>
+              <li
+                data-skills="Android, MySQL"
+                title="Android: okay, MySQL: excellent"
+              >Enabled the expansion of the company into international markets by porting and internationalising the entire backend, frontend and mobile platforms</li>
               
-              <li skills="">Delivered a brand new staff management mobile app for iOS and Android, built in React Native against a distributed Node.JS API and caching platform</li>
+              <li
+                data-skills="Android, React Native"
+                title="Android: okay, React Native: okay"
+              >Delivered a brand new staff management mobile app for iOS and Android, built in React Native against a distributed Node.JS API and caching platform</li>
               
-              <li skills="">Sole day-to-day support of legacy and current systems for staff booking, job creation and payroll systems</li>
+              <li
+                data-skills="VB.NET"
+                title="VB.NET: rusty"
+              >Sole day-to-day support of legacy and current systems for staff booking, job creation and payroll systems</li>
               
-              <li skills="">4+ years&#39; experience working with and developing .NET web and console applications in VB.NET and C#</li>
+              <li
+                data-skills=".NET, C#, VB.NET"
+                title=".NET: rusty, C#: rusty, VB.NET: rusty"
+              >4+ years&#39; experience working with and developing .NET web and console applications in VB.NET and C#</li>
               
             </ul>
           </li>
@@ -147,41 +246,95 @@
             <span>Brighton</span>
             <ul>
               
-              <li skills="">Used Relay, GraphQL, and Memcached to build a scalable API for a forum with tens of millions of posts</li>
+              <li
+                data-skills="GraphQL, Memcached, Relay"
+                title="GraphQL: good, Memcached: good, Relay: good"
+              >Used Relay, GraphQL, and Memcached to build a scalable API for a forum with tens of millions of posts</li>
               
-              <li skills="">Delivered Apple and Android apps to their respective app stores, with experience in code-signing, user testing and delivery practices</li>
+              <li
+                data-skills="Android, Gradle, Testing"
+                title="Android: okay, Gradle: okay, Testing: excellent"
+              >Delivered Apple and Android apps to their respective app stores, with experience in code-signing, user testing and delivery practices</li>
               
-              <li skills="">Built mobile-first web apps using React.JS, JSX and Apollo, embracing the latest language features in ES2015 and beyond</li>
+              <li
+                data-skills="JSX"
+                title="JSX: good"
+              >Built mobile-first web apps using React.JS, JSX and Apollo, embracing the latest language features in ES2015 and beyond</li>
               
-              <li skills="">Developed a Ruby / JS build system with full App Store integration, using nodegit and fastlane</li>
+              <li
+                data-skills="Ruby"
+                title="Ruby: good"
+              >Developed a Ruby / JS build system with full App Store integration, using nodegit and fastlane</li>
               
-              <li skills="">Experienced mentoring novice developers, having previously volunteered for CodeBar Brighton and helped budding coders into their first professional roles</li>
+              <li
+                data-skills="Leadership"
+                title="Leadership: excellent"
+              >Experienced mentoring novice developers, having previously volunteered for CodeBar Brighton and helped budding coders into their first professional roles</li>
               
-              <li skills="">Project lead on TSR&#39;s mobile discussion app</li>
+              <li
+                data-skills="React Native"
+                title="React Native: okay"
+              >Project lead on TSR&#39;s mobile discussion app</li>
               
-              <li skills="">Integration of Firebase, Google Analytics, TestFairy, and Sentry APIs, to keep track of everything in the TSR codebase</li>
+              <li
+                data-skills="Testing"
+                title="Testing: excellent"
+              >Integration of Firebase, Google Analytics, TestFairy, and Sentry APIs, to keep track of everything in the TSR codebase</li>
               
-              <li skills="">Written solid, test-driven code using Mocha, Chai and Enzyme, with Nuclide and React DevTools</li>
+              <li
+                data-skills="NodeJS"
+                title="NodeJS: excellent"
+              >Written solid, test-driven code using Mocha, Chai and Enzyme, with Nuclide and React DevTools</li>
               
-              <li skills="">Built micro- and macro-services using Lumen and Laravel 5.* to support search and JSON API functionality for TSR&#39;s ever-growing services</li>
+              <li
+                data-skills="JavaScript, Laravel, Lumen, MySQL, PHP"
+                title="JavaScript: excellent, Laravel: good, Lumen: okay, MySQL: excellent, PHP: good"
+              >Built micro- and macro-services using Lumen and Laravel 5.* to support search and JSON API functionality for TSR&#39;s ever-growing services</li>
               
-              <li skills="">Augmented services with custom build scripts and continuous integration, built in Ruby and Java</li>
+              <li
+                data-skills="Java, Ruby"
+                title="Java: okay, Ruby: good"
+              >Augmented services with custom build scripts and continuous integration, built in Ruby and Java</li>
               
-              <li skills="">Wrote a complete BBCode parser in Node.JS, and accompanying renderer in React Native, to correctly render phpBB posts in a native mobile app</li>
+              <li
+                data-skills="NodeJS"
+                title="NodeJS: excellent"
+              >Wrote a complete BBCode parser in Node.JS, and accompanying renderer in React Native, to correctly render phpBB posts in a native mobile app</li>
               
-              <li skills="">Created extensive boilerplate code to integrate TSR with the Dynamic Yield personalisation platform</li>
+              <li
+                data-skills="JavaScript"
+                title="JavaScript: excellent"
+              >Created extensive boilerplate code to integrate TSR with the Dynamic Yield personalisation platform</li>
               
-              <li skills="">Developed fast and scalable backend services in Node.JS</li>
+              <li
+                data-skills="NodeJS"
+                title="NodeJS: excellent"
+              >Developed fast and scalable backend services in Node.JS</li>
               
-              <li skills="">Delivered scalable, testable Android code with extensive use of RxJava for observables and Dagger for dependency injection</li>
+              <li
+                data-skills="Android"
+                title="Android: okay"
+              >Delivered scalable, testable Android code with extensive use of RxJava for observables and Dagger for dependency injection</li>
               
-              <li skills="">Tested JS and Node.JS code with Mocha / Chai, including promise support through Chai-as-promised</li>
+              <li
+                data-skills="JavaScript, NodeJS, Testing"
+                title="JavaScript: excellent, NodeJS: excellent, Testing: excellent"
+              >Tested JS and Node.JS code with Mocha / Chai, including promise support through Chai-as-promised</li>
               
-              <li skills="">Replaced the aging TSR search pages with a sleek and powerful system built on Google Search Appliances</li>
+              <li
+                data-skills="JavaScript, PHP"
+                title="JavaScript: excellent, PHP: good"
+              >Replaced the aging TSR search pages with a sleek and powerful system built on Google Search Appliances</li>
               
-              <li skills="">Conceived and built a rapid and clean discussion app for TSR, using React Native, Relay, GraphQL, and more</li>
+              <li
+                data-skills="GraphQL, React Native, Relay"
+                title="GraphQL: good, React Native: okay, Relay: good"
+              >Conceived and built a rapid and clean discussion app for TSR, using React Native, Relay, GraphQL, and more</li>
               
-              <li skills="">Developed entire React Native component structure, navigation, styling, and higher-order components for a widely-used forum app</li>
+              <li
+                data-skills="React Native"
+                title="React Native: okay"
+              >Developed entire React Native component structure, navigation, styling, and higher-order components for a widely-used forum app</li>
               
             </ul>
           </li>
@@ -193,11 +346,20 @@
             <span>Manchester</span>
             <ul>
               
-              <li skills="">Frontline support and sole full-time developer on a large .NET web application</li>
+              <li
+                data-skills=".NET, C#, VB.NET"
+                title=".NET: rusty, C#: rusty, VB.NET: rusty"
+              >Frontline support and sole full-time developer on a large .NET web application</li>
               
-              <li skills="">Supported a range of corporate clients through complex surveying needs, from local food companies to global pharmaceutical giants</li>
+              <li
+                data-skills="Leadership"
+                title="Leadership: excellent"
+              >Supported a range of corporate clients through complex surveying needs, from local food companies to global pharmaceutical giants</li>
               
-              <li skills="">Implemented the AWS port of the entire surveying platform</li>
+              <li
+                data-skills="AWS, C#, JavaScript, VB.NET"
+                title="AWS: excellent, C#: rusty, JavaScript: excellent, VB.NET: rusty"
+              >Implemented the AWS port of the entire surveying platform</li>
               
             </ul>
           </li>
@@ -209,15 +371,30 @@
             <span>Maidstone</span>
             <ul>
               
-              <li skills="">Managed and maintained all development and production servers</li>
+              <li
+                data-skills="Hardware, Linux"
+                title="Hardware: good, Linux: excellent"
+              >Managed and maintained all development and production servers</li>
               
-              <li skills="">Ported, maintened, and redeveloped a wide selection of PHP sites for schools and small enterprises</li>
+              <li
+                data-skills="MySQL, PHP"
+                title="MySQL: excellent, PHP: good"
+              >Ported, maintened, and redeveloped a wide selection of PHP sites for schools and small enterprises</li>
               
-              <li skills="">Development of full inhouse CMS for new clients, based on the Symfony2 platform</li>
+              <li
+                data-skills="PHP"
+                title="PHP: good"
+              >Development of full inhouse CMS for new clients, based on the Symfony2 platform</li>
               
-              <li skills="">Migrated ~50 school and academy websites from a previous hosting provider to our own, with code fixes and improvements applied across the board</li>
+              <li
+                data-skills="JavaScript, MySQL, PHP"
+                title="JavaScript: excellent, MySQL: excellent, PHP: good"
+              >Migrated ~50 school and academy websites from a previous hosting provider to our own, with code fixes and improvements applied across the board</li>
               
-              <li skills="">Experienced with WordPress, Composer, Zend, Symfony, Doctrine, Eloquent, Magento - you name it, I&#39;ve taken it apart</li>
+              <li
+                data-skills="Composer, Doctrine, Magento, Symfony, WordPress"
+                title="Composer: good, Doctrine: good, Magento: rusty, Symfony: good, WordPress: excellent"
+              >Experienced with WordPress, Composer, Zend, Symfony, Doctrine, Eloquent, Magento - you name it, I&#39;ve taken it apart</li>
               
             </ul>
           </li>
@@ -229,55 +406,130 @@
             
             <ul>
               
-              <li skills="">Managed the logging of events from hundreds of production systems using a combination of rsyslog2, ElasticSearch and OpenDistro</li>
+              <li
+                data-skills="ElasticSearch, Logging, OpenDistro"
+                title="ElasticSearch: good, Logging: excellent, OpenDistro: rusty"
+              >Managed the logging of events from hundreds of production systems using a combination of rsyslog2, ElasticSearch and OpenDistro</li>
               
-              <li skills="">Implemented solutions against MongoDB for document-based storage, and Redis for key-value storage</li>
+              <li
+                data-skills="MongoDB, Redis"
+                title="MongoDB: okay, Redis: good"
+              >Implemented solutions against MongoDB for document-based storage, and Redis for key-value storage</li>
               
-              <li skills="">Extremely experienced working within Agile processes, adapting Scrum working practices to different cross-functional teams, tracking work in Jira / Confluence etc</li>
+              <li
+                data-skills="Leadership"
+                title="Leadership: excellent"
+              >Extremely experienced working within Agile processes, adapting Scrum working practices to different cross-functional teams, tracking work in Jira / Confluence etc</li>
               
-              <li skills="">Experienced with Bootstrap for rapid application prototyping</li>
+              <li
+                data-skills="Bootstrap, JavaScript"
+                title="Bootstrap: okay, JavaScript: excellent"
+              >Experienced with Bootstrap for rapid application prototyping</li>
               
-              <li skills="">Developed against a range of caching solutions, including Varnish, Memcached, and node-cache</li>
+              <li
+                data-skills="Memcached, Varnish"
+                title="Memcached: good, Varnish: good"
+              >Developed against a range of caching solutions, including Varnish, Memcached, and node-cache</li>
               
-              <li skills="">Developed and hosted a range of personal sites, galleries, online game data crunching tools</li>
+              <li
+                data-skills="JavaScript, Linux, MySQL, PostgreSQL"
+                title="JavaScript: excellent, Linux: excellent, MySQL: excellent, PostgreSQL: excellent"
+              >Developed and hosted a range of personal sites, galleries, online game data crunching tools</li>
               
-              <li skills="">Built and automated icinga2 clusters to monitor all development and production systems, including custom checks for new services</li>
+              <li
+                data-skills="Icinga2"
+                title="Icinga2: excellent"
+              >Built and automated icinga2 clusters to monitor all development and production systems, including custom checks for new services</li>
               
-              <li skills="">Worked extensively with MySQL and PostgreSQL for relational data persistence, including PL/SQL, sequencing and complex indexing</li>
+              <li
+                data-skills="MySQL, PL/SQL, PostgreSQL"
+                title="MySQL: excellent, PL/SQL: good, PostgreSQL: excellent"
+              >Worked extensively with MySQL and PostgreSQL for relational data persistence, including PL/SQL, sequencing and complex indexing</li>
               
-              <li skills="">Deployed replicating clusters for MySQL / MariaDB / PostgreSQL, using a variety of modern replication strategies, with Corosync / Pacemaker for automated cluster management</li>
+              <li
+                data-skills="Clustering, Corosync, MariaDB, MySQL, PostgreSQL"
+                title="Clustering: excellent, Corosync: excellent, MariaDB: excellent, MySQL: excellent, PostgreSQL: excellent"
+              >Deployed replicating clusters for MySQL / MariaDB / PostgreSQL, using a variety of modern replication strategies, with Corosync / Pacemaker for automated cluster management</li>
               
-              <li skills="">Extremely confident at getting the best out of others, with a focus on efficient and accurate working, and using the right tools for the job</li>
+              <li
+                data-skills="Leadership"
+                title="Leadership: excellent"
+              >Extremely confident at getting the best out of others, with a focus on efficient and accurate working, and using the right tools for the job</li>
               
-              <li skills="">Using Git for absolutely everything</li>
+              <li
+                data-skills="Git"
+                title="Git: excellent"
+              >Using Git for absolutely everything</li>
               
-              <li skills="">Built and maintained two iterations of a Drupal site for a 500-member uni rock society</li>
+              <li
+                data-skills="JavaScript, MySQL, PHP"
+                title="JavaScript: excellent, MySQL: excellent, PHP: good"
+              >Built and maintained two iterations of a Drupal site for a 500-member uni rock society</li>
               
-              <li skills="">Written complex maintenance and automation scripts in Bash and Python</li>
+              <li
+                data-skills="Bash, Python"
+                title="Bash: good, Python: good"
+              >Written complex maintenance and automation scripts in Bash and Python</li>
               
-              <li skills="">Confident configuring, maintaining and integrating everything into CI platforms like ConcourseCI and CircleCI, as well as legacy systems like Jenkins</li>
+              <li
+                data-skills="CircleCI, ConcourseCI, Jenkins"
+                title="CircleCI: okay, ConcourseCI: okay, Jenkins: good"
+              >Confident configuring, maintaining and integrating everything into CI platforms like ConcourseCI and CircleCI, as well as legacy systems like Jenkins</li>
               
-              <li skills="">Decades of experience with the packaging ecosystems for a wide range of modern distros (APT, DNF and the like) and languages (Composer, NPM, RubyGems, Bower and more)</li>
+              <li
+                data-skills="NPM"
+                title="NPM: good"
+              >Decades of experience with the packaging ecosystems for a wide range of modern distros (APT, DNF and the like) and languages (Composer, NPM, RubyGems, Bower and more)</li>
               
-              <li skills="">Created interactive charts, single-page applications, synthesized audio, procedurally-generated art, infinite-scroll galleries and more</li>
+              <li
+                data-skills="JavaScript"
+                title="JavaScript: excellent"
+              >Created interactive charts, single-page applications, synthesized audio, procedurally-generated art, infinite-scroll galleries and more</li>
               
-              <li skills="">Worked extensively with modern JS APIs for responsiveness, async communication, JSON data encoding and more</li>
+              <li
+                data-skills="JavaScript"
+                title="JavaScript: excellent"
+              >Worked extensively with modern JS APIs for responsiveness, async communication, JSON data encoding and more</li>
               
-              <li skills="">Built Docker images to run custom ConcourseCI resource types to streamline the automation of package builds</li>
+              <li
+                data-skills="ConcourseCI, Docker"
+                title="ConcourseCI: okay, Docker: good"
+              >Built Docker images to run custom ConcourseCI resource types to streamline the automation of package builds</li>
               
-              <li skills="">Experienced with Apache and nginx for HTTP, including all kinds of authnz, and creating Puppet modules to automate everything</li>
+              <li
+                data-skills="Apache, nginx, Puppet"
+                title="Apache: excellent, nginx: good, Puppet: excellent"
+              >Experienced with Apache and nginx for HTTP, including all kinds of authnz, and creating Puppet modules to automate everything</li>
               
-              <li skills="">Worked extensively with Puppet, PuppetDB, and Hiera, including writing my own ENCs, managing secrets at rest with hiera-eyaml, and creating modules for the management of Ceph, OpenStack, Apache Superset, Mediawiki, Taiga, Jitsi and more, with security concerns managed up front</li>
+              <li
+                data-skills="Hiera, Hiera-eyaml, Mediawiki, OpenStack, Puppet, Superset"
+                title="Hiera: excellent, Hiera-eyaml: excellent, Mediawiki: good, OpenStack: excellent, Puppet: excellent, Superset: rusty"
+              >Worked extensively with Puppet, PuppetDB, and Hiera, including writing my own ENCs, managing secrets at rest with hiera-eyaml, and creating modules for the management of Ceph, OpenStack, Apache Superset, Mediawiki, Taiga, Jitsi and more, with security concerns managed up front</li>
               
-              <li skills="">Built PCs, servers, home routers, office networks, programmable disco lights, even a Wifi-enabled ouija board</li>
+              <li
+                data-skills="Arduino, ESP32, Hardware"
+                title="Arduino: good, ESP32: good, Hardware: good"
+              >Built PCs, servers, home routers, office networks, programmable disco lights, even a Wifi-enabled ouija board</li>
               
-              <li skills="">A lifelong interest in security and fuzzing, with strong skills in intrusion detection, SSH configuration, key and certificate management, iptables and nftables, and SELinux</li>
+              <li
+                data-skills="FreeIPA, iptables, nftables, SSH"
+                title="FreeIPA: excellent, iptables: excellent, nftables: excellent, SSH: excellent"
+              >A lifelong interest in security and fuzzing, with strong skills in intrusion detection, SSH configuration, key and certificate management, iptables and nftables, and SELinux</li>
               
-              <li skills="">~18 years messing with networks, routers, switches, physical and virtual, at home and at work</li>
+              <li
+                data-skills="Hardware, Networking"
+                title="Hardware: good, Networking: excellent"
+              >~18 years messing with networks, routers, switches, physical and virtual, at home and at work</li>
               
-              <li skills="">Developed a digital literacy tool for an education consultancy, handling massive datasets, animated graphing, file-based caching, map-reduce and PDF exports</li>
+              <li
+                data-skills="D3, JavaScript, MySQL, PHP"
+                title="D3: good, JavaScript: excellent, MySQL: excellent, PHP: good"
+              >Developed a digital literacy tool for an education consultancy, handling massive datasets, animated graphing, file-based caching, map-reduce and PDF exports</li>
               
-              <li skills="">~20 years&#39; experience with Linux in a personal and professional context, building servers, configuring kernels, patching modules, automating configuration, and constantly learning</li>
+              <li
+                data-skills="Hardware, Kernel, Linux"
+                title="Hardware: good, Kernel: okay, Linux: excellent"
+              >~20 years&#39; experience with Linux in a personal and professional context, building servers, configuring kernels, patching modules, automating configuration, and constantly learning</li>
               
             </ul>
           </li>
@@ -285,7 +537,7 @@
         </ul>
       </div>
       <div role="tabpanel" class="tab-pane fade" id="education">
-        <h1>Education</h1>
+        <h1>What I've (officially) learned</h1>
           <ul>
             
             <li class="history">
@@ -297,30 +549,6 @@
             
           </ul>
       </div>
-      <div role="tabpanel" class="tab-pane fade" id="me">
-        <h1>Me</h1>
-        <p>I'm an avid problem-solver but also an explorer at heart. Though I'm probably never happier than when I'm completely lost and relying on my navigational senses, I love spacial data, mapping, and using it to my advantage to find new places to wander. I know the shortcuts, footpaths, woodlands, hidden meadows of my surrounding area, I've cycled all over the Peak District and Yorkshire Dales without any particular direction in mind, hiked up to Swiss glaciers, walked the length of the South Downs.</p>
-        <p>When I'm not out on my bike or solving problems that I didn't know I had, I can be found listening to (and occasionally making) an eclectic range of music, watching films that make you scratch your head, sketching the world around me, playing obscure board games, and building my engagement in local activism.</p>
-      </div>
     </div><!-- /.container -->
-
-    <script>
-    (function () {
-      'use strict';
-
-      if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
-        var msViewportStyle = document.createElement('style')
-        msViewportStyle.appendChild(
-          document.createTextNode(
-            '@-ms-viewport{width:auto!important}'
-          )
-        )
-        document.querySelector('head').appendChild(msViewportStyle)
-      }
-      $(document).ready(function() {
-        $('[data-toggle="tooltip"]').tooltip();
-      });
-    })();
-    </script>
   </body>
 </html>

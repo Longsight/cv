@@ -164,6 +164,7 @@ achievements:
 - !Achievement {detail: 'Extremely experienced working within Agile processes, adapting Scrum working practices to different cross-functional teams, tracking work in Jira / Confluence etc', role: *role_none, skills: [*skill_leader]}
 - !Achievement {detail: 'Experienced with Bootstrap for rapid application prototyping', role: *role_none, skills: [*skill_js, *skill_bootstrap]}
 - !Achievement {detail: 'Managed three production OpenStack clusters, supporting ~1300 cores across three sites', role: *role_unipart, skills: [*skill_network, *skill_openstack]}
+- !Achievement {detail: 'Extended OpenStack with Python and Bash to simplify networking and DNS at the user level', role: *role_unipart, skills: [*skill_openstack, *skill_python, *skill_bash]}
 - !Achievement {detail: 'Developed against a range of caching solutions, including Varnish, Memcached, and node-cache', role: *role_none, skills: [*skill_varnish, *skill_memcached]}
 - !Achievement {detail: 'Developed and hosted a range of personal sites, galleries, online game data crunching tools', role: *role_none, skills: [*skill_js, *skill_mysql, *skill_postgres, *skill_linux]}
 - !Achievement {detail: 'Delivered Apple and Android apps to their respective app stores, with experience in code-signing, user testing and delivery practices', role: *role_tsr, skills: [*skill_android, *skill_testing, *skill_gradle]}

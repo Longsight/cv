@@ -147,7 +147,7 @@ class Achievement(yaml.YAMLObject):
             self.end_date = date.fromisoformat(kwargs['end_date'])
         else:
             self.end_date = date.today()
-        self.skills = {skill[0]: skill[1] for skill in [term.split(':') for term in kwargs['skills'].split(',')]}
+        self.skills = [{"name": skill[0], "competency": skill[1]} for skill in [term.split(':') for term in kwargs['skills'].split(',')]]
 
     def __lt__(self, other):
         if self.role == other.role:
