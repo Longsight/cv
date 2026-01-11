@@ -43,6 +43,9 @@ class Skill(yaml.YAMLObject):
         self.name = kwargs['name']
         self.competency = Competency(kwargs['competency'])
 
+    def __hash__(self):
+        return hash((self.name, ))
+
     def __repr__(self):
         return "%s(name=%r, competency=%r)" % (
             self.__class__.__name__, self.name, self.competency)
@@ -54,6 +57,9 @@ class Category(yaml.YAMLObject):
     def __init__(self, **kwargs):
         self.name = kwargs['name']
         self.skills = []
+
+    def __hash__(self):
+        return hash((self.name, ))
 
     def __repr__(self):
         return "%s(name=%r, skills=%r)" % (

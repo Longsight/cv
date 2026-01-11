@@ -1,4 +1,5 @@
-@import "nord";
+@use "sass:string";
+@use "nord";
 
 * {
   box-sizing: border-box;
@@ -7,23 +8,16 @@
   margin: 0.8cm;
 }
 html {
-  background: $nord1;
+  background: nord.$nord1;
 }
 body {
   text-align: justify;
-  background: $nord0;
+  background: nord.$nord0;
   max-width: 1024px;
   margin: 10px auto;
   font-size: 12pt;
-  color: $nord4;
-  border: 1px solid $nord3;
-}
-.highlight {
-  color: $nord2;
-  background: $nord6;
-  padding: 3px 5px;
-  border-radius: 8px;
-  animation: 60s infinite colorrotate2;
+  color: nord.$nord4;
+  border: 1px solid nord.$nord3;
 }
 h1 {
   font-family: "DejaVu Sans", sans-serif;
@@ -31,17 +25,19 @@ h1 {
   margin: 24pt 0 12pt;
   line-height: 1.3em;
 }
+h3 {
+  font-weight: bold;
+}
 #intro {
   margin-right: 250px;
-  animation: 15s infinite alternate colorrotate1;
 }
 a, #intro, h1 .highlight {
   font-weight: bold;
   text-decoration: none !important;
 }
 a.highlight:hover {
-  color: $nord2 !important;
-  background: $nord8 !important;
+  color: nord.$nord2 !important;
+  background: nord.$nord8 !important;
 }
 li {
   line-height: 1.2em;
@@ -79,7 +75,7 @@ h1, .tab-pane#home {
   cursor: help;
 }
 .subtitle {
-  color: $nord7;
+  color: nord.$nord7;
 }
 .subtitle:before {
   content: " (";
@@ -98,10 +94,10 @@ h1, .tab-pane#home {
   float: right;
 }
 .glyph-link {
-  filter: unquote("invert()");
+  filter: string.unquote("invert()");
   display: inline-block;
-  height: 24px;
-  width: 24px;
+  height: 48px;
+  width: 48px;
   margin: 8px;
   opacity: 0.6;
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
@@ -111,24 +107,18 @@ h1, .tab-pane#home {
 }
 .glyph-link:hover {
   opacity: 0.9;
-  height: 36px;
-  width: 36px;
+  height: 60px;
+  width: 60px;
   margin: 2px;
 }
-.twitter {
-  background-image: url('glyphicons/glyphicons-social-32-twitter.png');
-}
-.facebook {
-  background-image: url('glyphicons/glyphicons-social-31-facebook.png');
-}
 .email {
-  background-image: url('glyphicons/glyphicons-social-14-e-mail-envelope.png');
+  background-image: url('icons/email.png');
 }
 .linkedin {
-  background-image: url('glyphicons/glyphicons-social-18-linked-in.png');
+  background-image: url('icons/linkedin.png');
 }
 .github {
-  background-image: url('glyphicons/glyphicons-social-22-github.png');
+  background-image: url('icons/github.png');
 }
 .glyph-list:before {
   content: '';
@@ -196,7 +186,7 @@ h1, .tab-pane#home {
   .tab-pane > ul > li:nth-of-type(n+2) {
     margin-top: 1.5em;
     padding-top: 1.4em;
-    border-top: 1px solid $nord3;
+    border-top: 1px solid nord.$nord3;
   }
 }
 @keyframes colorrotate1 {
