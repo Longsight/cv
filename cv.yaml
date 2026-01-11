@@ -141,14 +141,16 @@ roles:
 - &role_none !Role {employer: Other, title: null, location: null, start_date: 1986-12-10, end_date: null}
 
 achievements:
-- !Achievement {detail: 'Automated the deployment of dozens of internal Linux-based systems, comprising an entire production delivery network', role: *role_vitrifi, skills: [*skill_puppet, *skill_linux, *skill_network]}
-- !Achievement {detail: 'Designed software- and network-level firewall rulesets for minimal and monitored access', role: *role_vitrifi, skills: [*skill_linux, *skill_iptables, *skill_nftables]}
-- !Achievement {detail: 'Migrated all possible production systems from local auth to federated auth, with system access strictly controlled by usergroup', role: *role_vitrifi, skills: [*skill_freeipa, *skill_linux, *skill_ssh]}
-- !Achievement {detail: 'Deployed Harbor with RadosGW backend for internal image storage and management', role: *role_vitrifi, skills: [*skill_ceph, *skill_docker, *skill_linux]}
-- !Achievement {detail: 'Fully automated the deployment of an entire high-availability CloudStack platform, using HAProxy, Puppet, and Node.JS to augment the installation process on controllers and compute hosts', role: *role_vitrifi, skills: [*skill_puppet, *skill_cloudstack, *skill_haproxy, *skill_ceph, *skill_hardware]}
-- !Achievement {detail: 'Wrote numerous bugfixes and new features for the CloudStack Terraform provider', role: *role_vitrifi, skills: [*skill_go, *skill_terraform, *skill_cloudstack]}
+- !Achievement {detail: 'Designed, deployed and maintained an on-premises cloud platform built on Apache CloudStack, using HAProxy, Puppet, and Node.JS to automate deployment on controllers, compute hosts, and network devices', role: *role_vitrifi, skills: [*skill_puppet, *skill_cloudstack, *skill_haproxy, *skill_ceph, *skill_hardware, *skill_node]}
 - !Achievement {detail: 'Developed Terraform modules for the automated deployment of CloudStack VPCs, networks, and compute instances', role: *role_vitrifi, skills: []}
 - !Achievement {detail: 'Automated DNS and BGP configuration within a CloudStack environment with the use of Python in conjunction with knot-resolver and exaBGP APIs', role: *role_vitrifi, skills: [*skill_cloudstack, *skill_python, *skill_bgp]}
+- !Achievement {detail: 'Wrote numerous bugfixes and new features for the CloudStack Terraform provider', role: *role_vitrifi, skills: [*skill_go, *skill_terraform, *skill_cloudstack]}
+- !Achievement {detail: 'Integrated new cloud platform with existing deployment mechanisms, using Ansible playbooks run by GitLab CI', role: *role_vitrifi, skills: [*skill_cloudstack, *skill_ansible, *skill_gitlab]}
+- !Achievement {detail: 'Automated the deployment of dozens of internal Linux-based systems, comprising an entire production delivery network', role: *role_vitrifi, skills: [*skill_puppet, *skill_linux, *skill_network]}
+- !Achievement {detail: 'Implemented firewalls, logging, monitoring, and SIEM integration with automated service discovery across the entire on-premises estate', role: *role_vitrifi, skills: [*skill_linux, *skill_iptables, *skill_nftables, *skill_wazuh, *skill_qualys]}
+- !Achievement {detail: 'Migrated development and production systems from local users and groups to SSSD and PAM', role: *role_vitrifi, skills: [*skill_freeipa, *skill_linux, *skill_ssh]}
+- !Achievement {detail: 'Investigated and demonstrated the integration of Cilium BGP with externally-managed WireGuard VPNs, allowing for natively-routed Kubernetes clusters spread across multiple PoPs', role: *role_vitrifi, skills: [*skill_cilium, *skill_wireguard, *skill_kubernetes]}
+- !Achievement {detail: 'Deployed Harbor with RadosGW backend for internal image storage and management', role: *role_vitrifi, skills: [*skill_ceph, *skill_docker, *skill_linux]}
 - !Achievement {detail: 'Created a live embedded network monitoring map by polling gRPC endpoints and representing the results with JS', role: *role_vitrifi, skills: [*skill_js, *skill_grpc]}
 - !Achievement {detail: 'Wrote management scripts for the automation of NVIDIA virtual devices, for MLOps purposes', role: *role_vitrifi, skills: [*skill_linux, *skill_hardware, *skill_bash, *skill_kernel]}
 - !Achievement {detail: 'Deployed a fully-automated, tuned, highly-available, general-purpose Ceph storage cluster, with RadosGW for object storage, RDB for disk imaging, and CephFS for shared filesystems', role: *role_vitrifi, skills: [*skill_linux, *skill_cloudstack, *skill_hardware, *skill_ceph, *skill_kernel, *skill_puppet]}
