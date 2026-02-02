@@ -150,6 +150,10 @@ h1, .tab-pane#home {
   margin: 2px;
 }
 
+.pdf {
+  background-image: url("icons/pdf.png");
+}
+
 .email {
   background-image: url("icons/email.png");
 }
