@@ -97,7 +97,9 @@ doc = {
 
 env = Environment(
     loader=PackageLoader("export"),
-    autoescape=select_autoescape()
+    autoescape=select_autoescape(),
+    trim_blocks=True,
+    lstrip_blocks=True,
 )
 template = env.get_template("index.html")
 with open("versions/%s.html" % (version if version != "" else "all"), "w") as file:
